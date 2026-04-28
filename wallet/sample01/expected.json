@@ -1,0 +1,9 @@
+{
+  "secret_hex": "37418F34B941FBC7DEE0E89B6BB9D5868E164287F33F1BF5DB9173304C0BC1AC",
+  "wif_uncompressed": "5JEd2MfroiV4cMzmtn2KCQEDYCmF2q6vSBUKj216731475hZVdP",
+  "wif_compressed": "Ky57zzEWqC6rw5g19XioKKXLLivGw5K8r9DbeTRPXdqEhTEedzBf",
+  "pubkey_uncompressed_hex": "04405b21b2731a1312b19dd0b67686712e14a3e6bdaf3a273cc554f06e92e13835337f0a041753ca897519d92f8b3a2f21a2f6fe1d6da487e7091a8e7ea7c3ae23",
+  "address_uncompressed": "13n3au9sg4pxqS2p7pweR1eGiGftEpRQyb",
+  "pubkey_compressed_hex": "03405b21b2731a1312b19dd0b67686712e14a3e6bdaf3a273cc554f06e92e13835",
+  "address_compressed": "1LM9HmujdtL69m82oR1xUqTcK1xhpreHEA"
+}
