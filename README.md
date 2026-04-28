@@ -113,6 +113,22 @@ This validates the RC4 key-scheduling step observed in the provider.
 
 ------------------------------------------------------------------
 
+### 5. Wallet derivation
+
+cd wallet
+python3 wallet_proof.py sample01/prng_log_excerpt.jsonl
+
+Expected:
+
+RAND==SECRET:   OK
+WIF uncomp:     OK
+P2PKH uncomp:   OK
+
+This validates the deterministic derivation from the captured RAND_bytes
+output to the corresponding Bitcoin private-key encoding and P2PKH address.
+
+------------------------------------------------------------------
+
 ### Notes
 
 - This repository is intentionally minimal and focuses on bit-exact reproducibility
