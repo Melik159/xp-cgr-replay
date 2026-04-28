@@ -33,3 +33,5 @@ f688e42692f6028fb77ef425e33a2e5fc8da78bcfc447407a0857534ba30da9f  ./vlh/camp01/s
 b1b25bb762d7b0e37c00ad3b3d540133dfcfaba491b5926c901f3bd8e94c7902  ./vlh/camp01/seed3_before.bin
 5fd83e310933d2735d4b3589de4d3ba431299d58740beb2c5826ff6ca45c67b7  ./vlh/camp01/seedbase_after.bin
 d5b4e62f6eb150abfd4ed1da37a8e3b50f71834140cf3f96abf4f0762a1925e0  ./vlh/camp01/seedbase_before.bin
+c2c276089da7e88370dfa705336533554c412634cd7a51ff2f2d8ad9c935884d  ./wallet/sample01/expected.json
+f9e093658662b2e52d9efd6fd5c28d8163043513bbe1d3fa06918602dcf01183  ./wallet/sample01/prng_log_excerpt.jsonl
