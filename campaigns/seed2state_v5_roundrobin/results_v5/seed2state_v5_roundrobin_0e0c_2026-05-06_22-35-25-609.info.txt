@@ -1,0 +1,117 @@
+[SEED2STATE V4 INFO]
+file=seed2state_v5_roundrobin_0e0c_2026-05-06_22-35-25-609.log
+events=243
+
+[MARKERS]
+ADVAPI_IOCTL_AFTER_C2                8
+ADVAPI_IOCTL_CANDIDATE_ESP_M04       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M08       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M0C       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M10       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M14       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M18       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M1C       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M20       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M24       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M28       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M2C       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M30       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M34       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M38       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M3C       8
+ADVAPI_IOCTL_CANDIDATE_ESP_M40       8
+ADVAPI_IOCTL_STACK_AFTER             8
+ADVAPI_IOCTL_STACK_BEFORE            8
+ADVAPI_RC4_PRGA_ENTRY                11
+ADVAPI_RC4_PRGA_RETURN               11
+ADVAPI_RC4_SAFE_ENTRY                11
+ADVAPI_RC4_SELECT_ENTRY              11
+ADVAPI_RC4_SELECT_RETURN             11
+ADVAPI_ROUNDROBIN_BREAKPOINTS        1
+COPY_SEED_AFTER_TO_LSA_AFTER         1
+COPY_SEED_AFTER_TO_LSA_BEFORE        1
+KSEC_AFTER_RC4_1                     1
+KSEC_AFTER_RC4_2_OUTPUT              1
+KSEC_AFTER_RC4_KEY                   1
+KSEC_AFTER_WRITESEED                 1
+KSEC_CALL_RC4_1                      1
+KSEC_CALL_RC4_2_OUTPUT               1
+KSEC_CALL_RC4_KEY                    1
+KSEC_CALL_WRITESEED                  1
+RSAENH_ALGORITHMCHECK                2
+RSAENH_FINAL_COPY_6800D605           2
+RSAENH_FIPS_ENTRY                    5
+RSAENH_STATE_COPY_6800D677           2
+SEED2STATE_V5_RR_GO_ARMED            1
+SEED2STATE_V5_RR_GO_BEGIN            1
+SEED2STATE_V5_RR_MASTER_SETUP_BEGIN  1
+SEED2STATE_V5_RR_MASTER_SETUP_END    1
+SYSTEMFUNCTION036_ENTRY              4
+SYSTEMFUNCTION036_RETURN             3
+VLH_ENTRY                            1
+VLH_EXIT_CHAIN_ARMED                 1
+VLH_EXIT_SEED_AFTER                  1
+
+[SEEDBASE]
+vlh_entry_line                  : 485
+vlh_exit_line                   : 576
+seedbase_addr                   : b9269b68
+pool_addr                       : e17cc008
+pool_len                        : None
+lsa_seed_slot                   : f74554e0
+lsa_matches_seedbase_after      : True
+
+[IOCTL]
+ksec_after_rc4_2_line       : 1236
+kernel_buf_addr             : 89f4dbe0
+advapi_ioctl_after_c2_count : 8
+advapi_ioctl_candidate_count: 128
+matching_ioctl_count        : 1
+fuzzy_matching_ioctl_count  : 3
+matching_ioctl:
+  - line=1560 label=ESP_M10 addr=0023f484
+fuzzy_ioctl:
+  - line=1360 marker=ADVAPI_IOCTL_CANDIDATE_ESP_M40 addr=0023f3bc type=contains_prefix matched_len=20
+  - line=1560 marker=ADVAPI_IOCTL_CANDIDATE_ESP_M10 addr=0023f484 type=exact matched_len=256
+  - line=1596 marker=ADVAPI_IOCTL_CANDIDATE_ESP_M08 addr=0023f47c type=contains_prefix matched_len=20
+
+[SYSTEMFUNCTION036]
+entry_count                 : 4
+return_count                : 3
+first_pairs:
+  - entry#1 line=336 buf=0023f658 len=00000014 -> ret_line=1789 out=0023f658 match_addr=True
+  - entry#2 line=1862 buf=0023fd3c len=00000014 -> ret_line=6342 out=0023fd3c match_addr=True
+  - entry#3 line=6403 buf=0023fca8 len=00000014 -> ret_line=6680 out=0023fca8 match_addr=True
+  - entry#4 line=6799 buf=005eeaa0 len=00000014 -> ret_line=None out=None match_addr=False
+
+[ADVAPI RC4 ROUND-ROBIN]
+select_entry_count         : 11
+select_return_count        : 11
+safe_entry_count           : 11
+prga_entry_count           : 11
+prga_return_count          : 11
+prga_matches_sysfunc_count : 3
+select_returns_first:
+  - line=386 manager=0025ba58 index=00000001 state=0025bba0
+  - line=1912 manager=0025ba58 index=00000002 state=0025bcc0
+  - line=2512 manager=0025ba58 index=00000003 state=0025bde0
+  - line=3112 manager=0025ba58 index=00000004 state=0025bf00
+  - line=3712 manager=0025ba58 index=00000005 state=0025c020
+prga_to_systemfunction_matches:
+  - prga_line=1736 out=0023f658 sysret_line=1789 out20=88d326ef350b225008492f9e449ab96605889627
+  - prga_line=6295 out=0023fd3c sysret_line=6342 out20=7be272671c7ef7706e7090ca4c1098258de5caee
+  - prga_line=6634 out=0023fca8 sysret_line=6680 out20=a1b3e131c20bf9f37d01c316d61f5ab6f5181f86
+
+[RSAENH]
+algorithmcheck_count        : 2
+state_copy_6800d677_count   : 2
+fips_entry_count            : 5
+final_copy_6800d605_count   : 2
+candidate_after_vlh_aux     : 1
+candidate_after_ksec_aux    : 1
+
+[CANDIDATE FIPS CHAINS]
+FIPS#4 line=6701 sysret_line=6680 final_copy_line=None state20=f67e7b392ebd75841d2985a2d363fe64f737ab50 aux20=a1b3e131c20bf9f37d01c316d61f5ab6f5181f86
+
+[DIAGNOSTICS]
+- SYSTEMFUNCTION036_ENTRY count differs from SYSTEMFUNCTION036_RETURN count; pair by aux20 or return address, not by index only.

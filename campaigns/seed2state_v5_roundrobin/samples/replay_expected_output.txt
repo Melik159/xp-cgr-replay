@@ -1,0 +1,32 @@
+[seed2state v5 offline replay]
+file: seed2state_v5_roundrobin_0e0c_2026-05-06_22-35-25-609.log
+
+[seedbase] OK - seedbase_after == LSA slot: True
+[ioctl] OK - KSecDD RC4_2 0x100 == ADVAPI IOCTL buffer: True (ESP_M10 @ 0023f484, line 1560)
+[roundrobin] OK - ADVAPI manager 0025ba58 round-robin sequence modulo 8: True (first=1,2,3,4,5,6,7,0,1,2)
+[prga_replay] OK - ADVAPI RC4 PRGA replay: True (nonzero=4, out_ok=4, state_ok=4, zero_len_skipped=7)
+[prga_to_sysfunc] OK - PRGA output20 -> SystemFunction036_RETURN: True (matches=3)
+[sysfunc_to_aux20] OK - SystemFunction036_RETURN -> rsaenh aux20: True (FIPS#4 line=6701 state20=f67e7b392ebd75841d2985a2d363fe64f737ab50 aux20=a1b3e131c20bf9f37d01c316d61f5ab6f5181f86)
+
+[rc4_safe_select sequence]
+  #01 manager=0025ba58 index=00000001 state=0025bba0
+  #02 manager=0025ba58 index=00000002 state=0025bcc0
+  #03 manager=0025ba58 index=00000003 state=0025bde0
+  #04 manager=0025ba58 index=00000004 state=0025bf00
+  #05 manager=0025ba58 index=00000005 state=0025c020
+  #06 manager=0025ba58 index=00000006 state=0025c140
+  #07 manager=0025ba58 index=00000007 state=0025c260
+  #08 manager=0025ba58 index=00000000 state=0025ba80
+  #09 manager=0025ba58 index=00000001 state=0025bba0
+  #10 manager=0025ba58 index=00000002 state=0025bcc0
+  #11 manager=00094c78 index=00000002 state=00094ee0
+
+[RESULT] PASS
+Observed/replayed path:
+  seedbase_after -> LSA slot
+  KSecDD RC4_2 output -> ADVAPI IOCTL buffer 0x100
+  ADVAPI manager[8] -> rc4_safe_select -> rc4 PRGA
+  PRGA output20 -> SystemFunction036 output20 -> rsaenh aux20
+
+Residual not reconstructed here:
+  IOCTL buffer 0x100 -> ADVAPI rekey/KSA of the 8 RC4 states
