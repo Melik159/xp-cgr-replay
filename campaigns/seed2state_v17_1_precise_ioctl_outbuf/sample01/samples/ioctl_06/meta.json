@@ -1,0 +1,11 @@
+{
+  "bytesret_ptr": "0023fb60",
+  "ioctl_inbuf": "77e46318",
+  "ioctl_inlen": "00000100",
+  "ioctl_outbuf": "0023fb68",
+  "ioctl_outlen": "00000100",
+  "peb": "7ffd9000",
+  "proc": "89e76c18",
+  "teb": "7ffdf000",
+  "thread": "89f63568"
+}
