@@ -177,6 +177,13 @@ Current included campaigns:
   PRGA20 calls from captured states, checks the post-PRGA state evolution, and
   includes negative controls on mutated IOCTL buffers and mutated PRGA states.
 
+- `seed2state_v18_1_ksecdd_kernel_outbuf_manual/` — validates a manually
+  captured KSecDD-to-ADVAPI boundary. It shows that a captured KSecDD
+  kernel-side `kernel_outbuf[0x100]` is byte-identical to the first ADVAPI
+  IOCTL `0x390008` `outbuf[0x100]`, then continues the replay through the
+  ADVAPI RC4 KSA states, useful PRGA20 calls, and `SystemFunction036`
+  output20.
+
 Validated relation for `seed2state_v5_roundrobin/`:
 
 ```text
@@ -198,6 +205,17 @@ captured ADVAPI IOCTL 0x390008 outbuf[0x100]
 → SystemFunction036 output20
 ```
 
+Validated relation for `seed2state_v18_1_ksecdd_kernel_outbuf_manual/`:
+
+```text
+captured KSecDD kernel_outbuf[0x100]
+→ matching ADVAPI IOCTL 0x390008 outbuf[0x100]
+→ RC4 KSA from outbuf[0:256]
+→ ADVAPI RC4 state
+→ useful PRGA20 replay
+→ SystemFunction036 output20
+```
+
 The V17.1 artifact strengthens the ADVAPI-side part of the previous
 round-robin result by checking the binary samples directly and by adding
 negative controls:
@@ -207,13 +225,22 @@ mutated IOCTL outbuf → KSA match rejected
 mutated PRGA state   → PRGA replay rejected
 ```
 
+The V18.1 artifact adds a narrower but stronger kernel/user boundary check:
+
+```text
+KSecDD kernel_outbuf[0x100] == ADVAPI IOCTL#1 outbuf[0x100]
+```
+
 Together, these campaigns validate the downstream `G_aux` / ADVAPI-to-`aux20`
 branch from captured ADVAPI RC4 material to `SystemFunction036 output20` and,
-in the V5 campaign, to `rsaenh aux20`.
+in the V5 campaign, to `rsaenh aux20`. V18.1 additionally validates the local
+boundary from a captured KSecDD kernel output buffer to the corresponding
+ADVAPI IOCTL output buffer.
 
 They do not close:
 
 ```text
+VLH seedbase_after → KSecDD kernel_outbuf[0x100]
 seedbase_after / persistent provider state → state20
 ```
 
@@ -225,7 +252,6 @@ complete seedbase_after → provider_state → state20 replay
 complete entropy assessment
 practical attack against Bitcoin or historical keys
 ```
-
 ------------------------------------------------------------------
 
 
