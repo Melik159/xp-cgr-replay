@@ -1,0 +1,15 @@
+{
+  "entry_line": 1925,
+  "i_after": 0,
+  "i_before": 0,
+  "index": 8,
+  "j_after": 0,
+  "j_before": 0,
+  "length": "00000000",
+  "out_ptr": "0023fd3c",
+  "output_matches": [],
+  "perm_after": true,
+  "perm_before": true,
+  "return_line": 1956,
+  "s_ptr": "0025b964"
+}
