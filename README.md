@@ -156,14 +156,28 @@ and reconstructs the final 32-byte `RAND_bytes` output.
 The `campaigns/` directory contains public replay artifacts derived from larger
 WinDbg/KD trace campaigns.
 
-Current included campaign:
+Each campaign is intentionally narrow: it validates one experimentally isolated
+relation and should not be read as a complete replay of Windows XP
+`CryptGenRandom`.
 
-- `seed2state_v5_roundrobin/` — validates the ADVAPI32 eight-state RC4
-  round-robin manager, replays non-zero ADVAPI32 RC4 PRGA calls from captured
-  states, correlates PRGA output with `SystemFunction036`, and correlates
-  `SystemFunction036` output with `rsaenh aux20`.
+Current included campaigns:
 
-Validated campaign relation:
+- `seed2state_v5_roundrobin/` — validates the downstream
+  KSecDD/ADVAPI/SystemFunction036/rsaenh `aux20` path. It observes the KSecDD
+  `RC4_2` 0x100-byte output as an ADVAPI-side IOCTL buffer, validates the
+  ADVAPI32 eight-state RC4 round-robin manager, replays non-zero ADVAPI32 RC4
+  PRGA calls from captured states, correlates PRGA output with
+  `SystemFunction036`, and correlates `SystemFunction036` output with
+  `rsaenh aux20`.
+
+- `seed2state_v17_1_precise_ioctl_outbuf/` — provides a tighter ADVAPI-side
+  validation of the IOCTL-output-buffer to RC4-state segment. It starts from
+  captured ADVAPI IOCTL `0x390008` `outbuf[0x100]` samples, verifies that
+  `outbuf[0:256]` reproduces the corresponding RC4 KSA states, replays useful
+  PRGA20 calls from captured states, checks the post-PRGA state evolution, and
+  includes negative controls on mutated IOCTL buffers and mutated PRGA states.
+
+Validated relation for `seed2state_v5_roundrobin/`:
 
 ```text
 KSecDD RC4_2 output
@@ -174,13 +188,42 @@ KSecDD RC4_2 output
 → rsaenh aux20
 ```
 
-This campaign closes the downstream `G_aux` segment from captured ADVAPI32 RC4
-state to `aux20`.
+Validated relation for `seed2state_v17_1_precise_ioctl_outbuf/`:
 
-It does not close:
+```text
+captured ADVAPI IOCTL 0x390008 outbuf[0x100]
+→ RC4 KSA from outbuf[0:256]
+→ ADVAPI RC4 state
+→ useful PRGA20 replay
+→ SystemFunction036 output20
+```
+
+The V17.1 artifact strengthens the ADVAPI-side part of the previous
+round-robin result by checking the binary samples directly and by adding
+negative controls:
+
+```text
+mutated IOCTL outbuf → KSA match rejected
+mutated PRGA state   → PRGA replay rejected
+```
+
+Together, these campaigns validate the downstream `G_aux` / ADVAPI-to-`aux20`
+branch from captured ADVAPI RC4 material to `SystemFunction036 output20` and,
+in the V5 campaign, to `rsaenh aux20`.
+
+They do not close:
 
 ```text
 seedbase_after / persistent provider state → state20
+```
+
+They also do not claim:
+
+```text
+complete Windows XP CryptGenRandom reconstruction
+complete seedbase_after → provider_state → state20 replay
+complete entropy assessment
+practical attack against Bitcoin or historical keys
 ```
 
 ------------------------------------------------------------------
