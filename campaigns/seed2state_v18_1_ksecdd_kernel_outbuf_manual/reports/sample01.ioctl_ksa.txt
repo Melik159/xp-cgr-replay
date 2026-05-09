@@ -1,0 +1,17 @@
+[V18.1 ADVAPI IOCTL OUTBUF -> RC4 KSA CHECK]
+ioctl_outbufs=8
+states=11
+
+MATCH ioctl_01 -> prga_001 i=00 j=00
+MATCH ioctl_02 -> prga_002 i=00 j=00
+MATCH ioctl_03 -> prga_003 i=00 j=00
+MATCH ioctl_04 -> prga_004 i=00 j=00
+MATCH ioctl_05 -> prga_005 i=00 j=00
+MATCH ioctl_06 -> prga_006 i=00 j=00
+MATCH ioctl_07 -> prga_007 i=00 j=00
+MATCH ioctl_08 -> prga_008 i=00 j=00
+MATCH ioctl_02 -> prga_010 i=00 j=00
+MATCH ioctl_03 -> prga_011 i=00 j=00
+
+[SUMMARY]
+ioctl_to_rc4_ksa_matches=10

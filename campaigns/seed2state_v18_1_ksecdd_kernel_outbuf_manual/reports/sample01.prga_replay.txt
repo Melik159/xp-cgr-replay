@@ -1,0 +1,5 @@
+prga_001: output_match=True state_match=True
+prga_009: output_match=True state_match=True
+prga_010: output_match=True state_match=True
+prga_011: output_match=True state_match=True
+[SUMMARY] useful_prga_replay_ok=4/4

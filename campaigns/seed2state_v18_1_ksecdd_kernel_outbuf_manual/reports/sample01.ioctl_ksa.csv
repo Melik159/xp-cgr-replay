@@ -1,0 +1,11 @@
+state,ioctl,i,j
+prga_001,ioctl_01,00,00
+prga_002,ioctl_02,00,00
+prga_003,ioctl_03,00,00
+prga_004,ioctl_04,00,00
+prga_005,ioctl_05,00,00
+prga_006,ioctl_06,00,00
+prga_007,ioctl_07,00,00
+prga_008,ioctl_08,00,00
+prga_010,ioctl_02,00,00
+prga_011,ioctl_03,00,00

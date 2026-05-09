@@ -1,0 +1,8 @@
+[V18.1 KSECDD KERNEL OUTBUF -> ADVAPI IOCTL CHECK]
+ksec_kernel_outbufs=1
+ioctl_outbufs=8
+
+MATCH ksec_01 == ioctl_01
+
+[SUMMARY]
+ksec_kernel_to_ioctl_exact_matches=1

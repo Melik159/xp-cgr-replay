@@ -1,0 +1,77 @@
+[SEED2STATE V18.1 KSECDD KERNEL OUTBUF MANUAL REPORT]
+file=seed2state_v18_1/logs/seed2state_v18_1_ksecdd_kernel_outbuf_manual_1414_2026-05-09_13-37-29-383.log
+
+[COUNTS]
+V18_1_ADVAPI_IOCTL_AFTER_C2                8
+V18_1_MANUAL_KSEC_LATE_F74599A6            1
+V18_1_MANUAL_VLH_EXIT_F7459724             1
+V18_1_RC4_PRGA_ENTRY                       11
+V18_1_RC4_PRGA_RETURN                      11
+V18_1_SYSTEMFUNCTION036_ENTRY              3
+V18_1_SYSTEMFUNCTION036_RETURN             4
+
+[VLH SEEDBASE_AFTER]
+VLH#1 line=18 seedbase80=86b45d0f6cc838b91e47b0a4ef997228f0d65b3c556bb65d34abbaa9d4783c41ba12cc14929730fd6d547e7fbf882995ea96b7f5037a29c38f5ed6e57c9a2dbc5daf32576f43a271f2bfd8ca637cf447
+
+[KSECDD KERNEL OUTBUF]
+KSEC#1 line=154 kernel_outbuf=8a0b15f8 len=00000100 dump_len=256 head16=c4aa4adab1fbd332386919a8daaddbcd
+
+[ADVAPI IOCTL OUTBUFS]
+IOCTL#1 line=486 outbuf=0023f484 outlen=00000100 dump_len=256 head16=c4aa4adab1fbd332386919a8daaddbcd
+IOCTL#2 line=751 outbuf=0023fb68 outlen=00000100 dump_len=256 head16=783e71bbf970dc1377a4fa568555aeac
+IOCTL#3 line=931 outbuf=0023fb68 outlen=00000100 dump_len=256 head16=fd9a856827658b9b2acffa5932dbbf66
+IOCTL#4 line=1111 outbuf=0023fb68 outlen=00000100 dump_len=256 head16=a600192b1d08d90b6ce914917490b854
+IOCTL#5 line=1291 outbuf=0023fb68 outlen=00000100 dump_len=256 head16=64865e4af67a5ef1e64774f4d4d2edff
+IOCTL#6 line=1471 outbuf=0023fb68 outlen=00000100 dump_len=256 head16=fc11fa091069279ea16d06f728cfa05e
+IOCTL#7 line=1651 outbuf=0023fb68 outlen=00000100 dump_len=256 head16=7142df1a1ba6d0611619ccbbca65ca3d
+IOCTL#8 line=1831 outbuf=0023fb68 outlen=00000100 dump_len=256 head16=d5417646166747fa88da0276e3c2cc16
+
+[KSECDD -> ADVAPI IOCTL MATCHES]
+MATCH exact KSEC#1 == IOCTL#1
+ksec_kernel_to_ioctl_exact_matches=1
+ksec_kernel_to_ioctl_total_matches=1
+
+[SYSTEMFUNCTION036 OUT20]
+#1 e30320f92b588a4e261705188544b54da00379ae
+#2 c3c199bd7b0546aca4838ce2b66fb3b14eaa1856
+#3 59f1d66f11cac3947bba7009d78590d8e0e217f5
+#4 7ee10a97ded2c127dcb7184a9b6a27c303716fbe
+
+[PRGA CALLS]
+PRGA#01 s_ptr=0025ba84 len=00000014 i/j=0/0->20/249 matches=2
+PRGA#02 s_ptr=0025bba4 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#03 s_ptr=0025bcc4 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#04 s_ptr=0025bde4 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#05 s_ptr=0025bf04 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#06 s_ptr=0025c024 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#07 s_ptr=0025c144 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#08 s_ptr=0025b964 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#09 s_ptr=0025ba84 len=00000014 i/j=20/249->40/212 matches=2
+PRGA#10 s_ptr=0025bba4 len=00000014 i/j=0/0->20/49 matches=2
+PRGA#11 s_ptr=0025bcc4 len=00000014 i/j=0/0->20/26 matches=2
+
+[ADVAPI IOCTL -> RC4 KSA MATCHES]
+MATCH IOCTL#1 -> PRGA#01 i=00 j=00
+MATCH IOCTL#2 -> PRGA#02 i=00 j=00
+MATCH IOCTL#3 -> PRGA#03 i=00 j=00
+MATCH IOCTL#4 -> PRGA#04 i=00 j=00
+MATCH IOCTL#5 -> PRGA#05 i=00 j=00
+MATCH IOCTL#6 -> PRGA#06 i=00 j=00
+MATCH IOCTL#7 -> PRGA#07 i=00 j=00
+MATCH IOCTL#8 -> PRGA#08 i=00 j=00
+MATCH IOCTL#2 -> PRGA#10 i=00 j=00
+MATCH IOCTL#3 -> PRGA#11 i=00 j=00
+ioctl_to_rc4_ksa_matches=10
+
+[SAMPLES]
+wrote=results/seed2state_v18_1_ksecdd_kernel_outbuf_manual_1414_2026-05-09_13-37-29-383_samples
+
+[DIAGNOSTICS]
+- KSecDD kernel_outbuf[0x100] was captured.
+- ADVAPI IOCTL outbuf[0x100] was captured.
+- KSecDD kernel buffer matches at least one ADVAPI IOCTL buffer.
+- ADVAPI IOCTL to RC4 KSA relation was observed.
+- PRGA outputs match SystemFunction036 outputs.
+
+[JSONL]
+wrote=results/seed2state_v18_1_ksecdd_kernel_outbuf_manual_1414_2026-05-09_13-37-29-383.jsonl
