@@ -1,0 +1,26 @@
+{
+  "entry_line": 3268,
+  "i_after": 20,
+  "i_before": 0,
+  "index": 10,
+  "j_after": 184,
+  "j_before": 0,
+  "length": "00000014",
+  "out_ptr": "0023fca8",
+  "output_matches": [
+    {
+      "block": "V17_1_PRGA_SYSFUNC_OUT_AT_RETURN",
+      "pos": 0,
+      "sysfunc": 3
+    },
+    {
+      "block": "V17_1_PRGA_OUTPUT_AFTER",
+      "pos": 0,
+      "sysfunc": 3
+    }
+  ],
+  "return_line": 3318,
+  "s_ptr": "0025bba4",
+  "state_after_perm": true,
+  "state_before_perm": true
+}
