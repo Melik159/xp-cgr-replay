@@ -1,0 +1,77 @@
+[SEED2STATE V17.1 PRECISE IOCTL OUTBUF REPORT]
+file=sample01/raw/sample01.log
+
+[COUNTS]
+V17_1_ADVAPI_IOCTL_AFTER_C2                8
+V17_1_RC4_PRGA_ENTRY                       11
+V17_1_RC4_PRGA_RETURN                      11
+V17_1_RC4_SAFE_ENTRY                       11
+V17_1_RC4_SELECT_ENTRY                     11
+V17_1_RC4_SELECT_RETURN                    11
+V17_1_SYSTEMFUNCTION036_ENTRY              4
+V17_1_SYSTEMFUNCTION036_RETURN             4
+
+[IOCTL OUTBUFS]
+IOCTL#1 line=135 outbuf_ptr=0023f484 outlen=00000100 bytesret=0023f47c
+  outbuf_len=256 outbuf_head16=2d8b854d7da340c86f29d1358204b241
+  inbuf_len=256 inbuf_head16=59ca1e7af9c27a9a3143d4ef1071d2f8
+IOCTL#2 line=571 outbuf_ptr=0023fb68 outlen=00000100 bytesret=0023fb60
+  outbuf_len=256 outbuf_head16=2cd26a752166b6519507fafa96180132
+  inbuf_len=256 inbuf_head16=59ca1e7af9c27a3a2d4180fdc8ddb9da
+IOCTL#3 line=905 outbuf_ptr=0023fb68 outlen=00000100 bytesret=0023fb60
+  outbuf_len=256 outbuf_head16=e13c982ce5ebb342fd25a623911ae6d3
+  inbuf_len=256 inbuf_head16=59ca1e7af9c27a3a2d4180fdc8dd19c6
+IOCTL#4 line=1239 outbuf_ptr=0023fb68 outlen=00000100 bytesret=0023fb60
+  outbuf_len=256 outbuf_head16=c6a3792f087e8828761f72290fc7f04c
+  inbuf_len=256 inbuf_head16=59ca1e7af9c27a3a2d4180fdc8dd19c6
+IOCTL#5 line=1573 outbuf_ptr=0023fb68 outlen=00000100 bytesret=0023fb60
+  outbuf_len=256 outbuf_head16=4d462498a20720b6bb45850e08299779
+  inbuf_len=256 inbuf_head16=59ca1e7af9c27a3a2d4180fdc8dd19c6
+IOCTL#6 line=1907 outbuf_ptr=0023fb68 outlen=00000100 bytesret=0023fb60
+  outbuf_len=256 outbuf_head16=53b0dce853cfe102e7b5ff65d4e51938
+  inbuf_len=256 inbuf_head16=59ca1e7af9c27a3a2d4180fdc8dd19c6
+IOCTL#7 line=2241 outbuf_ptr=0023fb68 outlen=00000100 bytesret=0023fb60
+  outbuf_len=256 outbuf_head16=7840cc2fe54e67075cb432c771d90742
+  inbuf_len=256 inbuf_head16=59ca1e7af9c27a3a2d4180fdc8dd19c6
+IOCTL#8 line=2575 outbuf_ptr=0023fb68 outlen=00000100 bytesret=0023fb60
+  outbuf_len=256 outbuf_head16=e856720533d93b4320446af05d3b9813
+  inbuf_len=256 inbuf_head16=59ca1e7af9c27a3a2d4180fdc8dd19c6
+ioctl_outbufs=8
+
+[SYSTEMFUNCTION036 OUT20]
+#1 83d51f784f1f9e55a7c709bfbe861cf55996dff5
+#2 4f725261f29ea8198b809e936d4ac090432aa5ed
+#3 a71e1f048dcd7aff68ed8ef0f252f25ed12a8c15
+#4 16b37ce0ac6a70ba894bff339c4d87f23b93389c
+
+[PRGA CALLS]
+PRGA#01 s_ptr=0025ba84 len=00000014 i/j=0/0->20/108 matches=2
+  output_match sysfunc#1 block=V17_1_PRGA_SYSFUNC_OUT_AT_RETURN pos=0
+  output_match sysfunc#1 block=V17_1_PRGA_OUTPUT_AFTER pos=0
+PRGA#02 s_ptr=0025bba4 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#03 s_ptr=0025bcc4 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#04 s_ptr=0025bde4 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#05 s_ptr=0025bf04 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#06 s_ptr=0025c024 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#07 s_ptr=0025c144 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#08 s_ptr=0025b964 len=00000000 i/j=0/0->0/0 matches=0
+PRGA#09 s_ptr=0025ba84 len=00000014 i/j=20/108->40/237 matches=2
+  output_match sysfunc#2 block=V17_1_PRGA_SYSFUNC_OUT_AT_RETURN pos=0
+  output_match sysfunc#2 block=V17_1_PRGA_OUTPUT_AFTER pos=0
+PRGA#10 s_ptr=0025bba4 len=00000014 i/j=0/0->20/184 matches=2
+  output_match sysfunc#3 block=V17_1_PRGA_SYSFUNC_OUT_AT_RETURN pos=0
+  output_match sysfunc#3 block=V17_1_PRGA_OUTPUT_AFTER pos=0
+PRGA#11 s_ptr=0025bcc4 len=00000014 i/j=0/0->20/106 matches=2
+  output_match sysfunc#4 block=V17_1_PRGA_SYSFUNC_OUT_AT_RETURN pos=0
+  output_match sysfunc#4 block=V17_1_PRGA_OUTPUT_AFTER pos=0
+
+[SAMPLES]
+wrote=sample01/samples
+
+[DIAGNOSTICS]
+- Precise IOCTL outbuf dumps were captured.
+- PRGA outputs match SystemFunction036 outputs.
+- Run replay_prga_useful_only.py, then scan_ioctl_outbuf_to_rc4_ksa.py.
+
+[JSONL]
+wrote=sample01/results/sample01.states.jsonl

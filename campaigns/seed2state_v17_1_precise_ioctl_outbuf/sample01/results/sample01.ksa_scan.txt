@@ -1,0 +1,20 @@
+[V17.1 PRECISE IOCTL-OUTBUF -> RC4 KSA SCAN]
+samples_dir=sample01/samples
+ioctl_outbufs=8
+states=11
+lengths=[16, 20, 32, 40, 64, 80, 100, 128, 240, 256]
+
+MATCH state=prga_001 outbuf=ioctl_01/V17_1_IOCTL_OUTBUF_100.bin off=0 len=256 i=00 j=00
+MATCH state=prga_002 outbuf=ioctl_02/V17_1_IOCTL_OUTBUF_100.bin off=0 len=256 i=00 j=00
+MATCH state=prga_003 outbuf=ioctl_03/V17_1_IOCTL_OUTBUF_100.bin off=0 len=256 i=00 j=00
+MATCH state=prga_004 outbuf=ioctl_04/V17_1_IOCTL_OUTBUF_100.bin off=0 len=256 i=00 j=00
+MATCH state=prga_005 outbuf=ioctl_05/V17_1_IOCTL_OUTBUF_100.bin off=0 len=256 i=00 j=00
+MATCH state=prga_006 outbuf=ioctl_06/V17_1_IOCTL_OUTBUF_100.bin off=0 len=256 i=00 j=00
+MATCH state=prga_007 outbuf=ioctl_07/V17_1_IOCTL_OUTBUF_100.bin off=0 len=256 i=00 j=00
+MATCH state=prga_008 outbuf=ioctl_08/V17_1_IOCTL_OUTBUF_100.bin off=0 len=256 i=00 j=00
+MATCH state=prga_010 outbuf=ioctl_02/V17_1_IOCTL_OUTBUF_100.bin off=0 len=256 i=00 j=00
+MATCH state=prga_011 outbuf=ioctl_03/V17_1_IOCTL_OUTBUF_100.bin off=0 len=256 i=00 j=00
+
+[SUMMARY]
+direct_ksa_matches=10
+csv=sample01/results/sample01.ksa_scan.csv
