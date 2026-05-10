@@ -1,0 +1,215 @@
+V26_RSAENH_PROVIDER_VERBOSE
+log=/home/hal/xp-cgr-replay/campaigns/seed2state_v26_rsaenh_provider_only/samples/sample01/v26_rsaenh_provider_only.REDACTED.log
+lines=6633
+events=251
+
+==============================================================================
+1. Marker census
+==============================================================================
+V26_SELFTEST_STATIC_COPY_68011CA3             2
+V26_SELFTEST_AFTER_D640_68011CAA              1
+V26_D640_ENTRY_6800D640                       6
+V26_SOURCE_TO_STATE20_SLOT_COPY_6800D677      2
+V26_AFTER_SOURCE_COPY_OR_NULL_6800D679        6
+V26_BEFORE_FIPS_CALL_6800D6F6                 2
+V26_FIPS_ENTRY_68027101                       6
+V26_FIPS_UPDATE_A_RETURN_680271D5             6
+V26_FIPS_UPDATE_B_RETURN_68027297             6
+V26_AFTER_FIPS_CALL_6800D6FB                  6
+V26_BEFORE_OUT_COPY_6800D70E                  6
+V26_AFTER_OUT_COPY_6800D713                   6
+V26_D640_RETURN_6800D743                      4
+[INFO] total_events=251
+
+==============================================================================
+2. Provider self-test: static seed -> local source -> expected state
+==============================================================================
+       static seed marker line     = 1040
+       expected marker line        = 1045
+       stack source after line     = 2787
+       state20 slot marker line    = 2802
+       static seed20               = 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14
+       expected after20            = 24 c5 06 c0 44 5b 81 78 6d c9 1c 85 6e 0d f5 c0 7c 88 04 eb
+       stack source after20        = 24 c5 06 c0 44 5b 81 78 6d c9 1c 85 6e 0d f5 c0 7c 88 04 eb
+       state20 slot sample20       = 24 c5 06 c0 44 5b 81 78 6d c9 1c 85 6e 0d f5 c0 7c 88 04 eb
+[PASS] selftest_stack_source_equals_6802F8CC: local self-test source after 6800d640 equals expected provider vector at 6802F8CC
+
+==============================================================================
+3. 6800d640 calls: source pointer / requested output length / caller class
+==============================================================================
+[PASS] d640_entry_seen: found 6 calls to 6800d640
+
+Call #1 @ line 74
+  arg1            = 0x0025c2a8
+  arg2            = 0x0025c288
+  source_arg3     = 0x00000000
+  arg4            = 0x00000000
+  out_dest        = 0x0023fda0
+  out_len         = 0x00000020
+  writeback_flag  = 0x00000000
+  classification  = runtime/global-state call; source_arg3 is NULL
+  requested len    = 0x20 (32 bytes)
+  state20 sample   = b4 bc ab eb c4 7a 0e 59 33 c8 f3 b2 9d a3 85 37 ae fe 93 b6
+
+Call #2 @ line 1433
+  arg1            = 0x00000000
+  arg2            = 0x00000000
+  source_arg3     = 0x0023f664
+  arg4            = 0x0023f628
+  out_dest        = 0x0023f628
+  out_len         = 0x00000028
+  writeback_flag  = 0x00000001
+  classification  = source-to-state call; source_arg3 is non-NULL
+  requested len    = 0x28 (40 bytes)
+  state20 sample   = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+Call #3 @ line 2953
+  arg1            = 0x00000000
+  arg2            = 0x00000000
+  source_arg3     = 0x00000000
+  arg4            = 0x00000000
+  out_dest        = 0x0023f69c
+  out_len         = 0x00000028
+  writeback_flag  = 0x00000000
+  classification  = runtime/global-state call; source_arg3 is NULL
+  requested len    = 0x28 (40 bytes)
+  state20 sample   = 24 c5 06 c0 44 5b 81 78 6d c9 1c 85 6e 0d f5 c0 7c 88 04 eb
+
+Call #4 @ line 3893
+  arg1            = 0x0025c2a8
+  arg2            = 0x0025c288
+  source_arg3     = 0x00000000
+  arg4            = 0x00000000
+  out_dest        = 0x0023fdbc
+  out_len         = 0x0000000a
+  writeback_flag  = 0x00000000
+  classification  = runtime/global-state call; source_arg3 is NULL
+  requested len    = 0xa (10 bytes)
+  state20 sample   = 82 a6 f4 0a 21 b3 28 91 0b 49 96 eb d1 b2 5b 3f 77 55 58 2f
+
+Call #5 @ line 4785
+  arg1            = 0x0025c2a8
+  arg2            = 0x0025c288
+  source_arg3     = 0x00000000
+  arg4            = 0x00000000
+  out_dest        = 0x0023fda0
+  out_len         = 0x00000020
+  writeback_flag  = 0x00000000
+  classification  = runtime/global-state call; source_arg3 is NULL
+  requested len    = 0x20 (32 bytes)
+  state20 sample   = c5 db 4a 8c ff 31 6b fc 30 73 df 23 87 10 2d e9 1c e9 f8 9b
+
+Call #6 @ line 5673
+  arg1            = 0x0025c2a8
+  arg2            = 0x0025c288
+  source_arg3     = 0x00000000
+  arg4            = 0x00000000
+  out_dest        = 0x0023fda0
+  out_len         = 0x00000020
+  writeback_flag  = 0x00000000
+  classification  = runtime/global-state call; source_arg3 is NULL
+  requested len    = 0x20 (32 bytes)
+  state20 sample   = b5 86 73 45 66 22 ab 71 d0 76 74 c7 5c b6 b0 8d e2 b6 f0 8c
+
+==============================================================================
+4. FIPS boundary and state update markers
+==============================================================================
+[PASS] fips_entry_count: found 6 FIPS entries at 68027101
+[PASS] fips_update_A_seen: found 6 update-A return markers at 680271D5
+[PASS] fips_update_B_seen: found 6 update-B return markers at 68027297
+[PASS] after_fips_seen: found 6 after-FIPS markers at 6800D6FB
+
+After-FIPS #1 @ line 867
+  state20_after = 40 53 30 c5 99 fa 2f 67 73 44 9c 8d 0c 0f 14 f3 67 3a 46 93
+  out40         = db 9d 5a fa 3b a5 05 23 91 05 2a 52 05 9b 80 86 30 1a 37 c8 af f9 29 df 99 db 1b ea ae 76 7e 88 68 d0 0f 35 88 21 7b 13
+  aux20         = a6 ff 2f 48 9d 4a fb b6 4b 88 ca 14 5c f1 b2 b7 65 42 d2 98
+
+After-FIPS #2 @ line 2582
+  state20_after = 24 c5 06 c0 44 5b 81 78 6d c9 1c 85 6e 0d f5 c0 7c 88 04 eb
+  out40         = 0a e8 1e 95 fc 39 7b 50 8d 9a 4e 0d fd cd 1a 2c 24 e4 72 86 18 da e5 26 43 1b ff 1f d7 24 c3 6b 63 32 cc 84 46 91 7f 4f
+  aux20         = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+After-FIPS #3 @ line 3741
+  state20_after = 82 a6 f4 0a 21 b3 28 91 0b 49 96 eb d1 b2 5b 3f 77 55 58 2f
+  out40         = 64 e4 f1 c0 6a 49 d5 c8 28 09 a0 b5 a0 ac db 33 d0 9e 2a 9e f8 fc fb 89 73 0d d1 50 75 76 d9 b0 c2 f7 8a 4b 2a 2f 28 a4
+  aux20         = 8e b8 67 41 a8 01 f0 d4 8f c4 de 0f da 5a ce 5e bf d5 1e 75
+
+After-FIPS #4 @ line 4651
+  state20_after = c5 db 4a 8c ff 31 6b fc 30 73 df 23 87 10 2d e9 1c e9 f8 9b
+  out40         = 65 29 bc 3f 33 17 cd bf 1b 80 bb cf e0 e6 9f e8 fe 5e 80 50 de 0a 9a 43 aa 66 75 ac 09 a9 8c 67 d4 77 32 c0 a7 36 20 1a
+  aux20         = a0 72 ca 2c 5b 95 98 ea 94 61 b8 64 df da 29 b9 15 92 d4 43
+
+After-FIPS #5 @ line 5538
+  state20_after = b5 86 73 45 66 22 ab 71 d0 76 74 c7 5c b6 b0 8d e2 b6 f0 8c
+  out40         = c8 be 1c 90 ab 5b 91 d6 9d c0 40 42 0e e0 5e ef ae d3 08 7d 26 ed 0c 27 bb 95 ad 9f 02 42 55 61 c6 c6 23 b5 16 f9 ef 72
+  aux20         = 1d 53 73 71 51 21 f2 6b 61 b0 2d af 66 42 22 cb ef 0c 5b 26
+
+After-FIPS #6 @ line 6466
+  state20_after = 96 bd c2 a1 70 c1 af 30 05 55 e2 5a 04 5f 1c 81 75 5e 4c 0a
+  out40         = 6d 37 2e 4e 3b 1d 4e 63 89 3b df f1 3e 52 db d7 2e 99 53 0b 74 00 21 0d cf 81 b5 5a ab a3 8d a1 69 55 90 1c 64 0e 08 71
+  aux20         = a0 dd 52 7a c8 86 b6 91 99 f4 fc e1 d6 60 02 12 74 78 39 3b
+
+==============================================================================
+5. Output copy: out40[:len] -> caller buffer
+==============================================================================
+
+Copy #1 @ line 953
+  effective length = 0x20 (32 bytes)
+  destination      = 0x0023fda0
+  out40 local      = 0x0023fc80
+  dest[:len]       = db 9d 5a fa 3b a5 05 23 91 05 2a 52 05 9b 80 86 30 1a 37 c8 af f9 29 df 99 db 1b ea ae 76 7e 88
+  out40[:len]      = db 9d 5a fa 3b a5 05 23 91 05 2a 52 05 9b 80 86 30 1a 37 c8 af f9 29 df 99 db 1b ea ae 76 7e 88
+[PASS] out_copy_prefix: destination prefix equals out40 prefix for 32 bytes
+
+Copy #2 @ line 2684
+  effective length = 0x28 (40 bytes)
+  destination      = 0x0023f628
+  out40 local      = 0x0023f320
+  dest[:len]       = 0a e8 1e 95 fc 39 7b 50 8d 9a 4e 0d fd cd 1a 2c 24 e4 72 86 18 da e5 26 43 1b ff 1f d7 24 c3 6b 63 32 cc 84 46 91 7f 4f
+  out40[:len]      = 0a e8 1e 95 fc 39 7b 50 8d 9a 4e 0d fd cd 1a 2c 24 e4 72 86 18 da e5 26 43 1b ff 1f d7 24 c3 6b 63 32 cc 84 46 91 7f 4f
+[PASS] out_copy_prefix: destination prefix equals out40 prefix for 40 bytes
+
+Copy #3 @ line 3841
+  effective length = 0x28 (40 bytes)
+  destination      = 0x0023f69c
+  out40 local      = 0x0023f630
+  dest[:len]       = 64 e4 f1 c0 6a 49 d5 c8 28 09 a0 b5 a0 ac db 33 d0 9e 2a 9e f8 fc fb 89 73 0d d1 50 75 76 d9 b0 c2 f7 8a 4b 2a 2f 28 a4
+  out40[:len]      = 64 e4 f1 c0 6a 49 d5 c8 28 09 a0 b5 a0 ac db 33 d0 9e 2a 9e f8 fc fb 89 73 0d d1 50 75 76 d9 b0 c2 f7 8a 4b 2a 2f 28 a4
+[PASS] out_copy_prefix: destination prefix equals out40 prefix for 40 bytes
+
+Copy #4 @ line 4739
+  effective length = 0xa (10 bytes)
+  destination      = 0x0023fdbc
+  out40 local      = 0x0023fd14
+  dest[:len]       = 65 29 bc 3f 33 17 cd bf 1b 80
+  out40[:len]      = 65 29 bc 3f 33 17 cd bf 1b 80
+[PASS] out_copy_prefix: destination prefix equals out40 prefix for 10 bytes
+
+Copy #5 @ line 5624
+  effective length = 0x20 (32 bytes)
+  destination      = 0x0023fda0
+  out40 local      = 0x0023fc80
+  dest[:len]       = c8 be 1c 90 ab 5b 91 d6 9d c0 40 42 0e e0 5e ef ae d3 08 7d 26 ed 0c 27 bb 95 ad 9f 02 42 55 61
+  out40[:len]      = c8 be 1c 90 ab 5b 91 d6 9d c0 40 42 0e e0 5e ef ae d3 08 7d 26 ed 0c 27 bb 95 ad 9f 02 42 55 61
+[PASS] out_copy_prefix: destination prefix equals out40 prefix for 32 bytes
+
+Copy #6 @ line 6552
+  effective length = 0x20 (32 bytes)
+  destination      = 0x0023fda0
+  out40 local      = 0x0023fc80
+  dest[:len]       = 6d 37 2e 4e 3b 1d 4e 63 89 3b df f1 3e 52 db d7 2e 99 53 0b 74 00 21 0d cf 81 b5 5a ab a3 8d a1
+  out40[:len]      = 6d 37 2e 4e 3b 1d 4e 63 89 3b df f1 3e 52 db d7 2e 99 53 0b 74 00 21 0d cf 81 b5 5a ab a3 8d a1
+[PASS] out_copy_prefix: destination prefix equals out40 prefix for 32 bytes
+[PASS] out_copy_prefix_summary: all output copies passed (6/6)
+
+==============================================================================
+6. Final verdict
+==============================================================================
+[PASS] OVERALL: provider-local transition validated for this log
+       Meaning:
+       - self-test provider vector is coherent
+       - FIPS entries were observed
+       - both FIPS state-update return sites were observed
+       - every captured output copy satisfies dest[:len] == out40[:len]
+
+[INFO] wrote JSONL: /home/hal/xp-cgr-replay/campaigns/seed2state_v26_rsaenh_provider_only/samples/sample01/v26_events.jsonl

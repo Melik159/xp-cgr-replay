@@ -1,0 +1,2146 @@
+[V26_D640_RETURN_6800D743]
+eax=00000000 ebx=7ffdd000 ecx=00006e5c edx=68031980 esi=0025abf0 edi=00000000
+001b:6800d743 c21c00          ret     1Ch
+[V26_STATE20_SLOT_AT_D640_RETURN]
+68031958  b4 bc ab eb c4 7a 0e 59-33 c8 f3 b2 9d a3 85 37  .....z.Y3......7
+68031968  ae fe 93 b6 0b 1d 5e f3-5d 66 ad f7 d2 43 4d fa  ......^.]f...CM.
+68031978  fd 09 c0 81 14 e9 97 74-e6 4f 90 f5 fd 05 ef 93  .......t.O......
+68031988  b9 28 0a 13 f3 99 a0 1f-5b f3 27 97 00 00 00 00  .(......[.'.....
+[V26_D640_RETURN_STACK]
+0023fcc4  6800d7da 0025c2a8 0025c288 00000000
+0023fcd4  00000000 0023fda0 00000020 00000000
+0023fce4  0023fd28 77dfb401 e37f5c84 00000020
+0023fcf4  0023fda0 729029bc 01dcde82 7ffdd000
+0023fd04  00000000 0025abf0 00000001 0023fcf8
+0023fd14  448b3bba 0023ffe0 77df1758 77dfb420
+0023fd24  00000000 0023fea8 00401d2e 0025abf0
+0023fd34  00000020 0023fda0 00000020 ab1339c5
+0023fd44  66f35117 22f9be17 ab3810c7 00006e5c
+0023fd54  00000018 6800d766 0025c2a8 0025c288
+0023fd64  00000000 00000000 0023fdbc 0000000a
+0023fd74  00000000 0023fdcc 00250000 0025c3b4
+0023fd84  0025c2a8 0025c288 0023fdbc 0000000a
+0023fd94  0001fe34 00000003 0023fcf8 f5904fe6
+0023fda4  93ef05fd 130a28b9 1fa099f3 9727f35b
+0023fdb4  58d0b981 5cf9b489 1566b38e 00000000
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+001b:7c90120e cc              int     3
+[V26_D640_ENTRY_6800D640]
+eax=0025c2a8 ebx=7ffdd000 ecx=0025c288 edx=77c61b78 esi=0025abf0 edi=00000000
+001b:6800d640 8bff            mov     edi,edi
+[V26_D640_ENTRY_STACK]
+0023fcc4  6800d7da 0025c2a8 0025c288 00000000
+0023fcd4  00000000 0023fda0 00000020 00000000
+0023fce4  0023fd28 77dfb401 e37f5c84 00000020
+0023fcf4  0023fda0 729029bc 01dcde82 7ffdd000
+0023fd04  00000000 0025abf0 00000001 0023fcf8
+0023fd14  002f0001 0023ffe0 77df1758 77dfb420
+0023fd24  00000000 0023fea8 00401d2e 0025abf0
+0023fd34  00000020 0023fda0 00000020 00000000
+0023fd44  7c872a83 00670063 005f0072 00610068
+0023fd54  006e0072 00730065 002e0073 00780065
+0023fd64  00000065 00000000 0023fdbc 0000000a
+0023fd74  00000000 0023fdcc 00250000 0025c3b4
+0023fd84  0025c2a8 0025c288 0000e562 0023fce0
+0023fd94  0001fe34 0023fde4 7c839ac0 00000000
+0023fda4  00000000 00000000 00000000 00000000
+0023fdb4  00000000 00000000 00000000 00000000
+[V26_D640_ARGS_RAW]
+Evaluate expression: 2474664 = 0025c2a8
+Evaluate expression: 2474632 = 0025c288
+Evaluate expression: 0 = 00000000
+Evaluate expression: 0 = 00000000
+Evaluate expression: 2358688 = 0023fda0
+Evaluate expression: 32 = 00000020
+Evaluate expression: 0 = 00000000
+[V26_STATE20_SLOT_68031958_AT_D640_ENTRY]
+68031958  b4 bc ab eb c4 7a 0e 59-33 c8 f3 b2 9d a3 85 37  .....z.Y3......7
+68031968  ae fe 93 b6 0b 1d 5e f3-5d 66 ad f7 d2 43 4d fa  ......^.]f...CM.
+68031978  fd 09 c0 81 14 e9 97 74-e6 4f 90 f5 fd 05 ef 93  .......t.O......
+68031988  b9 28 0a 13 f3 99 a0 1f-5b f3 27 97 00 00 00 00  .(......[.'.....
+6800d640 8bff            mov     edi,edi
+6800d642 55              push    ebp
+6800d643 8bec            mov     ebp,esp
+6800d645 83ec50          sub     esp,50h
+6800d648 a184180368      mov     eax,dword ptr ds:[68031884h]
+6800d64d 8945fc          mov     dword ptr [ebp-4],eax
+6800d650 8b4514          mov     eax,dword ptr [ebp+14h]
+6800d653 53              push    ebx
+6800d654 8945b4          mov     dword ptr [ebp-4Ch],eax
+6800d657 8b4518          mov     eax,dword ptr [ebp+18h]
+6800d65a 56              push    esi
+6800d65b 8b7510          mov     esi,dword ptr [ebp+10h]
+6800d65e 85f6            test    esi,esi
+6800d660 8945b8          mov     dword ptr [ebp-48h],eax
+6800d663 8b451c          mov     eax,dword ptr [ebp+1Ch]
+6800d666 57              push    edi
+6800d667 8975b0          mov     dword ptr [ebp-50h],esi
+6800d66a 8945bc          mov     dword ptr [ebp-44h],eax
+6800d66d 740a            je      6800d679
+6800d66f 6a05            push    5
+6800d671 59              pop     ecx
+6800d672 bf58190368      mov     edi,68031958h
+6800d677 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d679 85c0            test    eax,eax
+6800d67b 0f84a2000000    je      6800d723
+6800d681 33db            xor     ebx,ebx
+6800d683 395d20          cmp     dword ptr [ebp+20h],ebx
+6800d686 7550            jne     6800d6d8
+6800d688 6a14            push    14h
+6800d68a 5f              pop     edi
+6800d68b 397dbc          cmp     dword ptr [ebp-44h],edi
+6800d68e 7303            jae     6800d693
+6800d690 8b7dbc          mov     edi,dword ptr [ebp-44h]
+6800d693 6a14            push    14h
+6800d695 8d45e8          lea     eax,[ebp-18h]
+6800d698 50              push    eax
+6800d699 e8ae790000      call    6801504c
+6800d69e 84c0            test    al,al
+6800d6a0 742f            je      6800d6d1
+6800d6a2 33c9            xor     ecx,ecx
+6800d6a4 85ff            test    edi,edi
+6800d6a6 7616            jbe     6800d6be
+6800d6a8 8b75b8          mov     esi,dword ptr [ebp-48h]
+6800d6ab 8d45e8          lea     eax,[ebp-18h]
+6800d6ae 2bf0            sub     esi,eax
+6800d6b0 8d440de8        lea     eax,[ebp+ecx-18h]
+6800d6b4 8a1406          mov     dl,byte ptr [esi+eax]
+6800d6b7 3010            xor     byte ptr [eax],dl
+6800d6b9 41              inc     ecx
+6800d6ba 3bcf            cmp     ecx,edi
+6800d6bc 72f2            jb      6800d6b0
+6800d6be 8d45e8          lea     eax,[ebp-18h]
+6800d6c1 50              push    eax
+6800d6c2 e87dfeffff      call    6800d544
+6800d6c7 43              inc     ebx
+6800d6c8 85c0            test    eax,eax
+6800d6ca 751b            jne     6800d6e7
+6800d6cc 83fb05          cmp     ebx,5
+6800d6cf 76c2            jbe     6800d693
+6800d6d1 b820000980      mov     eax,80090020h
+6800d6d6 eb5f            jmp     6800d737
+6800d6d8 8b75b4          mov     esi,dword ptr [ebp-4Ch]
+6800d6db 3bf3            cmp     esi,ebx
+6800d6dd 74f2            je      6800d6d1
+6800d6df 6a05            push    5
+6800d6e1 59              pop     ecx
+6800d6e2 8d7de8          lea     edi,[ebp-18h]
+6800d6e5 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d6e7 6a14            push    14h
+6800d6e9 8d45c0          lea     eax,[ebp-40h]
+6800d6ec 50              push    eax
+6800d6ed 8d45e8          lea     eax,[ebp-18h]
+6800d6f0 50              push    eax
+6800d6f1 6858190368      push    68031958h
+6800d6f6 e8069a0100      call    68027101
+6800d6fb 6a28            push    28h
+6800d6fd 5e              pop     esi
+6800d6fe 3975bc          cmp     dword ptr [ebp-44h],esi
+6800d701 7703            ja      6800d706
+6800d703 8b75bc          mov     esi,dword ptr [ebp-44h]
+6800d706 56              push    esi
+6800d707 8d45c0          lea     eax,[ebp-40h]
+6800d70a 50              push    eax
+6800d70b ff75b8          push    dword ptr [ebp-48h]
+6800d70e e8bafeffff      call    6800d5cd
+6800d713 85c0            test    eax,eax
+6800d715 74ba            je      6800d6d1
+6800d717 0175b8          add     dword ptr [ebp-48h],esi
+6800d71a 2975bc          sub     dword ptr [ebp-44h],esi
+6800d71d 0f855effffff    jne     6800d681
+6800d723 33c0            xor     eax,eax
+6800d725 394520          cmp     dword ptr [ebp+20h],eax
+6800d728 740d            je      6800d737
+6800d72a 8b7db0          mov     edi,dword ptr [ebp-50h]
+6800d72d 6a05            push    5
+6800d72f 59              pop     ecx
+6800d730 be58190368      mov     esi,68031958h
+6800d735 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4]
+6800d73a 5f              pop     edi
+6800d73b 5e              pop     esi
+6800d73c 5b              pop     ebx
+6800d73d e877750000      call    68014cb9
+6800d742 c9              leave
+6800d743 c21c00          ret     1Ch
+6800d746 cc              int     3
+6800d747 cc              int     3
+6800d748 cc              int     3
+6800d749 cc              int     3
+6800d74a cc              int     3
+6800d74b 8bff            mov     edi,edi
+6800d74d 55              push    ebp
+6800d74e 8bec            mov     ebp,esp
+6800d750 33c0            xor     eax,eax
+6800d752 50              push    eax
+6800d753 ff7518          push    dword ptr [ebp+18h]
+6800d756 ff7514          push    dword ptr [ebp+14h]
+6800d759 50              push    eax
+6800d75a 50              push    eax
+6800d75b ff7510          push    dword ptr [ebp+10h]
+6800d75e ff750c          push    dword ptr [ebp+0Ch]
+6800d761 e8dafeffff      call    6800d640
+6800d766 5d              pop     ebp
+6800d767 c21400          ret     14h
+6800d76a cc              int     3
+6800d76b cc              int     3
+6800d76c cc              int     3
+6800d76d cc              int     3
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_SOURCE_COPY_OR_NULL_6800D679]
+eax=00000020 ebx=7ffdd000 ecx=0025c288 edx=77c61b78 esi=00000000 edi=00000000
+001b:6800d679 85c0            test    eax,eax
+[V26_STATE20_SLOT_AFTER_SOURCE_STAGE]
+68031958  b4 bc ab eb c4 7a 0e 59-33 c8 f3 b2 9d a3 85 37  .....z.Y3......7
+68031968  ae fe 93 b6 0b 1d 5e f3-5d 66 ad f7 d2 43 4d fa  ......^.]f...CM.
+68031978  fd 09 c0 81 14 e9 97 74-e6 4f 90 f5 fd 05 ef 93  .......t.O......
+68031988  b9 28 0a 13 f3 99 a0 1f-5b f3 27 97 00 00 00 00  .(......[.'.....
+[V26_BEFORE_FIPS_CALL_6800D6F6]
+eax=0023fca8 ebx=00000001 ecx=00006e5c edx=6803196c esi=000000f8 edi=00000014
+001b:6800d6f6 e8069a0100      call    68027101
+[V26_STATE20_BEFORE_FIPS_SLOT]
+68031958  b4 bc ab eb c4 7a 0e 59-33 c8 f3 b2 9d a3 85 37  .....z.Y3......7
+68031968  ae fe 93 b6 73 61 da bb-50 49 96 38 fd cf 5c b0  ....sa..PI.8..\.
+68031978  2a ba 84 02 c7 32 33 79-e6 4f 90 f5 fd 05 ef 93  *....23y.O......
+68031988  b9 28 0a 13 f3 99 a0 1f-5b f3 27 97 00 00 00 00  .(......[.'.....
+[V26_OUT40_LOCAL_BEFORE_FIPS_EBP_M40]
+0023fc80  ad 03 c3 77 2a 00 00 00-a0 fc c5 77 00 00 00 00  ...w*......w....
+0023fc90  2a 00 00 00 84 fc 23 00-6e 00 65 00 18 fd 23 00  *.....#.n.e...#.
+0023fca0  94 5c c3 77 80 25 c1 77-a6 ff 2f 48 9d 4a fb b6  .\.w.%.w../H.J..
+0023fcb0  4b 88 ca 14 5c f1 b2 b7-65 42 d2 98 5c 6e 00 00  K...\...eB..\n..
+[V26_AUX20_LOCAL_BEFORE_FIPS_EBP_M18]
+0023fca8  a6 ff 2f 48 9d 4a fb b6-4b 88 ca 14 5c f1 b2 b7  ../H.J..K...\...
+0023fcb8  65 42 d2 98 5c 6e 00 00-e4 fc 23 00 da d7 00 68  eB..\n....#....h
+0023fcc8  a8 c2 25 00 88 c2 25 00-00 00 00 00 00 00 00 00  ..%...%.........
+0023fcd8  a0 fd 23 00 20 00 00 00-00 00 00 00 28 fd 23 00  ..#. .......(.#.
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_FIPS_ENTRY_68027101]
+eax=0023fca8 ebx=00000001 ecx=00006e5c edx=6803196c esi=000000f8 edi=00000014
+001b:68027101 8bff            mov     edi,edi
+[V26_FIPS_ENTRY_ARGS]
+0023fc50  6800d6fb 68031958 0023fca8 0023fc80
+0023fc60  00000014 00000000 0025abf0 7ffdd000
+0023fc70  00000000 00000000 0023fda0 00000020
+0023fc80  77c303ad 0000002a 77c5fca0 00000000
+0023fc90  0000002a 0023fc84 0065006e 0023fd18
+0023fca0  77c35c94 77c12580 482fffa6 b6fb4a9d
+0023fcb0  14ca884b b7b2f15c 98d24265 00006e5c
+0023fcc0  0023fce4 6800d7da 0025c2a8 0025c288
+[V26_FIPS_UPDATE_A_RETURN_680271D5]
+eax=00230001 ebx=00000014 ecx=68490190 edx=00000014 esi=68031958 edi=0023fc1c
+001b:680271d5 83bd3cffffff00  cmp     dword ptr [ebp-0C4h],0 ss:0023:0023fb88=0023fca8
+[V26_STATE20_SLOT_AFTER_UPDATE_A_OR_PARTIAL]
+68031958  90 5a 06 e6 00 1f 13 7c-c4 ce 1e 04 a3 3f 05 bd  .Z.....|.....?..
+68031968  df 18 cb 7f 73 61 da bb-50 49 96 38 fd cf 5c b0  ....sa..PI.8..\.
+68031978  2a ba 84 02 c7 32 33 79-e6 4f 90 f5 fd 05 ef 93  *....23y.O......
+68031988  b9 28 0a 13 f3 99 a0 1f-5b f3 27 97 00 00 00 00  .(......[.'.....
+[V26_FIPS_UPDATE_B_RETURN_68027297]
+eax=00230001 ebx=00000014 ecx=68490140 edx=00000014 esi=0023fc1c edi=0023fc1c
+001b:68027297 8bbd40ffffff    mov     edi,dword ptr [ebp-0C0h] ss:0023:0023fb8c=0023fc80
+[V26_STATE20_SLOT_AFTER_UPDATE_B_OR_FINAL]
+68031958  40 53 30 c5 99 fa 2f 67-73 44 9c 8d 0c 0f 14 f3  @S0.../gsD......
+68031968  67 3a 46 93 73 61 da bb-50 49 96 38 fd cf 5c b0  g:F.sa..PI.8..\.
+68031978  2a ba 84 02 c7 32 33 79-e6 4f 90 f5 fd 05 ef 93  *....23y.O......
+68031988  b9 28 0a 13 f3 99 a0 1f-5b f3 27 97 00 00 00 00  .(......[.'.....
+[V26_AFTER_FIPS_CALL_6800D6FB]
+eax=00230001 ebx=00000001 ecx=00006e5c edx=00000014 esi=000000f8 edi=00000014
+001b:6800d6fb 6a28            push    28h
+[V26_STATE20_AFTER_FIPS_SLOT]
+68031958  40 53 30 c5 99 fa 2f 67-73 44 9c 8d 0c 0f 14 f3  @S0.../gsD......
+68031968  67 3a 46 93 73 61 da bb-50 49 96 38 fd cf 5c b0  g:F.sa..PI.8..\.
+68031978  2a ba 84 02 c7 32 33 79-e6 4f 90 f5 fd 05 ef 93  *....23y.O......
+68031988  b9 28 0a 13 f3 99 a0 1f-5b f3 27 97 00 00 00 00  .(......[.'.....
+[V26_OUT40_LOCAL_AFTER_FIPS_EBP_M40]
+0023fc80  db 9d 5a fa 3b a5 05 23-91 05 2a 52 05 9b 80 86  ..Z.;..#..*R....
+0023fc90  30 1a 37 c8 af f9 29 df-99 db 1b ea ae 76 7e 88  0.7...)......v~.
+0023fca0  68 d0 0f 35 88 21 7b 13-a6 ff 2f 48 9d 4a fb b6  h..5.!{.../H.J..
+0023fcb0  4b 88 ca 14 5c f1 b2 b7-65 42 d2 98 5c 6e 00 00  K...\...eB..\n..
+[V26_AUX20_LOCAL_AFTER_FIPS_EBP_M18]
+0023fca8  a6 ff 2f 48 9d 4a fb b6-4b 88 ca 14 5c f1 b2 b7  ../H.J..K...\...
+0023fcb8  65 42 d2 98 5c 6e 00 00-e4 fc 23 00 da d7 00 68  eB..\n....#....h
+0023fcc8  a8 c2 25 00 88 c2 25 00-00 00 00 00 00 00 00 00  ..%...%.........
+0023fcd8  a0 fd 23 00 20 00 00 00-00 00 00 00 28 fd 23 00  ..#. .......(.#.
+[V26_BEFORE_OUT_COPY_6800D70E]
+eax=0023fc80 ebx=00000001 ecx=00006e5c edx=00000014 esi=00000020 edi=00000014
+001b:6800d70e e8bafeffff      call    6800d5cd
+[V26_OUT40_LOCAL_BEFORE_COPY_EBP_M40]
+0023fc80  db 9d 5a fa 3b a5 05 23-91 05 2a 52 05 9b 80 86  ..Z.;..#..*R....
+0023fc90  30 1a 37 c8 af f9 29 df-99 db 1b ea ae 76 7e 88  0.7...)......v~.
+0023fca0  68 d0 0f 35 88 21 7b 13-a6 ff 2f 48 9d 4a fb b6  h..5.!{.../H.J..
+0023fcb0  4b 88 ca 14 5c f1 b2 b7-65 42 d2 98 5c 6e 00 00  K...\...eB..\n..
+[V26_OUT_DEST_BEFORE_COPY]
+0023fda0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdb0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdc0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdd0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_OUT_DEST_PTR_AND_LEN_HINTS]
+Evaluate expression: 2358688 = 0023fda0
+Evaluate expression: 32 = 00000020
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_OUT_COPY_6800D713]
+eax=00000001 ebx=00000001 ecx=00000000 edx=68031980 esi=00000020 edi=00000014
+001b:6800d713 85c0            test    eax,eax
+[V26_OUT_DEST_AFTER_COPY]
+0023fda0  db 9d 5a fa 3b a5 05 23-91 05 2a 52 05 9b 80 86  ..Z.;..#..*R....
+0023fdb0  30 1a 37 c8 af f9 29 df-99 db 1b ea ae 76 7e 88  0.7...)......v~.
+0023fdc0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdd0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_OUT40_LOCAL_AFTER_COPY_EBP_M40]
+0023fc80  db 9d 5a fa 3b a5 05 23-91 05 2a 52 05 9b 80 86  ..Z.;..#..*R....
+0023fc90  30 1a 37 c8 af f9 29 df-99 db 1b ea ae 76 7e 88  0.7...)......v~.
+0023fca0  68 d0 0f 35 88 21 7b 13-a6 ff 2f 48 9d 4a fb b6  h..5.!{.../H.J..
+0023fcb0  4b 88 ca 14 5c f1 b2 b7-65 42 d2 98 5c 6e 00 00  K...\...eB..\n..
+[V26_OUT_COPY_LEN_REGISTER_ESI]
+Evaluate expression: 32 = 00000020
+[V26_D640_RETURN_6800D743]
+eax=00000000 ebx=7ffdd000 ecx=00006e5c edx=68031980 esi=0025abf0 edi=00000000
+001b:6800d743 c21c00          ret     1Ch
+[V26_STATE20_SLOT_AT_D640_RETURN]
+68031958  40 53 30 c5 99 fa 2f 67-73 44 9c 8d 0c 0f 14 f3  @S0.../gsD......
+68031968  67 3a 46 93 73 61 da bb-50 49 96 38 fd cf 5c b0  g:F.sa..PI.8..\.
+68031978  2a ba 84 02 c7 32 33 79-db 9d 5a fa 3b a5 05 23  *....23y..Z.;..#
+68031988  91 05 2a 52 05 9b 80 86-30 1a 37 c8 00 00 00 00  ..*R....0.7.....
+[V26_D640_RETURN_STACK]
+0023fcc4  6800d7da 0025c2a8 0025c288 00000000
+0023fcd4  00000000 0023fda0 00000020 00000000
+0023fce4  0023fd28 77dfb401 e37f5c84 00000020
+0023fcf4  0023fda0 729029bc 01dcde82 7ffdd000
+0023fd04  00000000 0025abf0 00000001 0023fcf8
+0023fd14  002f0001 0023ffe0 77df1758 77dfb420
+0023fd24  00000000 0023fea8 00401d2e 0025abf0
+0023fd34  00000020 0023fda0 00000020 00000000
+0023fd44  7c872a83 00670063 005f0072 00610068
+0023fd54  006e0072 00730065 002e0073 00780065
+0023fd64  00000065 00000000 0023fdbc 0000000a
+0023fd74  00000000 0023fdcc 00250000 0025c3b4
+0023fd84  0025c2a8 0025c288 0000e562 0023fce0
+0023fd94  0001fe34 0023fde4 7c839ac0 fa5a9ddb
+0023fda4  2305a53b 522a0591 86809b05 c8371a30
+0023fdb4  df29f9af ea1bdb99 887e76ae 00000000
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_SELFTEST_STATIC_COPY_68011CA3]
+eax=0023f664 ebx=00000001 ecx=00000005 edx=00001000 esi=6802f8b8 edi=0023f664
+001b:68011ca3 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+[V26_SELFTEST_STATIC_SEED_6802F8B8]
+6802f8b8  01 02 03 04 05 06 07 08-09 0a 0b 0c 0d 0e 0f 10  ................
+6802f8c8  11 12 13 14 24 c5 06 c0-44 5b 81 78 6d c9 1c 85  ....$...D[.xm...
+6802f8d8  6e 0d f5 c0 7c 88 04 eb-02 66 00 00 28 00 00 00  n...|....f..(...
+6802f8e8  28 00 00 00 38 00 00 00-00 00 00 00 04 00 00 00  (...8...........
+[V26_SELFTEST_EXPECTED_AFTER_6802F8CC]
+6802f8cc  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+6802f8dc  7c 88 04 eb 02 66 00 00-28 00 00 00 28 00 00 00  |....f..(...(...
+6802f8ec  38 00 00 00 00 00 00 00-04 00 00 00 52 43 32 00  8...........RC2.
+6802f8fc  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_SELFTEST_STACK_SOURCE_EBP_M28_BEFORE]
+0023f664  00 e9 90 7c 08 03 91 7c-ff ff ff ff 03 03 91 7c  ...|...|.......|
+0023f674  4c d9 02 68 00 00 00 00-00 00 00 00 00 00 00 00  L..h............
+0023f684  00 00 00 00 8d 36 00 00-c8 f6 23 00 b7 20 01 68  .....6....#.. .h
+0023f694  00 00 00 00 01 00 00 00-ce c3 c2 77 e7 c3 c2 77  ...........w...w
+[V26_SELFTEST_STATIC_COPY_68011CA3]
+eax=0023f664 ebx=00000001 ecx=00000004 edx=00001000 esi=6802f8bc edi=0023f668
+001b:68011ca3 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+[V26_SELFTEST_STATIC_SEED_6802F8B8]
+6802f8b8  01 02 03 04 05 06 07 08-09 0a 0b 0c 0d 0e 0f 10  ................
+6802f8c8  11 12 13 14 24 c5 06 c0-44 5b 81 78 6d c9 1c 85  ....$...D[.xm...
+6802f8d8  6e 0d f5 c0 7c 88 04 eb-02 66 00 00 28 00 00 00  n...|....f..(...
+6802f8e8  28 00 00 00 38 00 00 00-00 00 00 00 04 00 00 00  (...8...........
+[V26_SELFTEST_EXPECTED_AFTER_6802F8CC]
+6802f8cc  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+6802f8dc  7c 88 04 eb 02 66 00 00-28 00 00 00 28 00 00 00  |....f..(...(...
+6802f8ec  38 00 00 00 00 00 00 00-04 00 00 00 52 43 32 00  8...........RC2.
+6802f8fc  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_SELFTEST_STACK_SOURCE_EBP_M28_BEFORE]
+0023f664  01 02 03 04 08 03 91 7c-ff ff ff ff 03 03 91 7c  .......|.......|
+0023f674  4c d9 02 68 00 00 00 00-00 00 00 00 00 00 00 00  L..h............
+0023f684  00 00 00 00 8d 36 00 00-c8 f6 23 00 b7 20 01 68  .....6....#.. .h
+0023f694  00 00 00 00 01 00 00 00-ce c3 c2 77 e7 c3 c2 77  ...........w...w
+[V26_D640_ENTRY_6800D640]
+eax=0023f664 ebx=00000001 ecx=00000000 edx=00001000 esi=6802f8cc edi=0023f678
+001b:6800d640 8bff            mov     edi,edi
+[V26_D640_ENTRY_STACK]
+0023f364  68011caa 00000000 00000000 0023f664
+0023f374  0023f628 0023f628 00000028 00000001
+0023f384  68031998 00000000 68000000 46054e82
+0023f394  c458f834 8209890e 408494a8 83cc0a8d
+0023f3a4  b884e410 08c28fc8 b064e8e0 414e0602
+0023f3b4  80a8bcc8 428280c7 c48044c8 0d094f43
+0023f3c4  c814a864 cd0545ca 5c505c5c 41cd020c
+0023f3d4  2ce03438 82430d8c a0c0cc00 82cc8d02
+0023f3e4  e00c8cb8 0786c680 94a83c80 8583cb09
+0023f3f4  eca45428 c74d8804 648cd450 8e80420f
+0023f404  d09c2424 c8c38e09 b42cb880 49c8840f
+0023f414  7ca00c88 c94a4ac3 ec68e04c cc8005ca
+0023f424  44585860 c7cd4309 2c18203c 8ec5088f
+0023f434  3cf45420 89454c4c b8e48874 c6c08c04
+0023f444  b4f89c88 07830200 883c2008 87028f47
+0023f454  58dcacc0 0d8c4107 d8f4001c 4e0d46cd
+[V26_D640_ARGS_RAW]
+Evaluate expression: 0 = 00000000
+Evaluate expression: 0 = 00000000
+Evaluate expression: 2356836 = 0023f664
+Evaluate expression: 2356776 = 0023f628
+Evaluate expression: 2356776 = 0023f628
+Evaluate expression: 40 = 00000028
+Evaluate expression: 1 = 00000001
+[V26_STATE20_SLOT_68031958_AT_D640_ENTRY]
+68031958  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031968  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031978  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031988  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+6800d640 8bff            mov     edi,edi
+6800d642 55              push    ebp
+6800d643 8bec            mov     ebp,esp
+6800d645 83ec50          sub     esp,50h
+6800d648 a184180368      mov     eax,dword ptr ds:[68031884h]
+6800d64d 8945fc          mov     dword ptr [ebp-4],eax
+6800d650 8b4514          mov     eax,dword ptr [ebp+14h]
+6800d653 53              push    ebx
+6800d654 8945b4          mov     dword ptr [ebp-4Ch],eax
+6800d657 8b4518          mov     eax,dword ptr [ebp+18h]
+6800d65a 56              push    esi
+6800d65b 8b7510          mov     esi,dword ptr [ebp+10h]
+6800d65e 85f6            test    esi,esi
+6800d660 8945b8          mov     dword ptr [ebp-48h],eax
+6800d663 8b451c          mov     eax,dword ptr [ebp+1Ch]
+6800d666 57              push    edi
+6800d667 8975b0          mov     dword ptr [ebp-50h],esi
+6800d66a 8945bc          mov     dword ptr [ebp-44h],eax
+6800d66d 740a            je      6800d679
+6800d66f 6a05            push    5
+6800d671 59              pop     ecx
+6800d672 bf58190368      mov     edi,68031958h
+6800d677 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d679 85c0            test    eax,eax
+6800d67b 0f84a2000000    je      6800d723
+6800d681 33db            xor     ebx,ebx
+6800d683 395d20          cmp     dword ptr [ebp+20h],ebx
+6800d686 7550            jne     6800d6d8
+6800d688 6a14            push    14h
+6800d68a 5f              pop     edi
+6800d68b 397dbc          cmp     dword ptr [ebp-44h],edi
+6800d68e 7303            jae     6800d693
+6800d690 8b7dbc          mov     edi,dword ptr [ebp-44h]
+6800d693 6a14            push    14h
+6800d695 8d45e8          lea     eax,[ebp-18h]
+6800d698 50              push    eax
+6800d699 e8ae790000      call    6801504c
+6800d69e 84c0            test    al,al
+6800d6a0 742f            je      6800d6d1
+6800d6a2 33c9            xor     ecx,ecx
+6800d6a4 85ff            test    edi,edi
+6800d6a6 7616            jbe     6800d6be
+6800d6a8 8b75b8          mov     esi,dword ptr [ebp-48h]
+6800d6ab 8d45e8          lea     eax,[ebp-18h]
+6800d6ae 2bf0            sub     esi,eax
+6800d6b0 8d440de8        lea     eax,[ebp+ecx-18h]
+6800d6b4 8a1406          mov     dl,byte ptr [esi+eax]
+6800d6b7 3010            xor     byte ptr [eax],dl
+6800d6b9 41              inc     ecx
+6800d6ba 3bcf            cmp     ecx,edi
+6800d6bc 72f2            jb      6800d6b0
+6800d6be 8d45e8          lea     eax,[ebp-18h]
+6800d6c1 50              push    eax
+6800d6c2 e87dfeffff      call    6800d544
+6800d6c7 43              inc     ebx
+6800d6c8 85c0            test    eax,eax
+6800d6ca 751b            jne     6800d6e7
+6800d6cc 83fb05          cmp     ebx,5
+6800d6cf 76c2            jbe     6800d693
+6800d6d1 b820000980      mov     eax,80090020h
+6800d6d6 eb5f            jmp     6800d737
+6800d6d8 8b75b4          mov     esi,dword ptr [ebp-4Ch]
+6800d6db 3bf3            cmp     esi,ebx
+6800d6dd 74f2            je      6800d6d1
+6800d6df 6a05            push    5
+6800d6e1 59              pop     ecx
+6800d6e2 8d7de8          lea     edi,[ebp-18h]
+6800d6e5 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d6e7 6a14            push    14h
+6800d6e9 8d45c0          lea     eax,[ebp-40h]
+6800d6ec 50              push    eax
+6800d6ed 8d45e8          lea     eax,[ebp-18h]
+6800d6f0 50              push    eax
+6800d6f1 6858190368      push    68031958h
+6800d6f6 e8069a0100      call    68027101
+6800d6fb 6a28            push    28h
+6800d6fd 5e              pop     esi
+6800d6fe 3975bc          cmp     dword ptr [ebp-44h],esi
+6800d701 7703            ja      6800d706
+6800d703 8b75bc          mov     esi,dword ptr [ebp-44h]
+6800d706 56              push    esi
+6800d707 8d45c0          lea     eax,[ebp-40h]
+6800d70a 50              push    eax
+6800d70b ff75b8          push    dword ptr [ebp-48h]
+6800d70e e8bafeffff      call    6800d5cd
+6800d713 85c0            test    eax,eax
+6800d715 74ba            je      6800d6d1
+6800d717 0175b8          add     dword ptr [ebp-48h],esi
+6800d71a 2975bc          sub     dword ptr [ebp-44h],esi
+6800d71d 0f855effffff    jne     6800d681
+6800d723 33c0            xor     eax,eax
+6800d725 394520          cmp     dword ptr [ebp+20h],eax
+6800d728 740d            je      6800d737
+6800d72a 8b7db0          mov     edi,dword ptr [ebp-50h]
+6800d72d 6a05            push    5
+6800d72f 59              pop     ecx
+6800d730 be58190368      mov     esi,68031958h
+6800d735 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4]
+6800d73a 5f              pop     edi
+6800d73b 5e              pop     esi
+6800d73c 5b              pop     ebx
+6800d73d e877750000      call    68014cb9
+6800d742 c9              leave
+6800d743 c21c00          ret     1Ch
+6800d746 cc              int     3
+6800d747 cc              int     3
+6800d748 cc              int     3
+6800d749 cc              int     3
+6800d74a cc              int     3
+6800d74b 8bff            mov     edi,edi
+6800d74d 55              push    ebp
+6800d74e 8bec            mov     ebp,esp
+6800d750 33c0            xor     eax,eax
+6800d752 50              push    eax
+6800d753 ff7518          push    dword ptr [ebp+18h]
+6800d756 ff7514          push    dword ptr [ebp+14h]
+6800d759 50              push    eax
+6800d75a 50              push    eax
+6800d75b ff7510          push    dword ptr [ebp+10h]
+6800d75e ff750c          push    dword ptr [ebp+0Ch]
+6800d761 e8dafeffff      call    6800d640
+6800d766 5d              pop     ebp
+6800d767 c21400          ret     14h
+6800d76a cc              int     3
+6800d76b cc              int     3
+6800d76c cc              int     3
+6800d76d cc              int     3
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_SOURCE_TO_STATE20_SLOT_COPY_6800D677]
+eax=00000028 ebx=00000001 ecx=00000005 edx=00001000 esi=0023f664 edi=68031958
+001b:6800d677 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+[V26_STATE20_SLOT_BEFORE_COPY]
+68031958  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031968  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031978  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031988  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f304  0023f678 6802f8cc 00000001 0023f664
+0023f314  0023f628 0023f628 00000028 44cecd02
+0023f324  f47c9cbc 850749c8 1830d05c 87c64f4f
+0023f334  fc1498bc 084ecd8f 70e0dc9c cd448bce
+0023f344  ecb8f0f8 42c6cf48 a448a8f4 854d8b4d
+0023f354  289cb0d8 8fcfc2c3 0000368d 0023f68c
+0023f364  68011caa 00000000 00000000 0023f664
+0023f374  0023f628 0023f628 00000028 00000001
+0023f384  68031998 00000000 68000000 46054e82
+0023f394  c458f834 8209890e 408494a8 83cc0a8d
+0023f3a4  b884e410 08c28fc8 b064e8e0 414e0602
+0023f3b4  80a8bcc8 428280c7 c48044c8 0d094f43
+0023f3c4  c814a864 cd0545ca 5c505c5c 41cd020c
+0023f3d4  2ce03438 82430d8c a0c0cc00 82cc8d02
+0023f3e4  e00c8cb8 0786c680 94a83c80 8583cb09
+0023f3f4  eca45428 c74d8804 648cd450 8e80420f
+6800d647 50              push    eax
+6800d648 a184180368      mov     eax,dword ptr ds:[68031884h]
+6800d64d 8945fc          mov     dword ptr [ebp-4],eax
+6800d650 8b4514          mov     eax,dword ptr [ebp+14h]
+6800d653 53              push    ebx
+6800d654 8945b4          mov     dword ptr [ebp-4Ch],eax
+6800d657 8b4518          mov     eax,dword ptr [ebp+18h]
+6800d65a 56              push    esi
+6800d65b 8b7510          mov     esi,dword ptr [ebp+10h]
+6800d65e 85f6            test    esi,esi
+6800d660 8945b8          mov     dword ptr [ebp-48h],eax
+6800d663 8b451c          mov     eax,dword ptr [ebp+1Ch]
+6800d666 57              push    edi
+6800d667 8975b0          mov     dword ptr [ebp-50h],esi
+6800d66a 8945bc          mov     dword ptr [ebp-44h],eax
+6800d66d 740a            je      6800d679
+6800d66f 6a05            push    5
+6800d671 59              pop     ecx
+6800d672 bf58190368      mov     edi,68031958h
+6800d677 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d679 85c0            test    eax,eax
+6800d67b 0f84a2000000    je      6800d723
+6800d681 33db            xor     ebx,ebx
+6800d683 395d20          cmp     dword ptr [ebp+20h],ebx
+6800d686 7550            jne     6800d6d8
+6800d688 6a14            push    14h
+6800d68a 5f              pop     edi
+6800d68b 397dbc          cmp     dword ptr [ebp-44h],edi
+6800d68e 7303            jae     6800d693
+6800d690 8b7dbc          mov     edi,dword ptr [ebp-44h]
+6800d693 6a14            push    14h
+6800d695 8d45e8          lea     eax,[ebp-18h]
+6800d698 50              push    eax
+6800d699 e8ae790000      call    6801504c
+6800d69e 84c0            test    al,al
+6800d6a0 742f            je      6800d6d1
+6800d6a2 33c9            xor     ecx,ecx
+6800d6a4 85ff            test    edi,edi
+6800d6a6 7616            jbe     6800d6be
+6800d6a8 8b75b8          mov     esi,dword ptr [ebp-48h]
+6800d6ab 8d45e8          lea     eax,[ebp-18h]
+6800d6ae 2bf0            sub     esi,eax
+6800d6b0 8d440de8        lea     eax,[ebp+ecx-18h]
+6800d6b4 8a1406          mov     dl,byte ptr [esi+eax]
+6800d6b7 3010            xor     byte ptr [eax],dl
+6800d6b9 41              inc     ecx
+6800d6ba 3bcf            cmp     ecx,edi
+6800d6bc 72f2            jb      6800d6b0
+6800d6be 8d45e8          lea     eax,[ebp-18h]
+6800d6c1 50              push    eax
+6800d6c2 e87dfeffff      call    6800d544
+6800d6c7 43              inc     ebx
+6800d6c8 85c0            test    eax,eax
+6800d6ca 751b            jne     6800d6e7
+6800d6cc 83fb05          cmp     ebx,5
+6800d6cf 76c2            jbe     6800d693
+6800d6d1 b820000980      mov     eax,80090020h
+6800d6d6 eb5f            jmp     6800d737
+6800d6d8 8b75b4          mov     esi,dword ptr [ebp-4Ch]
+6800d6db 3bf3            cmp     esi,ebx
+6800d6dd 74f2            je      6800d6d1
+6800d6df 6a05            push    5
+6800d6e1 59              pop     ecx
+6800d6e2 8d7de8          lea     edi,[ebp-18h]
+6800d6e5 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d6e7 6a14            push    14h
+6800d6e9 8d45c0          lea     eax,[ebp-40h]
+6800d6ec 50              push    eax
+6800d6ed 8d45e8          lea     eax,[ebp-18h]
+6800d6f0 50              push    eax
+6800d6f1 6858190368      push    68031958h
+6800d6f6 e8069a0100      call    68027101
+6800d6fb 6a28            push    28h
+6800d6fd 5e              pop     esi
+6800d6fe 3975bc          cmp     dword ptr [ebp-44h],esi
+6800d701 7703            ja      6800d706
+6800d703 8b75bc          mov     esi,dword ptr [ebp-44h]
+6800d706 56              push    esi
+6800d707 8d45c0          lea     eax,[ebp-40h]
+6800d70a 50              push    eax
+6800d70b ff75b8          push    dword ptr [ebp-48h]
+6800d70e e8bafeffff      call    6800d5cd
+6800d713 85c0            test    eax,eax
+6800d715 74ba            je      6800d6d1
+6800d717 0175b8          add     dword ptr [ebp-48h],esi
+6800d71a 2975bc          sub     dword ptr [ebp-44h],esi
+6800d71d 0f855effffff    jne     6800d681
+6800d723 33c0            xor     eax,eax
+6800d725 394520          cmp     dword ptr [ebp+20h],eax
+6800d728 740d            je      6800d737
+6800d72a 8b7db0          mov     edi,dword ptr [ebp-50h]
+6800d72d 6a05            push    5
+6800d72f 59              pop     ecx
+6800d730 be58190368      mov     esi,68031958h
+6800d735 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4]
+6800d73a 5f              pop     edi
+6800d73b 5e              pop     esi
+6800d73c 5b              pop     ebx
+6800d73d e877750000      call    68014cb9
+6800d742 c9              leave
+6800d743 c21c00          ret     1Ch
+6800d746 cc              int     3
+6800d747 cc              int     3
+6800d748 cc              int     3
+6800d749 cc              int     3
+6800d74a cc              int     3
+6800d74b 8bff            mov     edi,edi
+6800d74d 55              push    ebp
+6800d74e 8bec            mov     ebp,esp
+6800d750 33c0            xor     eax,eax
+6800d752 50              push    eax
+6800d753 ff7518          push    dword ptr [ebp+18h]
+6800d756 ff7514          push    dword ptr [ebp+14h]
+6800d759 50              push    eax
+6800d75a 50              push    eax
+6800d75b ff7510          push    dword ptr [ebp+10h]
+6800d75e ff750c          push    dword ptr [ebp+0Ch]
+6800d761 e8dafeffff      call    6800d640
+6800d766 5d              pop     ebp
+6800d767 c21400          ret     14h
+6800d76a cc              int     3
+6800d76b cc              int     3
+6800d76c cc              int     3
+6800d76d cc              int     3
+6800d76e cc              int     3
+6800d76f 8bff            mov     edi,edi
+6800d771 55              push    ebp
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_SOURCE_TO_STATE20_SLOT_COPY_6800D677]
+eax=00000028 ebx=00000001 ecx=00000004 edx=00001000 esi=0023f668 edi=6803195c
+001b:6800d677 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+[V26_STATE20_SLOT_BEFORE_COPY]
+68031958  01 02 03 04 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031968  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031978  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031988  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f304  0023f678 6802f8cc 00000001 0023f664
+0023f314  0023f628 0023f628 00000028 44cecd02
+0023f324  f47c9cbc 850749c8 1830d05c 87c64f4f
+0023f334  fc1498bc 084ecd8f 70e0dc9c cd448bce
+0023f344  ecb8f0f8 42c6cf48 a448a8f4 854d8b4d
+0023f354  289cb0d8 8fcfc2c3 0000368d 0023f68c
+0023f364  68011caa 00000000 00000000 0023f664
+0023f374  0023f628 0023f628 00000028 00000001
+0023f384  68031998 00000000 68000000 46054e82
+0023f394  c458f834 8209890e 408494a8 83cc0a8d
+0023f3a4  b884e410 08c28fc8 b064e8e0 414e0602
+0023f3b4  80a8bcc8 428280c7 c48044c8 0d094f43
+0023f3c4  c814a864 cd0545ca 5c505c5c 41cd020c
+0023f3d4  2ce03438 82430d8c a0c0cc00 82cc8d02
+0023f3e4  e00c8cb8 0786c680 94a83c80 8583cb09
+0023f3f4  eca45428 c74d8804 648cd450 8e80420f
+6800d647 50              push    eax
+6800d648 a184180368      mov     eax,dword ptr ds:[68031884h]
+6800d64d 8945fc          mov     dword ptr [ebp-4],eax
+6800d650 8b4514          mov     eax,dword ptr [ebp+14h]
+6800d653 53              push    ebx
+6800d654 8945b4          mov     dword ptr [ebp-4Ch],eax
+6800d657 8b4518          mov     eax,dword ptr [ebp+18h]
+6800d65a 56              push    esi
+6800d65b 8b7510          mov     esi,dword ptr [ebp+10h]
+6800d65e 85f6            test    esi,esi
+6800d660 8945b8          mov     dword ptr [ebp-48h],eax
+6800d663 8b451c          mov     eax,dword ptr [ebp+1Ch]
+6800d666 57              push    edi
+6800d667 8975b0          mov     dword ptr [ebp-50h],esi
+6800d66a 8945bc          mov     dword ptr [ebp-44h],eax
+6800d66d 740a            je      6800d679
+6800d66f 6a05            push    5
+6800d671 59              pop     ecx
+6800d672 bf58190368      mov     edi,68031958h
+6800d677 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d679 85c0            test    eax,eax
+6800d67b 0f84a2000000    je      6800d723
+6800d681 33db            xor     ebx,ebx
+6800d683 395d20          cmp     dword ptr [ebp+20h],ebx
+6800d686 7550            jne     6800d6d8
+6800d688 6a14            push    14h
+6800d68a 5f              pop     edi
+6800d68b 397dbc          cmp     dword ptr [ebp-44h],edi
+6800d68e 7303            jae     6800d693
+6800d690 8b7dbc          mov     edi,dword ptr [ebp-44h]
+6800d693 6a14            push    14h
+6800d695 8d45e8          lea     eax,[ebp-18h]
+6800d698 50              push    eax
+6800d699 e8ae790000      call    6801504c
+6800d69e 84c0            test    al,al
+6800d6a0 742f            je      6800d6d1
+6800d6a2 33c9            xor     ecx,ecx
+6800d6a4 85ff            test    edi,edi
+6800d6a6 7616            jbe     6800d6be
+6800d6a8 8b75b8          mov     esi,dword ptr [ebp-48h]
+6800d6ab 8d45e8          lea     eax,[ebp-18h]
+6800d6ae 2bf0            sub     esi,eax
+6800d6b0 8d440de8        lea     eax,[ebp+ecx-18h]
+6800d6b4 8a1406          mov     dl,byte ptr [esi+eax]
+6800d6b7 3010            xor     byte ptr [eax],dl
+6800d6b9 41              inc     ecx
+6800d6ba 3bcf            cmp     ecx,edi
+6800d6bc 72f2            jb      6800d6b0
+6800d6be 8d45e8          lea     eax,[ebp-18h]
+6800d6c1 50              push    eax
+6800d6c2 e87dfeffff      call    6800d544
+6800d6c7 43              inc     ebx
+6800d6c8 85c0            test    eax,eax
+6800d6ca 751b            jne     6800d6e7
+6800d6cc 83fb05          cmp     ebx,5
+6800d6cf 76c2            jbe     6800d693
+6800d6d1 b820000980      mov     eax,80090020h
+6800d6d6 eb5f            jmp     6800d737
+6800d6d8 8b75b4          mov     esi,dword ptr [ebp-4Ch]
+6800d6db 3bf3            cmp     esi,ebx
+6800d6dd 74f2            je      6800d6d1
+6800d6df 6a05            push    5
+6800d6e1 59              pop     ecx
+6800d6e2 8d7de8          lea     edi,[ebp-18h]
+6800d6e5 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d6e7 6a14            push    14h
+6800d6e9 8d45c0          lea     eax,[ebp-40h]
+6800d6ec 50              push    eax
+6800d6ed 8d45e8          lea     eax,[ebp-18h]
+6800d6f0 50              push    eax
+6800d6f1 6858190368      push    68031958h
+6800d6f6 e8069a0100      call    68027101
+6800d6fb 6a28            push    28h
+6800d6fd 5e              pop     esi
+6800d6fe 3975bc          cmp     dword ptr [ebp-44h],esi
+6800d701 7703            ja      6800d706
+6800d703 8b75bc          mov     esi,dword ptr [ebp-44h]
+6800d706 56              push    esi
+6800d707 8d45c0          lea     eax,[ebp-40h]
+6800d70a 50              push    eax
+6800d70b ff75b8          push    dword ptr [ebp-48h]
+6800d70e e8bafeffff      call    6800d5cd
+6800d713 85c0            test    eax,eax
+6800d715 74ba            je      6800d6d1
+6800d717 0175b8          add     dword ptr [ebp-48h],esi
+6800d71a 2975bc          sub     dword ptr [ebp-44h],esi
+6800d71d 0f855effffff    jne     6800d681
+6800d723 33c0            xor     eax,eax
+6800d725 394520          cmp     dword ptr [ebp+20h],eax
+6800d728 740d            je      6800d737
+6800d72a 8b7db0          mov     edi,dword ptr [ebp-50h]
+6800d72d 6a05            push    5
+6800d72f 59              pop     ecx
+6800d730 be58190368      mov     esi,68031958h
+6800d735 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4]
+6800d73a 5f              pop     edi
+6800d73b 5e              pop     esi
+6800d73c 5b              pop     ebx
+6800d73d e877750000      call    68014cb9
+6800d742 c9              leave
+6800d743 c21c00          ret     1Ch
+6800d746 cc              int     3
+6800d747 cc              int     3
+6800d748 cc              int     3
+6800d749 cc              int     3
+6800d74a cc              int     3
+6800d74b 8bff            mov     edi,edi
+6800d74d 55              push    ebp
+6800d74e 8bec            mov     ebp,esp
+6800d750 33c0            xor     eax,eax
+6800d752 50              push    eax
+6800d753 ff7518          push    dword ptr [ebp+18h]
+6800d756 ff7514          push    dword ptr [ebp+14h]
+6800d759 50              push    eax
+6800d75a 50              push    eax
+6800d75b ff7510          push    dword ptr [ebp+10h]
+6800d75e ff750c          push    dword ptr [ebp+0Ch]
+6800d761 e8dafeffff      call    6800d640
+6800d766 5d              pop     ebp
+6800d767 c21400          ret     14h
+6800d76a cc              int     3
+6800d76b cc              int     3
+6800d76c cc              int     3
+6800d76d cc              int     3
+6800d76e cc              int     3
+6800d76f 8bff            mov     edi,edi
+6800d771 55              push    ebp
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_SOURCE_COPY_OR_NULL_6800D679]
+eax=00000028 ebx=00000001 ecx=00000000 edx=00001000 esi=0023f678 edi=6803196c
+001b:6800d679 85c0            test    eax,eax
+[V26_STATE20_SLOT_AFTER_SOURCE_STAGE]
+68031958  01 02 03 04 05 06 07 08-09 0a 0b 0c 0d 0e 0f 10  ................
+68031968  11 12 13 14 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031978  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031988  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_FIPS_ENTRY_68027101]
+eax=0023f348 ebx=00000000 ecx=00000000 edx=00001000 esi=0023f63c edi=0023f35c
+001b:68027101 8bff            mov     edi,edi
+[V26_FIPS_ENTRY_ARGS]
+0023f2f0  6800d6fb 68031958 0023f348 0023f320
+0023f300  00000014 0023f678 6802f8cc 00000001
+0023f310  0023f664 0023f628 0023f628 00000028
+0023f320  44cecd02 f47c9cbc 850749c8 1830d05c
+0023f330  87c64f4f fc1498bc 084ecd8f 70e0dc9c
+0023f340  cd448bce ecb8f0f8 00000000 00000000
+0023f350  00000000 00000000 00000000 0000368d
+0023f360  0023f68c 68011caa 00000000 00000000
+[V26_FIPS_UPDATE_A_RETURN_680271D5]
+eax=00230000 ebx=00000014 ecx=6849000b edx=00000014 esi=68031958 edi=0023f2bc
+001b:680271d5 83bd3cffffff00  cmp     dword ptr [ebp-0C4h],0 ss:0023:0023f228=0023f348
+[V26_STATE20_SLOT_AFTER_UPDATE_A_OR_PARTIAL]
+68031958  0b ea 21 9a 01 3f 82 58-96 a4 59 1a 0a db 29 3c  ..!..?.X..Y...)<
+68031968  35 f6 85 9b 00 00 00 00-00 00 00 00 00 00 00 00  5...............
+68031978  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031988  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_FIPS_UPDATE_B_RETURN_68027297]
+eax=00230000 ebx=00000014 ecx=68490024 edx=00000014 esi=0023f2bc edi=0023f2bc
+001b:68027297 8bbd40ffffff    mov     edi,dword ptr [ebp-0C0h] ss:0023:0023f22c=0023f320
+[V26_STATE20_SLOT_AFTER_UPDATE_B_OR_FINAL]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb 00 00 00 00-00 00 00 00 00 00 00 00  |...............
+68031978  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031988  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_AFTER_FIPS_CALL_6800D6FB]
+eax=00230000 ebx=00000000 ecx=0000368d edx=00000014 esi=0023f63c edi=0023f35c
+001b:6800d6fb 6a28            push    28h
+[V26_STATE20_AFTER_FIPS_SLOT]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb 00 00 00 00-00 00 00 00 00 00 00 00  |...............
+68031978  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031988  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_OUT40_LOCAL_AFTER_FIPS_EBP_M40]
+0023f320  0a e8 1e 95 fc 39 7b 50-8d 9a 4e 0d fd cd 1a 2c  .....9{P..N....,
+0023f330  24 e4 72 86 18 da e5 26-43 1b ff 1f d7 24 c3 6b  $.r....&C....$.k
+0023f340  63 32 cc 84 46 91 7f 4f-00 00 00 00 00 00 00 00  c2..F..O........
+0023f350  00 00 00 00 00 00 00 00-00 00 00 00 8d 36 00 00  .............6..
+[V26_AUX20_LOCAL_AFTER_FIPS_EBP_M18]
+0023f348  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f358  00 00 00 00 8d 36 00 00-8c f6 23 00 aa 1c 01 68  .....6....#....h
+0023f368  00 00 00 00 00 00 00 00-64 f6 23 00 28 f6 23 00  ........d.#.(.#.
+0023f378  28 f6 23 00 28 00 00 00-01 00 00 00 98 19 03 68  (.#.(..........h
+[V26_BEFORE_OUT_COPY_6800D70E]
+eax=0023f320 ebx=00000000 ecx=0000368d edx=00000014 esi=00000028 edi=0023f35c
+001b:6800d70e e8bafeffff      call    6800d5cd
+[V26_OUT40_LOCAL_BEFORE_COPY_EBP_M40]
+0023f320  0a e8 1e 95 fc 39 7b 50-8d 9a 4e 0d fd cd 1a 2c  .....9{P..N....,
+0023f330  24 e4 72 86 18 da e5 26-43 1b ff 1f d7 24 c3 6b  $.r....&C....$.k
+0023f340  63 32 cc 84 46 91 7f 4f-00 00 00 00 00 00 00 00  c2..F..O........
+0023f350  00 00 00 00 00 00 00 00-00 00 00 00 8d 36 00 00  .............6..
+[V26_OUT_DEST_BEFORE_COPY]
+0023f628  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f638  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f648  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f658  00 00 00 00 00 00 00 00-00 00 00 00 01 02 03 04  ................
+[V26_OUT_DEST_PTR_AND_LEN_HINTS]
+Evaluate expression: 2356776 = 0023f628
+Evaluate expression: 40 = 00000028
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_OUT_COPY_6800D713]
+eax=00000001 ebx=00000000 ecx=00000000 edx=68031980 esi=00000028 edi=0023f35c
+001b:6800d713 85c0            test    eax,eax
+[V26_OUT_DEST_AFTER_COPY]
+0023f628  0a e8 1e 95 fc 39 7b 50-8d 9a 4e 0d fd cd 1a 2c  .....9{P..N....,
+0023f638  24 e4 72 86 18 da e5 26-43 1b ff 1f d7 24 c3 6b  $.r....&C....$.k
+0023f648  63 32 cc 84 46 91 7f 4f-00 00 00 00 00 00 00 00  c2..F..O........
+0023f658  00 00 00 00 00 00 00 00-00 00 00 00 01 02 03 04  ................
+[V26_OUT40_LOCAL_AFTER_COPY_EBP_M40]
+0023f320  0a e8 1e 95 fc 39 7b 50-8d 9a 4e 0d fd cd 1a 2c  .....9{P..N....,
+0023f330  24 e4 72 86 18 da e5 26-43 1b ff 1f d7 24 c3 6b  $.r....&C....$.k
+0023f340  63 32 cc 84 46 91 7f 4f-00 00 00 00 00 00 00 00  c2..F..O........
+0023f350  00 00 00 00 00 00 00 00-00 00 00 00 8d 36 00 00  .............6..
+[V26_OUT_COPY_LEN_REGISTER_ESI]
+Evaluate expression: 40 = 00000028
+[V26_D640_RETURN_6800D743]
+eax=00000000 ebx=00000001 ecx=0000368d edx=68031980 esi=6802f8cc edi=0023f678
+001b:6800d743 c21c00          ret     1Ch
+[V26_STATE20_SLOT_AT_D640_RETURN]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb 00 00 00 00-00 00 00 00 00 00 00 00  |...............
+68031978  00 00 00 00 00 00 00 00-0a e8 1e 95 fc 39 7b 50  .............9{P
+68031988  8d 9a 4e 0d fd cd 1a 2c-24 e4 72 86 00 00 00 00  ..N....,$.r.....
+[V26_D640_RETURN_STACK]
+0023f364  68011caa 00000000 00000000 0023f664
+0023f374  0023f628 0023f628 00000028 00000001
+0023f384  68031998 00000000 68000000 46054e82
+0023f394  c458f834 8209890e 408494a8 83cc0a8d
+0023f3a4  b884e410 08c28fc8 b064e8e0 414e0602
+0023f3b4  80a8bcc8 428280c7 c48044c8 0d094f43
+0023f3c4  c814a864 cd0545ca 5c505c5c 41cd020c
+0023f3d4  2ce03438 82430d8c a0c0cc00 82cc8d02
+0023f3e4  e00c8cb8 0786c680 94a83c80 8583cb09
+0023f3f4  eca45428 c74d8804 648cd450 8e80420f
+0023f404  d09c2424 c8c38e09 b42cb880 49c8840f
+0023f414  7ca00c88 c94a4ac3 ec68e04c cc8005ca
+0023f424  44585860 c7cd4309 2c18203c 8ec5088f
+0023f434  3cf45420 89454c4c b8e48874 c6c08c04
+0023f444  b4f89c88 07830200 883c2008 87028f47
+0023f454  58dcacc0 0d8c4107 d8f4001c 4e0d46cd
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_SELFTEST_AFTER_D640_68011CAA]
+eax=00000000 ebx=00000001 ecx=0000368d edx=68031980 esi=6802f8cc edi=0023f678
+001b:68011caa 85c0            test    eax,eax
+[V26_SELFTEST_STACK_SOURCE_EBP_M28_AFTER]
+0023f664  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+0023f674  7c 88 04 eb 00 00 00 00-00 00 00 00 00 00 00 00  |...............
+0023f684  00 00 00 00 8d 36 00 00-c8 f6 23 00 b7 20 01 68  .....6....#.. .h
+0023f694  00 00 00 00 01 00 00 00-ce c3 c2 77 e7 c3 c2 77  ...........w...w
+[V26_SELFTEST_STATIC_SEED_6802F8B8]
+6802f8b8  01 02 03 04 05 06 07 08-09 0a 0b 0c 0d 0e 0f 10  ................
+6802f8c8  11 12 13 14 24 c5 06 c0-44 5b 81 78 6d c9 1c 85  ....$...D[.xm...
+6802f8d8  6e 0d f5 c0 7c 88 04 eb-02 66 00 00 28 00 00 00  n...|....f..(...
+6802f8e8  28 00 00 00 38 00 00 00-00 00 00 00 04 00 00 00  (...8...........
+[V26_SELFTEST_EXPECTED_AFTER_6802F8CC]
+6802f8cc  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+6802f8dc  7c 88 04 eb 02 66 00 00-28 00 00 00 28 00 00 00  |....f..(...(...
+6802f8ec  38 00 00 00 00 00 00 00-04 00 00 00 52 43 32 00  8...........RC2.
+6802f8fc  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_STATE20_SLOT_68031958]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb 00 00 00 00-00 00 00 00 00 00 00 00  |...............
+68031978  00 00 00 00 00 00 00 00-0a e8 1e 95 fc 39 7b 50  .............9{P
+68031988  8d 9a 4e 0d fd cd 1a 2c-24 e4 72 86 00 00 00 00  ..N....,$.r.....
+68011c8a 43              inc     ebx
+68011c8b 53              push    ebx
+68011c8c 6a28            push    28h
+68011c8e 8d459c          lea     eax,[ebp-64h]
+68011c91 50              push    eax
+68011c92 50              push    eax
+68011c93 8d45d8          lea     eax,[ebp-28h]
+68011c96 50              push    eax
+68011c97 6a00            push    0
+68011c99 beb8f80268      mov     esi,6802F8B8h
+68011c9e 8d7dd8          lea     edi,[ebp-28h]
+68011ca1 6a00            push    0
+68011ca3 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+68011ca5 e896b9ffff      call    6800d640
+68011caa 85c0            test    eax,eax
+68011cac 0f858d030000    jne     6801203f
+68011cb2 6a14            push    14h
+68011cb4 59              pop     ecx
+68011cb5 bfccf80268      mov     edi,6802F8CCh
+68011cba 8d75d8          lea     esi,[ebp-28h]
+68011cbd 33c0            xor     eax,eax
+68011cbf f3a6            repe cmps byte ptr [esi],byte ptr es:[edi]
+68011cc1 7405            je      68011cc8
+68011cc3 1bc0            sbb     eax,eax
+68011cc5 83d8ff          sbb     eax,0FFFFFFFFh
+68011cc8 85c0            test    eax,eax
+68011cca 0f856b010000    jne     68011e3b
+68011cd0 53              push    ebx
+68011cd1 53              push    ebx
+68011cd2 53              push    ebx
+68011cd3 bf80f00268      mov     edi,6802F080h
+68011cd8 57              push    edi
+68011cd9 be38f50268      mov     esi,6802F538h
+68011cde 56              push    esi
+68011cdf e8d8edffff      call    68010abc
+68011ce4 85c0            test    eax,eax
+68011ce6 0f8553030000    jne     6801203f
+68011cec 53              push    ebx
+68011ced 53              push    ebx
+68011cee 50              push    eax
+68011cef 57              push    edi
+68011cf0 56              push    esi
+68011cf1 e8c6edffff      call    68010abc
+68011cf6 85c0            test    eax,eax
+68011cf8 0f8541030000    jne     6801203f
+68011cfe 8d45ec          lea     eax,[ebp-14h]
+68011d01 50              push    eax
+68011d02 6a08            push    8
+68011d04 5b              pop     ebx
+68011d05 53              push    ebx
+68011d06 68cc150068      push    680015CCh
+68011d0b e82055ffff      call    68007230
+68011d10 85c0            test    eax,eax
+68011d12 0f8423010000    je      68011e3b
+68011d18 6a04            push    4
+68011d1a 59              pop     ecx
+68011d1b bf54f60268      mov     edi,6802F654h
+68011d20 8d75ec          lea     esi,[ebp-14h]
+68011d23 33c0            xor     eax,eax
+68011d25 f3a7            repe cmps dword ptr [esi],dword ptr es:[edi]
+68011d27 0f850e010000    jne     68011e3b
+68011d2d 8d45c4          lea     eax,[ebp-3Ch]
+68011d30 50              push    eax
+68011d31 53              push    ebx
+68011d32 68cc150068      push    680015CCh
+68011d37 e84f55ffff      call    6800728b
+68011d3c 85c0            test    eax,eax
+68011d3e 0f84f7000000    je      68011e3b
+68011d44 6a05            push    5
+68011d46 59              pop     ecx
+68011d47 bf64f60268      mov     edi,6802F664h
+68011d4c 8d75c4          lea     esi,[ebp-3Ch]
+68011d4f 33c0            xor     eax,eax
+68011d51 f3a7            repe cmps dword ptr [esi],dword ptr es:[edi]
+68011d53 0f85e2000000    jne     68011e3b
+68011d59 e81ff7ffff      call    6801147d
+68011d5e 85c0            test    eax,eax
+68011d60 0f84d5000000    je      68011e3b
+68011d66 8d85a4feffff    lea     eax,[ebp-15Ch]
+68011d6c 50              push    eax
+68011d6d e88e800000      call    68019e00
+68011d72 6a03            push    3
+68011d74 681cf80268      push    6802F81Ch
+68011d79 8d85a4feffff    lea     eax,[ebp-15Ch]
+68011d7f 50              push    eax
+68011d80 e84b8c0000      call    6801a9d0
+68011d85 8d857cffffff    lea     eax,[ebp-84h]
+68011d8b 50              push    eax
+68011d8c 8d85a4feffff    lea     eax,[ebp-15Ch]
+68011d92 50              push    eax
+68011d93 e8688d0000      call    6801ab00
+68011d98 8bcb            mov     ecx,ebx
+68011d9a bf20f80268      mov     edi,6802F820h
+68011d9f 8db57cffffff    lea     esi,[ebp-84h]
+68011da5 33c0            xor     eax,eax
+68011da7 f3a7            repe cmps dword ptr [esi],dword ptr es:[edi]
+68011da9 0f858c000000    jne     68011e3b
+68011daf 8d85d4fdffff    lea     eax,[ebp-22Ch]
+68011db5 50              push    eax
+68011db6 e8358e0000      call    6801abf0
+68011dbb 6a03            push    3
+68011dbd 6840f80268      push    6802F840h
+68011dc2 8d85d4fdffff    lea     eax,[ebp-22Ch]
+68011dc8 50              push    eax
+68011dc9 e852bd0000      call    6801db20
+68011dce 8d854cffffff    lea     eax,[ebp-0B4h]
+68011dd4 50              push    eax
+68011dd5 8d85d4fdffff    lea     eax,[ebp-22Ch]
+68011ddb 50              push    eax
+68011ddc e8bfc50000      call    6801e3a0
+68011de1 6a0c            push    0Ch
+68011de3 59              pop     ecx
+68011de4 bf44f80268      mov     edi,6802F844h
+68011de9 8db54cffffff    lea     esi,[ebp-0B4h]
+68011def 33c0            xor     eax,eax
+68011df1 f3a7            repe cmps dword ptr [esi],dword ptr es:[edi]
+68011df3 7546            jne     68011e3b
+68011df5 8d8504fdffff    lea     eax,[ebp-2FCh]
+68011dfb 50              push    eax
+68011dfc e87f8e0000      call    6801ac80
+68011e01 6a03            push    3
+68011e03 6874f80268      push    6802F874h
+68011e08 8d8504fdffff    lea     eax,[ebp-2FCh]
+68011e0e 50              push    eax
+68011e0f e80cbd0000      call    6801db20
+68011e14 8d850cffffff    lea     eax,[ebp-0F4h]
+68011e1a 50              push    eax
+68011e1b 8d8504fdffff    lea     eax,[ebp-2FCh]
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_D640_ENTRY_6800D640]
+eax=0023f69c ebx=68000000 ecx=680266c6 edx=7c97b140 esi=00000000 edi=68031998
+001b:6800d640 8bff            mov     edi,edi
+[V26_D640_ENTRY_STACK]
+0023f674  680120d4 00000000 00000000 00000000
+0023f684  00000000 0023f69c 00000028 00000000
+0023f694  00000000 00000001 77c2c3ce 77c2c3e7
+0023f6a4  00000080 0023f6b4 77c39d7a 00000000
+0023f6b4  0023f6c8 68014e32 6802f000 6802f008
+0023f6c4  0000368d 0023f6e8 68014eda 68000000
+0023f6d4  00000001 00000000 00000001 0023f6fc
+0023f6e4  68014e88 0023f708 7c90118a 68000000
+0023f6f4  00000001 00000000 68014e88 00000001
+0023f704  003522e8 0023f810 7c91c4da 68014e88
+0023f714  68000000 00000001 00000000 0023fdb0
+0023f724  0023fd90 00000000 00000000 68001000
+0023f734  0023f6f0 7c91c265 7ffdf000 003522e8
+0023f744  7c91d008 ffffffff 7c91cffe 7c91d2fb
+0023f754  00352388 003522e8 7ffdf000 00000000
+0023f764  00000001 003522e8 7ffdb000 00352388
+[V26_D640_ARGS_RAW]
+Evaluate expression: 0 = 00000000
+Evaluate expression: 0 = 00000000
+Evaluate expression: 0 = 00000000
+Evaluate expression: 0 = 00000000
+Evaluate expression: 2356892 = 0023f69c
+Evaluate expression: 40 = 00000028
+Evaluate expression: 0 = 00000000
+[V26_STATE20_SLOT_68031958_AT_D640_ENTRY]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb 00 00 00 00-00 00 00 00 00 00 00 00  |...............
+68031978  00 00 00 00 00 00 00 00-0a e8 1e 95 fc 39 7b 50  .............9{P
+68031988  8d 9a 4e 0d fd cd 1a 2c-24 e4 72 86 00 00 00 00  ..N....,$.r.....
+6800d640 8bff            mov     edi,edi
+6800d642 55              push    ebp
+6800d643 8bec            mov     ebp,esp
+6800d645 83ec50          sub     esp,50h
+6800d648 a184180368      mov     eax,dword ptr ds:[68031884h]
+6800d64d 8945fc          mov     dword ptr [ebp-4],eax
+6800d650 8b4514          mov     eax,dword ptr [ebp+14h]
+6800d653 53              push    ebx
+6800d654 8945b4          mov     dword ptr [ebp-4Ch],eax
+6800d657 8b4518          mov     eax,dword ptr [ebp+18h]
+6800d65a 56              push    esi
+6800d65b 8b7510          mov     esi,dword ptr [ebp+10h]
+6800d65e 85f6            test    esi,esi
+6800d660 8945b8          mov     dword ptr [ebp-48h],eax
+6800d663 8b451c          mov     eax,dword ptr [ebp+1Ch]
+6800d666 57              push    edi
+6800d667 8975b0          mov     dword ptr [ebp-50h],esi
+6800d66a 8945bc          mov     dword ptr [ebp-44h],eax
+6800d66d 740a            je      6800d679
+6800d66f 6a05            push    5
+6800d671 59              pop     ecx
+6800d672 bf58190368      mov     edi,68031958h
+6800d677 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d679 85c0            test    eax,eax
+6800d67b 0f84a2000000    je      6800d723
+6800d681 33db            xor     ebx,ebx
+6800d683 395d20          cmp     dword ptr [ebp+20h],ebx
+6800d686 7550            jne     6800d6d8
+6800d688 6a14            push    14h
+6800d68a 5f              pop     edi
+6800d68b 397dbc          cmp     dword ptr [ebp-44h],edi
+6800d68e 7303            jae     6800d693
+6800d690 8b7dbc          mov     edi,dword ptr [ebp-44h]
+6800d693 6a14            push    14h
+6800d695 8d45e8          lea     eax,[ebp-18h]
+6800d698 50              push    eax
+6800d699 e8ae790000      call    6801504c
+6800d69e 84c0            test    al,al
+6800d6a0 742f            je      6800d6d1
+6800d6a2 33c9            xor     ecx,ecx
+6800d6a4 85ff            test    edi,edi
+6800d6a6 7616            jbe     6800d6be
+6800d6a8 8b75b8          mov     esi,dword ptr [ebp-48h]
+6800d6ab 8d45e8          lea     eax,[ebp-18h]
+6800d6ae 2bf0            sub     esi,eax
+6800d6b0 8d440de8        lea     eax,[ebp+ecx-18h]
+6800d6b4 8a1406          mov     dl,byte ptr [esi+eax]
+6800d6b7 3010            xor     byte ptr [eax],dl
+6800d6b9 41              inc     ecx
+6800d6ba 3bcf            cmp     ecx,edi
+6800d6bc 72f2            jb      6800d6b0
+6800d6be 8d45e8          lea     eax,[ebp-18h]
+6800d6c1 50              push    eax
+6800d6c2 e87dfeffff      call    6800d544
+6800d6c7 43              inc     ebx
+6800d6c8 85c0            test    eax,eax
+6800d6ca 751b            jne     6800d6e7
+6800d6cc 83fb05          cmp     ebx,5
+6800d6cf 76c2            jbe     6800d693
+6800d6d1 b820000980      mov     eax,80090020h
+6800d6d6 eb5f            jmp     6800d737
+6800d6d8 8b75b4          mov     esi,dword ptr [ebp-4Ch]
+6800d6db 3bf3            cmp     esi,ebx
+6800d6dd 74f2            je      6800d6d1
+6800d6df 6a05            push    5
+6800d6e1 59              pop     ecx
+6800d6e2 8d7de8          lea     edi,[ebp-18h]
+6800d6e5 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d6e7 6a14            push    14h
+6800d6e9 8d45c0          lea     eax,[ebp-40h]
+6800d6ec 50              push    eax
+6800d6ed 8d45e8          lea     eax,[ebp-18h]
+6800d6f0 50              push    eax
+6800d6f1 6858190368      push    68031958h
+6800d6f6 e8069a0100      call    68027101
+6800d6fb 6a28            push    28h
+6800d6fd 5e              pop     esi
+6800d6fe 3975bc          cmp     dword ptr [ebp-44h],esi
+6800d701 7703            ja      6800d706
+6800d703 8b75bc          mov     esi,dword ptr [ebp-44h]
+6800d706 56              push    esi
+6800d707 8d45c0          lea     eax,[ebp-40h]
+6800d70a 50              push    eax
+6800d70b ff75b8          push    dword ptr [ebp-48h]
+6800d70e e8bafeffff      call    6800d5cd
+6800d713 85c0            test    eax,eax
+6800d715 74ba            je      6800d6d1
+6800d717 0175b8          add     dword ptr [ebp-48h],esi
+6800d71a 2975bc          sub     dword ptr [ebp-44h],esi
+6800d71d 0f855effffff    jne     6800d681
+6800d723 33c0            xor     eax,eax
+6800d725 394520          cmp     dword ptr [ebp+20h],eax
+6800d728 740d            je      6800d737
+6800d72a 8b7db0          mov     edi,dword ptr [ebp-50h]
+6800d72d 6a05            push    5
+6800d72f 59              pop     ecx
+6800d730 be58190368      mov     esi,68031958h
+6800d735 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4]
+6800d73a 5f              pop     edi
+6800d73b 5e              pop     esi
+6800d73c 5b              pop     ebx
+6800d73d e877750000      call    68014cb9
+6800d742 c9              leave
+6800d743 c21c00          ret     1Ch
+6800d746 cc              int     3
+6800d747 cc              int     3
+6800d748 cc              int     3
+6800d749 cc              int     3
+6800d74a cc              int     3
+6800d74b 8bff            mov     edi,edi
+6800d74d 55              push    ebp
+6800d74e 8bec            mov     ebp,esp
+6800d750 33c0            xor     eax,eax
+6800d752 50              push    eax
+6800d753 ff7518          push    dword ptr [ebp+18h]
+6800d756 ff7514          push    dword ptr [ebp+14h]
+6800d759 50              push    eax
+6800d75a 50              push    eax
+6800d75b ff7510          push    dword ptr [ebp+10h]
+6800d75e ff750c          push    dword ptr [ebp+0Ch]
+6800d761 e8dafeffff      call    6800d640
+6800d766 5d              pop     ebp
+6800d767 c21400          ret     14h
+6800d76a cc              int     3
+6800d76b cc              int     3
+6800d76c cc              int     3
+6800d76d cc              int     3
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_SOURCE_COPY_OR_NULL_6800D679]
+eax=00000028 ebx=68000000 ecx=680266c6 edx=7c97b140 esi=00000000 edi=68031998
+001b:6800d679 85c0            test    eax,eax
+[V26_STATE20_SLOT_AFTER_SOURCE_STAGE]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb 00 00 00 00-00 00 00 00 00 00 00 00  |...............
+68031978  00 00 00 00 00 00 00 00-0a e8 1e 95 fc 39 7b 50  .............9{P
+68031988  8d 9a 4e 0d fd cd 1a 2c-24 e4 72 86 00 00 00 00  ..N....,$.r.....
+[V26_FIPS_ENTRY_68027101]
+eax=0023f658 ebx=00000001 ecx=0000368d edx=6803196c esi=00000044 edi=00000014
+001b:68027101 8bff            mov     edi,edi
+[V26_FIPS_ENTRY_ARGS]
+0023f600  6800d6fb 68031958 0023f658 0023f630
+0023f610  00000014 68031998 00000000 68000000
+0023f620  00000000 00000000 0023f69c 00000028
+0023f630  0023f640 7c91160c 0025ae00 00000000
+0023f640  0023f64c 7c809f8f 0025ae00 0023f68c
+0023f650  68026678 680266c6 4167b88e d4f001a8
+0023f660  0fdec48f 5ece5ada 751ed5bf 0000368d
+0023f670  0023f6c8 680120d4 00000000 00000000
+[V26_FIPS_UPDATE_A_RETURN_680271D5]
+eax=00230000 ebx=00000014 ecx=68490089 edx=00000014 esi=68031958 edi=0023f5cc
+001b:680271d5 83bd3cffffff00  cmp     dword ptr [ebp-0C4h],0 ss:0023:0023f538=0023f658
+[V26_STATE20_SLOT_AFTER_UPDATE_A_OR_PARTIAL]
+68031958  89 a9 f8 80 ae a5 57 40-95 d2 bd 3b 0e ba d0 f4  ......W@...;....
+68031968  4d 26 2f 8a b9 11 2f 6f-b1 d0 cc cd 13 8a 6f 7a  M&/.../o......oz
+68031978  cb db 2d f8 81 e2 d3 f9-0a e8 1e 95 fc 39 7b 50  ..-..........9{P
+68031988  8d 9a 4e 0d fd cd 1a 2c-24 e4 72 86 00 00 00 00  ..N....,$.r.....
+[V26_FIPS_UPDATE_B_RETURN_68027297]
+eax=00230001 ebx=00000014 ecx=68490182 edx=00000014 esi=0023f5cc edi=0023f5cc
+001b:68027297 8bbd40ffffff    mov     edi,dword ptr [ebp-0C0h] ss:0023:0023f53c=0023f630
+[V26_STATE20_SLOT_AFTER_UPDATE_B_OR_FINAL]
+68031958  82 a6 f4 0a 21 b3 28 91-0b 49 96 eb d1 b2 5b 3f  ....!.(..I....[?
+68031968  77 55 58 2f b9 11 2f 6f-b1 d0 cc cd 13 8a 6f 7a  wUX/../o......oz
+68031978  cb db 2d f8 81 e2 d3 f9-0a e8 1e 95 fc 39 7b 50  ..-..........9{P
+68031988  8d 9a 4e 0d fd cd 1a 2c-24 e4 72 86 00 00 00 00  ..N....,$.r.....
+[V26_AFTER_FIPS_CALL_6800D6FB]
+eax=00230001 ebx=00000001 ecx=0000368d edx=00000014 esi=00000044 edi=00000014
+001b:6800d6fb 6a28            push    28h
+[V26_STATE20_AFTER_FIPS_SLOT]
+68031958  82 a6 f4 0a 21 b3 28 91-0b 49 96 eb d1 b2 5b 3f  ....!.(..I....[?
+68031968  77 55 58 2f b9 11 2f 6f-b1 d0 cc cd 13 8a 6f 7a  wUX/../o......oz
+68031978  cb db 2d f8 81 e2 d3 f9-0a e8 1e 95 fc 39 7b 50  ..-..........9{P
+68031988  8d 9a 4e 0d fd cd 1a 2c-24 e4 72 86 00 00 00 00  ..N....,$.r.....
+[V26_OUT40_LOCAL_AFTER_FIPS_EBP_M40]
+0023f630  64 e4 f1 c0 6a 49 d5 c8-28 09 a0 b5 a0 ac db 33  d...jI..(......3
+0023f640  d0 9e 2a 9e f8 fc fb 89-73 0d d1 50 75 76 d9 b0  ..*.....s..Puv..
+0023f650  c2 f7 8a 4b 2a 2f 28 a4-8e b8 67 41 a8 01 f0 d4  ...K*/(...gA....
+0023f660  8f c4 de 0f da 5a ce 5e-bf d5 1e 75 8d 36 00 00  .....Z.^...u.6..
+[V26_AUX20_LOCAL_AFTER_FIPS_EBP_M18]
+0023f658  8e b8 67 41 a8 01 f0 d4-8f c4 de 0f da 5a ce 5e  ..gA.........Z.^
+0023f668  bf d5 1e 75 8d 36 00 00-c8 f6 23 00 d4 20 01 68  ...u.6....#.. .h
+0023f678  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f688  9c f6 23 00 28 00 00 00-00 00 00 00 00 00 00 00  ..#.(...........
+[V26_BEFORE_OUT_COPY_6800D70E]
+eax=0023f630 ebx=00000001 ecx=0000368d edx=00000014 esi=00000028 edi=00000014
+001b:6800d70e e8bafeffff      call    6800d5cd
+[V26_OUT40_LOCAL_BEFORE_COPY_EBP_M40]
+0023f630  64 e4 f1 c0 6a 49 d5 c8-28 09 a0 b5 a0 ac db 33  d...jI..(......3
+0023f640  d0 9e 2a 9e f8 fc fb 89-73 0d d1 50 75 76 d9 b0  ..*.....s..Puv..
+0023f650  c2 f7 8a 4b 2a 2f 28 a4-8e b8 67 41 a8 01 f0 d4  ...K*/(...gA....
+0023f660  8f c4 de 0f da 5a ce 5e-bf d5 1e 75 8d 36 00 00  .....Z.^...u.6..
+[V26_OUT_DEST_BEFORE_COPY]
+0023f69c  ce c3 c2 77 e7 c3 c2 77-80 00 00 00 b4 f6 23 00  ...w...w......#.
+0023f6ac  7a 9d c3 77 00 00 00 00-c8 f6 23 00 32 4e 01 68  z..w......#.2N.h
+0023f6bc  00 f0 02 68 08 f0 02 68-8d 36 00 00 e8 f6 23 00  ...h...h.6....#.
+0023f6cc  da 4e 01 68 00 00 00 68-01 00 00 00 00 00 00 00  .N.h...h........
+[V26_OUT_DEST_PTR_AND_LEN_HINTS]
+Evaluate expression: 2356892 = 0023f69c
+Evaluate expression: 40 = 00000028
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_OUT_COPY_6800D713]
+eax=00000001 ebx=00000001 ecx=00000000 edx=68031980 esi=00000028 edi=00000014
+001b:6800d713 85c0            test    eax,eax
+[V26_OUT_DEST_AFTER_COPY]
+0023f69c  64 e4 f1 c0 6a 49 d5 c8-28 09 a0 b5 a0 ac db 33  d...jI..(......3
+0023f6ac  d0 9e 2a 9e f8 fc fb 89-73 0d d1 50 75 76 d9 b0  ..*.....s..Puv..
+0023f6bc  c2 f7 8a 4b 2a 2f 28 a4-8d 36 00 00 e8 f6 23 00  ...K*/(..6....#.
+0023f6cc  da 4e 01 68 00 00 00 68-01 00 00 00 00 00 00 00  .N.h...h........
+[V26_OUT40_LOCAL_AFTER_COPY_EBP_M40]
+0023f630  64 e4 f1 c0 6a 49 d5 c8-28 09 a0 b5 a0 ac db 33  d...jI..(......3
+0023f640  d0 9e 2a 9e f8 fc fb 89-73 0d d1 50 75 76 d9 b0  ..*.....s..Puv..
+0023f650  c2 f7 8a 4b 2a 2f 28 a4-8e b8 67 41 a8 01 f0 d4  ...K*/(...gA....
+0023f660  8f c4 de 0f da 5a ce 5e-bf d5 1e 75 8d 36 00 00  .....Z.^...u.6..
+[V26_OUT_COPY_LEN_REGISTER_ESI]
+Evaluate expression: 40 = 00000028
+[V26_D640_ENTRY_6800D640]
+eax=00000000 ebx=0025c250 ecx=7c9101bb edx=00000014 esi=0025c2a8 edi=f0000000
+001b:6800d640 8bff            mov     edi,edi
+[V26_D640_ENTRY_STACK]
+0023fd58  6800d766 0025c2a8 0025c288 00000000
+0023fd68  00000000 0023fdbc 0000000a 00000000
+0023fd78  0023fdcc 6800fac7 0025c3b4 0025c2a8
+0023fd88  0025c288 0023fdbc 0000000a 0023fe34
+0023fd98  00000001 0025abf0 0023fe04 0023fea8
+0023fda8  0023fe4c 7c917df0 00254a78 f0000000
+0023fdb8  00000000 68000000 0023fdf0 00000000
+0023fdc8  0000368d 0023fdf0 6800fb7a 00000000
+0023fdd8  f0000000 0023fe04 0023fe4c 00000001
+0023fde8  00254a78 0023ff2c 0023feb8 77de7c8f
+0023fdf8  0023fe4c 00000000 f0000000 0023fe18
+0023fe08  729029bc 01dcde82 7ffdb000 00000080
+0023fe18  00000003 77e1173a 77e1178c 00000001
+0023fe28  00000000 00000000 00254a78 00000000
+0023fe38  00000000 00000001 00000000 00000001
+0023fe48  0023ff2c e37f5c84 00000000 68000000
+[V26_D640_ARGS_RAW]
+Evaluate expression: 2474664 = 0025c2a8
+Evaluate expression: 2474632 = 0025c288
+Evaluate expression: 0 = 00000000
+Evaluate expression: 0 = 00000000
+Evaluate expression: 2358716 = 0023fdbc
+Evaluate expression: 10 = 0000000a
+Evaluate expression: 0 = 00000000
+[V26_STATE20_SLOT_68031958_AT_D640_ENTRY]
+68031958  82 a6 f4 0a 21 b3 28 91-0b 49 96 eb d1 b2 5b 3f  ....!.(..I....[?
+68031968  77 55 58 2f b9 11 2f 6f-b1 d0 cc cd 13 8a 6f 7a  wUX/../o......oz
+68031978  cb db 2d f8 81 e2 d3 f9-64 e4 f1 c0 6a 49 d5 c8  ..-.....d...jI..
+68031988  28 09 a0 b5 a0 ac db 33-d0 9e 2a 9e 00 00 00 00  (......3..*.....
+6800d640 8bff            mov     edi,edi
+6800d642 55              push    ebp
+6800d643 8bec            mov     ebp,esp
+6800d645 83ec50          sub     esp,50h
+6800d648 a184180368      mov     eax,dword ptr ds:[68031884h]
+6800d64d 8945fc          mov     dword ptr [ebp-4],eax
+6800d650 8b4514          mov     eax,dword ptr [ebp+14h]
+6800d653 53              push    ebx
+6800d654 8945b4          mov     dword ptr [ebp-4Ch],eax
+6800d657 8b4518          mov     eax,dword ptr [ebp+18h]
+6800d65a 56              push    esi
+6800d65b 8b7510          mov     esi,dword ptr [ebp+10h]
+6800d65e 85f6            test    esi,esi
+6800d660 8945b8          mov     dword ptr [ebp-48h],eax
+6800d663 8b451c          mov     eax,dword ptr [ebp+1Ch]
+6800d666 57              push    edi
+6800d667 8975b0          mov     dword ptr [ebp-50h],esi
+6800d66a 8945bc          mov     dword ptr [ebp-44h],eax
+6800d66d 740a            je      6800d679
+6800d66f 6a05            push    5
+6800d671 59              pop     ecx
+6800d672 bf58190368      mov     edi,68031958h
+6800d677 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d679 85c0            test    eax,eax
+6800d67b 0f84a2000000    je      6800d723
+6800d681 33db            xor     ebx,ebx
+6800d683 395d20          cmp     dword ptr [ebp+20h],ebx
+6800d686 7550            jne     6800d6d8
+6800d688 6a14            push    14h
+6800d68a 5f              pop     edi
+6800d68b 397dbc          cmp     dword ptr [ebp-44h],edi
+6800d68e 7303            jae     6800d693
+6800d690 8b7dbc          mov     edi,dword ptr [ebp-44h]
+6800d693 6a14            push    14h
+6800d695 8d45e8          lea     eax,[ebp-18h]
+6800d698 50              push    eax
+6800d699 e8ae790000      call    6801504c
+6800d69e 84c0            test    al,al
+6800d6a0 742f            je      6800d6d1
+6800d6a2 33c9            xor     ecx,ecx
+6800d6a4 85ff            test    edi,edi
+6800d6a6 7616            jbe     6800d6be
+6800d6a8 8b75b8          mov     esi,dword ptr [ebp-48h]
+6800d6ab 8d45e8          lea     eax,[ebp-18h]
+6800d6ae 2bf0            sub     esi,eax
+6800d6b0 8d440de8        lea     eax,[ebp+ecx-18h]
+6800d6b4 8a1406          mov     dl,byte ptr [esi+eax]
+6800d6b7 3010            xor     byte ptr [eax],dl
+6800d6b9 41              inc     ecx
+6800d6ba 3bcf            cmp     ecx,edi
+6800d6bc 72f2            jb      6800d6b0
+6800d6be 8d45e8          lea     eax,[ebp-18h]
+6800d6c1 50              push    eax
+6800d6c2 e87dfeffff      call    6800d544
+6800d6c7 43              inc     ebx
+6800d6c8 85c0            test    eax,eax
+6800d6ca 751b            jne     6800d6e7
+6800d6cc 83fb05          cmp     ebx,5
+6800d6cf 76c2            jbe     6800d693
+6800d6d1 b820000980      mov     eax,80090020h
+6800d6d6 eb5f            jmp     6800d737
+6800d6d8 8b75b4          mov     esi,dword ptr [ebp-4Ch]
+6800d6db 3bf3            cmp     esi,ebx
+6800d6dd 74f2            je      6800d6d1
+6800d6df 6a05            push    5
+6800d6e1 59              pop     ecx
+6800d6e2 8d7de8          lea     edi,[ebp-18h]
+6800d6e5 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d6e7 6a14            push    14h
+6800d6e9 8d45c0          lea     eax,[ebp-40h]
+6800d6ec 50              push    eax
+6800d6ed 8d45e8          lea     eax,[ebp-18h]
+6800d6f0 50              push    eax
+6800d6f1 6858190368      push    68031958h
+6800d6f6 e8069a0100      call    68027101
+6800d6fb 6a28            push    28h
+6800d6fd 5e              pop     esi
+6800d6fe 3975bc          cmp     dword ptr [ebp-44h],esi
+6800d701 7703            ja      6800d706
+6800d703 8b75bc          mov     esi,dword ptr [ebp-44h]
+6800d706 56              push    esi
+6800d707 8d45c0          lea     eax,[ebp-40h]
+6800d70a 50              push    eax
+6800d70b ff75b8          push    dword ptr [ebp-48h]
+6800d70e e8bafeffff      call    6800d5cd
+6800d713 85c0            test    eax,eax
+6800d715 74ba            je      6800d6d1
+6800d717 0175b8          add     dword ptr [ebp-48h],esi
+6800d71a 2975bc          sub     dword ptr [ebp-44h],esi
+6800d71d 0f855effffff    jne     6800d681
+6800d723 33c0            xor     eax,eax
+6800d725 394520          cmp     dword ptr [ebp+20h],eax
+6800d728 740d            je      6800d737
+6800d72a 8b7db0          mov     edi,dword ptr [ebp-50h]
+6800d72d 6a05            push    5
+6800d72f 59              pop     ecx
+6800d730 be58190368      mov     esi,68031958h
+6800d735 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4]
+6800d73a 5f              pop     edi
+6800d73b 5e              pop     esi
+6800d73c 5b              pop     ebx
+6800d73d e877750000      call    68014cb9
+6800d742 c9              leave
+6800d743 c21c00          ret     1Ch
+6800d746 cc              int     3
+6800d747 cc              int     3
+6800d748 cc              int     3
+6800d749 cc              int     3
+6800d74a cc              int     3
+6800d74b 8bff            mov     edi,edi
+6800d74d 55              push    ebp
+6800d74e 8bec            mov     ebp,esp
+6800d750 33c0            xor     eax,eax
+6800d752 50              push    eax
+6800d753 ff7518          push    dword ptr [ebp+18h]
+6800d756 ff7514          push    dword ptr [ebp+14h]
+6800d759 50              push    eax
+6800d75a 50              push    eax
+6800d75b ff7510          push    dword ptr [ebp+10h]
+6800d75e ff750c          push    dword ptr [ebp+0Ch]
+6800d761 e8dafeffff      call    6800d640
+6800d766 5d              pop     ebp
+6800d767 c21400          ret     14h
+6800d76a cc              int     3
+6800d76b cc              int     3
+6800d76c cc              int     3
+6800d76d cc              int     3
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_SOURCE_COPY_OR_NULL_6800D679]
+eax=0000000a ebx=0025c250 ecx=7c9101bb edx=00000014 esi=00000000 edi=f0000000
+001b:6800d679 85c0            test    eax,eax
+[V26_STATE20_SLOT_AFTER_SOURCE_STAGE]
+68031958  82 a6 f4 0a 21 b3 28 91-0b 49 96 eb d1 b2 5b 3f  ....!.(..I....[?
+68031968  77 55 58 2f b9 11 2f 6f-b1 d0 cc cd 13 8a 6f 7a  wUX/../o......oz
+68031978  cb db 2d f8 81 e2 d3 f9-64 e4 f1 c0 6a 49 d5 c8  ..-.....d...jI..
+68031988  28 09 a0 b5 a0 ac db 33-d0 9e 2a 9e 00 00 00 00  (......3..*.....
+[V26_FIPS_ENTRY_68027101]
+eax=0023fd3c ebx=00000001 ecx=0000368d edx=6803196c esi=00000080 edi=0000000a
+001b:68027101 8bff            mov     edi,edi
+[V26_FIPS_ENTRY_ARGS]
+0023fce4  6800d6fb 68031958 0023fd3c 0023fd14
+0023fcf4  00000014 f0000000 0025c2a8 0025c250
+0023fd04  00000000 00000000 0023fdbc 0000000a
+0023fd14  0025af98 0023fc6c 000007c8 0023fea8
+0023fd24  7c90e900 7c9115e0 00000000 00254ba8
+0023fd34  7c97b140 0025c250 2cca72a0 ea98955b
+0023fd44  64b86194 b929dadf 43d49215 0000368d
+0023fd54  0023fd78 6800d766 0025c2a8 0025c288
+[V26_FIPS_UPDATE_A_RETURN_680271D5]
+eax=00230000 ebx=00000014 ecx=684900e7 edx=00000014 esi=68031958 edi=0023fcb0
+001b:680271d5 83bd3cffffff00  cmp     dword ptr [ebp-0C4h],0 ss:0023:0023fc1c=0023fd3c
+[V26_STATE20_SLOT_AFTER_UPDATE_A_OR_PARTIAL]
+68031958  e7 d0 b0 49 54 ca f6 50-26 ca 52 bb b2 98 fb 28  ...IT..P&.R....(
+68031968  75 b3 d8 80 f7 a3 03 fe-a9 84 b9 4d c6 36 c2 6f  u..........M.6.o
+68031978  f7 31 1a 73 82 ad b8 8a-64 e4 f1 c0 6a 49 d5 c8  .1.s....d...jI..
+68031988  28 09 a0 b5 a0 ac db 33-d0 9e 2a 9e 00 00 00 00  (......3..*.....
+[V26_FIPS_UPDATE_B_RETURN_68027297]
+eax=00230001 ebx=00000014 ecx=684901c5 edx=00000014 esi=0023fcb0 edi=0023fcb0
+001b:68027297 8bbd40ffffff    mov     edi,dword ptr [ebp-0C0h] ss:0023:0023fc20=0023fd14
+[V26_STATE20_SLOT_AFTER_UPDATE_B_OR_FINAL]
+68031958  c5 db 4a 8c ff 31 6b fc-30 73 df 23 87 10 2d e9  ..J..1k.0s.#..-.
+68031968  1c e9 f8 9b f7 a3 03 fe-a9 84 b9 4d c6 36 c2 6f  ...........M.6.o
+68031978  f7 31 1a 73 82 ad b8 8a-64 e4 f1 c0 6a 49 d5 c8  .1.s....d...jI..
+68031988  28 09 a0 b5 a0 ac db 33-d0 9e 2a 9e 00 00 00 00  (......3..*.....
+[V26_AFTER_FIPS_CALL_6800D6FB]
+eax=00230001 ebx=00000001 ecx=0000368d edx=00000014 esi=00000080 edi=0000000a
+001b:6800d6fb 6a28            push    28h
+[V26_STATE20_AFTER_FIPS_SLOT]
+68031958  c5 db 4a 8c ff 31 6b fc-30 73 df 23 87 10 2d e9  ..J..1k.0s.#..-.
+68031968  1c e9 f8 9b f7 a3 03 fe-a9 84 b9 4d c6 36 c2 6f  ...........M.6.o
+68031978  f7 31 1a 73 82 ad b8 8a-64 e4 f1 c0 6a 49 d5 c8  .1.s....d...jI..
+68031988  28 09 a0 b5 a0 ac db 33-d0 9e 2a 9e 00 00 00 00  (......3..*.....
+[V26_OUT40_LOCAL_AFTER_FIPS_EBP_M40]
+0023fd14  65 29 bc 3f 33 17 cd bf-1b 80 bb cf e0 e6 9f e8  e).?3...........
+0023fd24  fe 5e 80 50 de 0a 9a 43-aa 66 75 ac 09 a9 8c 67  .^.P...C.fu....g
+0023fd34  d4 77 32 c0 a7 36 20 1a-a0 72 ca 2c 5b 95 98 ea  .w2..6 ..r.,[...
+0023fd44  94 61 b8 64 df da 29 b9-15 92 d4 43 8d 36 00 00  .a.d..)....C.6..
+[V26_AUX20_LOCAL_AFTER_FIPS_EBP_M18]
+0023fd3c  a0 72 ca 2c 5b 95 98 ea-94 61 b8 64 df da 29 b9  .r.,[....a.d..).
+0023fd4c  15 92 d4 43 8d 36 00 00-78 fd 23 00 66 d7 00 68  ...C.6..x.#.f..h
+0023fd5c  a8 c2 25 00 88 c2 25 00-00 00 00 00 00 00 00 00  ..%...%.........
+0023fd6c  bc fd 23 00 0a 00 00 00-00 00 00 00 cc fd 23 00  ..#...........#.
+[V26_BEFORE_OUT_COPY_6800D70E]
+eax=0023fd14 ebx=00000001 ecx=0000368d edx=00000014 esi=0000000a edi=0000000a
+001b:6800d70e e8bafeffff      call    6800d5cd
+[V26_OUT40_LOCAL_BEFORE_COPY_EBP_M40]
+0023fd14  65 29 bc 3f 33 17 cd bf-1b 80 bb cf e0 e6 9f e8  e).?3...........
+0023fd24  fe 5e 80 50 de 0a 9a 43-aa 66 75 ac 09 a9 8c 67  .^.P...C.fu....g
+0023fd34  d4 77 32 c0 a7 36 20 1a-a0 72 ca 2c 5b 95 98 ea  .w2..6 ..r.,[...
+0023fd44  94 61 b8 64 df da 29 b9-15 92 d4 43 8d 36 00 00  .a.d..)....C.6..
+[V26_OUT_DEST_BEFORE_COPY]
+0023fdbc  00 00 00 68 f0 fd 23 00-00 00 00 00 8d 36 00 00  ...h..#......6..
+0023fdcc  f0 fd 23 00 7a fb 00 68-00 00 00 00 00 00 00 f0  ..#.z..h........
+0023fddc  04 fe 23 00 4c fe 23 00-01 00 00 00 78 4a 25 00  ..#.L.#.....xJ%.
+0023fdec  2c ff 23 00 b8 fe 23 00-8f 7c de 77 4c fe 23 00  ,.#...#..|.wL.#.
+[V26_OUT_DEST_PTR_AND_LEN_HINTS]
+Evaluate expression: 2358716 = 0023fdbc
+Evaluate expression: 10 = 0000000a
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_OUT_COPY_6800D713]
+eax=00000001 ebx=00000001 ecx=00000000 edx=68031980 esi=0000000a edi=0000000a
+001b:6800d713 85c0            test    eax,eax
+[V26_OUT_DEST_AFTER_COPY]
+0023fdbc  65 29 bc 3f 33 17 cd bf-1b 80 00 00 8d 36 00 00  e).?3........6..
+0023fdcc  f0 fd 23 00 7a fb 00 68-00 00 00 00 00 00 00 f0  ..#.z..h........
+0023fddc  04 fe 23 00 4c fe 23 00-01 00 00 00 78 4a 25 00  ..#.L.#.....xJ%.
+0023fdec  2c ff 23 00 b8 fe 23 00-8f 7c de 77 4c fe 23 00  ,.#...#..|.wL.#.
+[V26_OUT40_LOCAL_AFTER_COPY_EBP_M40]
+0023fd14  65 29 bc 3f 33 17 cd bf-1b 80 bb cf e0 e6 9f e8  e).?3...........
+0023fd24  fe 5e 80 50 de 0a 9a 43-aa 66 75 ac 09 a9 8c 67  .^.P...C.fu....g
+0023fd34  d4 77 32 c0 a7 36 20 1a-a0 72 ca 2c 5b 95 98 ea  .w2..6 ..r.,[...
+0023fd44  94 61 b8 64 df da 29 b9-15 92 d4 43 8d 36 00 00  .a.d..)....C.6..
+[V26_OUT_COPY_LEN_REGISTER_ESI]
+Evaluate expression: 10 = 0000000a
+[V26_D640_ENTRY_6800D640]
+eax=0025c2a8 ebx=7ffdb000 ecx=0025c288 edx=77c61b78 esi=0025abf0 edi=00000000
+001b:6800d640 8bff            mov     edi,edi
+[V26_D640_ENTRY_STACK]
+0023fcc4  6800d7da 0025c2a8 0025c288 00000000
+0023fcd4  00000000 0023fda0 00000020 00000000
+0023fce4  0023fd28 77dfb401 e37f5c84 00000020
+0023fcf4  0023fda0 729029bc 01dcde82 7ffdb000
+0023fd04  00000000 0025abf0 00000001 0023fcf8
+0023fd14  3fbc2965 0023ffe0 77df1758 77dfb420
+0023fd24  00000000 0023fea8 00401d2e 0025abf0
+0023fd34  00000020 0023fda0 00000020 ea98955b
+0023fd44  64b86194 b929dadf 43d49215 0000368d
+0023fd54  00000018 6800d766 0025c2a8 0025c288
+0023fd64  00000000 00000000 0023fdbc 0000000a
+0023fd74  00000000 0023fdcc 00250000 0025c3b4
+0023fd84  0025c2a8 0025c288 0023fdbc 0000000a
+0023fd94  0001fe34 00000003 0023fcf8 00000000
+0023fda4  00000000 00000000 00000000 00000000
+0023fdb4  00000000 00000000 00000000 00000000
+[V26_D640_ARGS_RAW]
+Evaluate expression: 2474664 = 0025c2a8
+Evaluate expression: 2474632 = 0025c288
+Evaluate expression: 0 = 00000000
+Evaluate expression: 0 = 00000000
+Evaluate expression: 2358688 = 0023fda0
+Evaluate expression: 32 = 00000020
+Evaluate expression: 0 = 00000000
+[V26_STATE20_SLOT_68031958_AT_D640_ENTRY]
+68031958  c5 db 4a 8c ff 31 6b fc-30 73 df 23 87 10 2d e9  ..J..1k.0s.#..-.
+68031968  1c e9 f8 9b f7 a3 03 fe-a9 84 b9 4d c6 36 c2 6f  ...........M.6.o
+68031978  f7 31 1a 73 82 ad b8 8a-65 29 bc 3f 33 17 cd bf  .1.s....e).?3...
+68031988  1b 80 bb cf e0 e6 9f e8-fe 5e 80 50 00 00 00 00  .........^.P....
+6800d640 8bff            mov     edi,edi
+6800d642 55              push    ebp
+6800d643 8bec            mov     ebp,esp
+6800d645 83ec50          sub     esp,50h
+6800d648 a184180368      mov     eax,dword ptr ds:[68031884h]
+6800d64d 8945fc          mov     dword ptr [ebp-4],eax
+6800d650 8b4514          mov     eax,dword ptr [ebp+14h]
+6800d653 53              push    ebx
+6800d654 8945b4          mov     dword ptr [ebp-4Ch],eax
+6800d657 8b4518          mov     eax,dword ptr [ebp+18h]
+6800d65a 56              push    esi
+6800d65b 8b7510          mov     esi,dword ptr [ebp+10h]
+6800d65e 85f6            test    esi,esi
+6800d660 8945b8          mov     dword ptr [ebp-48h],eax
+6800d663 8b451c          mov     eax,dword ptr [ebp+1Ch]
+6800d666 57              push    edi
+6800d667 8975b0          mov     dword ptr [ebp-50h],esi
+6800d66a 8945bc          mov     dword ptr [ebp-44h],eax
+6800d66d 740a            je      6800d679
+6800d66f 6a05            push    5
+6800d671 59              pop     ecx
+6800d672 bf58190368      mov     edi,68031958h
+6800d677 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d679 85c0            test    eax,eax
+6800d67b 0f84a2000000    je      6800d723
+6800d681 33db            xor     ebx,ebx
+6800d683 395d20          cmp     dword ptr [ebp+20h],ebx
+6800d686 7550            jne     6800d6d8
+6800d688 6a14            push    14h
+6800d68a 5f              pop     edi
+6800d68b 397dbc          cmp     dword ptr [ebp-44h],edi
+6800d68e 7303            jae     6800d693
+6800d690 8b7dbc          mov     edi,dword ptr [ebp-44h]
+6800d693 6a14            push    14h
+6800d695 8d45e8          lea     eax,[ebp-18h]
+6800d698 50              push    eax
+6800d699 e8ae790000      call    6801504c
+6800d69e 84c0            test    al,al
+6800d6a0 742f            je      6800d6d1
+6800d6a2 33c9            xor     ecx,ecx
+6800d6a4 85ff            test    edi,edi
+6800d6a6 7616            jbe     6800d6be
+6800d6a8 8b75b8          mov     esi,dword ptr [ebp-48h]
+6800d6ab 8d45e8          lea     eax,[ebp-18h]
+6800d6ae 2bf0            sub     esi,eax
+6800d6b0 8d440de8        lea     eax,[ebp+ecx-18h]
+6800d6b4 8a1406          mov     dl,byte ptr [esi+eax]
+6800d6b7 3010            xor     byte ptr [eax],dl
+6800d6b9 41              inc     ecx
+6800d6ba 3bcf            cmp     ecx,edi
+6800d6bc 72f2            jb      6800d6b0
+6800d6be 8d45e8          lea     eax,[ebp-18h]
+6800d6c1 50              push    eax
+6800d6c2 e87dfeffff      call    6800d544
+6800d6c7 43              inc     ebx
+6800d6c8 85c0            test    eax,eax
+6800d6ca 751b            jne     6800d6e7
+6800d6cc 83fb05          cmp     ebx,5
+6800d6cf 76c2            jbe     6800d693
+6800d6d1 b820000980      mov     eax,80090020h
+6800d6d6 eb5f            jmp     6800d737
+6800d6d8 8b75b4          mov     esi,dword ptr [ebp-4Ch]
+6800d6db 3bf3            cmp     esi,ebx
+6800d6dd 74f2            je      6800d6d1
+6800d6df 6a05            push    5
+6800d6e1 59              pop     ecx
+6800d6e2 8d7de8          lea     edi,[ebp-18h]
+6800d6e5 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d6e7 6a14            push    14h
+6800d6e9 8d45c0          lea     eax,[ebp-40h]
+6800d6ec 50              push    eax
+6800d6ed 8d45e8          lea     eax,[ebp-18h]
+6800d6f0 50              push    eax
+6800d6f1 6858190368      push    68031958h
+6800d6f6 e8069a0100      call    68027101
+6800d6fb 6a28            push    28h
+6800d6fd 5e              pop     esi
+6800d6fe 3975bc          cmp     dword ptr [ebp-44h],esi
+6800d701 7703            ja      6800d706
+6800d703 8b75bc          mov     esi,dword ptr [ebp-44h]
+6800d706 56              push    esi
+6800d707 8d45c0          lea     eax,[ebp-40h]
+6800d70a 50              push    eax
+6800d70b ff75b8          push    dword ptr [ebp-48h]
+6800d70e e8bafeffff      call    6800d5cd
+6800d713 85c0            test    eax,eax
+6800d715 74ba            je      6800d6d1
+6800d717 0175b8          add     dword ptr [ebp-48h],esi
+6800d71a 2975bc          sub     dword ptr [ebp-44h],esi
+6800d71d 0f855effffff    jne     6800d681
+6800d723 33c0            xor     eax,eax
+6800d725 394520          cmp     dword ptr [ebp+20h],eax
+6800d728 740d            je      6800d737
+6800d72a 8b7db0          mov     edi,dword ptr [ebp-50h]
+6800d72d 6a05            push    5
+6800d72f 59              pop     ecx
+6800d730 be58190368      mov     esi,68031958h
+6800d735 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4]
+6800d73a 5f              pop     edi
+6800d73b 5e              pop     esi
+6800d73c 5b              pop     ebx
+6800d73d e877750000      call    68014cb9
+6800d742 c9              leave
+6800d743 c21c00          ret     1Ch
+6800d746 cc              int     3
+6800d747 cc              int     3
+6800d748 cc              int     3
+6800d749 cc              int     3
+6800d74a cc              int     3
+6800d74b 8bff            mov     edi,edi
+6800d74d 55              push    ebp
+6800d74e 8bec            mov     ebp,esp
+6800d750 33c0            xor     eax,eax
+6800d752 50              push    eax
+6800d753 ff7518          push    dword ptr [ebp+18h]
+6800d756 ff7514          push    dword ptr [ebp+14h]
+6800d759 50              push    eax
+6800d75a 50              push    eax
+6800d75b ff7510          push    dword ptr [ebp+10h]
+6800d75e ff750c          push    dword ptr [ebp+0Ch]
+6800d761 e8dafeffff      call    6800d640
+6800d766 5d              pop     ebp
+6800d767 c21400          ret     14h
+6800d76a cc              int     3
+6800d76b cc              int     3
+6800d76c cc              int     3
+6800d76d cc              int     3
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_SOURCE_COPY_OR_NULL_6800D679]
+eax=00000020 ebx=7ffdb000 ecx=0025c288 edx=77c61b78 esi=00000000 edi=00000000
+001b:6800d679 85c0            test    eax,eax
+[V26_STATE20_SLOT_AFTER_SOURCE_STAGE]
+68031958  c5 db 4a 8c ff 31 6b fc-30 73 df 23 87 10 2d e9  ..J..1k.0s.#..-.
+68031968  1c e9 f8 9b f7 a3 03 fe-a9 84 b9 4d c6 36 c2 6f  ...........M.6.o
+68031978  f7 31 1a 73 82 ad b8 8a-65 29 bc 3f 33 17 cd bf  .1.s....e).?3...
+68031988  1b 80 bb cf e0 e6 9f e8-fe 5e 80 50 00 00 00 00  .........^.P....
+[V26_FIPS_ENTRY_68027101]
+eax=0023fca8 ebx=00000001 ecx=0000368d edx=6803196c esi=000000f8 edi=00000014
+001b:68027101 8bff            mov     edi,edi
+[V26_FIPS_ENTRY_ARGS]
+0023fc50  6800d6fb 68031958 0023fca8 0023fc80
+0023fc60  00000014 00000000 0025abf0 7ffdb000
+0023fc70  00000000 00000000 0023fda0 00000020
+0023fc80  77c303ad 00000028 77c5fca0 00000000
+0023fc90  00000028 0023fc84 00000000 0023fd18
+0023fca0  77c35c94 77c12580 7173531d 6bf22151
+0023fcb0  af2db061 cb224266 265b0cef 0000368d
+0023fcc0  0023fce4 6800d7da 0025c2a8 0025c288
+[V26_FIPS_UPDATE_A_RETURN_680271D5]
+eax=00230001 ebx=00000014 ecx=6849018e edx=00000014 esi=68031958 edi=0023fc1c
+001b:680271d5 83bd3cffffff00  cmp     dword ptr [ebp-0C4h],0 ss:0023:0023fb88=0023fca8
+[V26_STATE20_SLOT_AFTER_UPDATE_A_OR_PARTIAL]
+68031958  8e 99 67 1d aa 8c fd d2-ce 34 1f 65 95 f0 8c d8  ..g......4.e....
+68031968  cb bd 01 19 87 42 ab 9d-88 ef 91 a7 0d f7 94 79  .....B.........y
+68031978  5c 31 f0 05 15 51 74 76-65 29 bc 3f 33 17 cd bf  \1...Qtve).?3...
+68031988  1b 80 bb cf e0 e6 9f e8-fe 5e 80 50 00 00 00 00  .........^.P....
+[V26_FIPS_UPDATE_B_RETURN_68027297]
+eax=00230000 ebx=00000014 ecx=684900b5 edx=00000014 esi=0023fc1c edi=0023fc1c
+001b:68027297 8bbd40ffffff    mov     edi,dword ptr [ebp-0C0h] ss:0023:0023fb8c=0023fc80
+[V26_STATE20_SLOT_AFTER_UPDATE_B_OR_FINAL]
+68031958  b5 86 73 45 66 22 ab 71-d0 76 74 c7 5c b6 b0 8d  ..sEf".q.vt.\...
+68031968  e2 b6 f0 8c 87 42 ab 9d-88 ef 91 a7 0d f7 94 79  .....B.........y
+68031978  5c 31 f0 05 15 51 74 76-65 29 bc 3f 33 17 cd bf  \1...Qtve).?3...
+68031988  1b 80 bb cf e0 e6 9f e8-fe 5e 80 50 00 00 00 00  .........^.P....
+[V26_AFTER_FIPS_CALL_6800D6FB]
+eax=00230000 ebx=00000001 ecx=0000368d edx=00000014 esi=000000f8 edi=00000014
+001b:6800d6fb 6a28            push    28h
+[V26_STATE20_AFTER_FIPS_SLOT]
+68031958  b5 86 73 45 66 22 ab 71-d0 76 74 c7 5c b6 b0 8d  ..sEf".q.vt.\...
+68031968  e2 b6 f0 8c 87 42 ab 9d-88 ef 91 a7 0d f7 94 79  .....B.........y
+68031978  5c 31 f0 05 15 51 74 76-65 29 bc 3f 33 17 cd bf  \1...Qtve).?3...
+68031988  1b 80 bb cf e0 e6 9f e8-fe 5e 80 50 00 00 00 00  .........^.P....
+[V26_OUT40_LOCAL_AFTER_FIPS_EBP_M40]
+0023fc80  c8 be 1c 90 ab 5b 91 d6-9d c0 40 42 0e e0 5e ef  .....[....@B..^.
+0023fc90  ae d3 08 7d 26 ed 0c 27-bb 95 ad 9f 02 42 55 61  ...}&..'.....BUa
+0023fca0  c6 c6 23 b5 16 f9 ef 72-1d 53 73 71 51 21 f2 6b  ..#....r.SsqQ!.k
+0023fcb0  61 b0 2d af 66 42 22 cb-ef 0c 5b 26 8d 36 00 00  a.-.fB"...[&.6..
+[V26_AUX20_LOCAL_AFTER_FIPS_EBP_M18]
+0023fca8  1d 53 73 71 51 21 f2 6b-61 b0 2d af 66 42 22 cb  .SsqQ!.ka.-.fB".
+0023fcb8  ef 0c 5b 26 8d 36 00 00-e4 fc 23 00 da d7 00 68  ..[&.6....#....h
+0023fcc8  a8 c2 25 00 88 c2 25 00-00 00 00 00 00 00 00 00  ..%...%.........
+0023fcd8  a0 fd 23 00 20 00 00 00-00 00 00 00 28 fd 23 00  ..#. .......(.#.
+[V26_BEFORE_OUT_COPY_6800D70E]
+eax=0023fc80 ebx=00000001 ecx=0000368d edx=00000014 esi=00000020 edi=00000014
+001b:6800d70e e8bafeffff      call    6800d5cd
+[V26_OUT40_LOCAL_BEFORE_COPY_EBP_M40]
+0023fc80  c8 be 1c 90 ab 5b 91 d6-9d c0 40 42 0e e0 5e ef  .....[....@B..^.
+0023fc90  ae d3 08 7d 26 ed 0c 27-bb 95 ad 9f 02 42 55 61  ...}&..'.....BUa
+0023fca0  c6 c6 23 b5 16 f9 ef 72-1d 53 73 71 51 21 f2 6b  ..#....r.SsqQ!.k
+0023fcb0  61 b0 2d af 66 42 22 cb-ef 0c 5b 26 8d 36 00 00  a.-.fB"...[&.6..
+[V26_OUT_DEST_BEFORE_COPY]
+0023fda0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdb0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdc0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdd0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_OUT_DEST_PTR_AND_LEN_HINTS]
+Evaluate expression: 2358688 = 0023fda0
+Evaluate expression: 32 = 00000020
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_OUT_COPY_6800D713]
+eax=00000001 ebx=00000001 ecx=00000000 edx=68031980 esi=00000020 edi=00000014
+001b:6800d713 85c0            test    eax,eax
+[V26_OUT_DEST_AFTER_COPY]
+0023fda0  c8 be 1c 90 ab 5b 91 d6-9d c0 40 42 0e e0 5e ef  .....[....@B..^.
+0023fdb0  ae d3 08 7d 26 ed 0c 27-bb 95 ad 9f 02 42 55 61  ...}&..'.....BUa
+0023fdc0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdd0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_OUT40_LOCAL_AFTER_COPY_EBP_M40]
+0023fc80  c8 be 1c 90 ab 5b 91 d6-9d c0 40 42 0e e0 5e ef  .....[....@B..^.
+0023fc90  ae d3 08 7d 26 ed 0c 27-bb 95 ad 9f 02 42 55 61  ...}&..'.....BUa
+0023fca0  c6 c6 23 b5 16 f9 ef 72-1d 53 73 71 51 21 f2 6b  ..#....r.SsqQ!.k
+0023fcb0  61 b0 2d af 66 42 22 cb-ef 0c 5b 26 8d 36 00 00  a.-.fB"...[&.6..
+[V26_OUT_COPY_LEN_REGISTER_ESI]
+Evaluate expression: 32 = 00000020
+[V26_D640_ENTRY_6800D640]
+eax=0025c2a8 ebx=7ffdb000 ecx=0025c288 edx=77c61b78 esi=0025abf0 edi=00000000
+001b:6800d640 8bff            mov     edi,edi
+[V26_D640_ENTRY_STACK]
+0023fcc4  6800d7da 0025c2a8 0025c288 00000000
+0023fcd4  00000000 0023fda0 00000020 00000000
+0023fce4  0023fd28 77dfb401 e37f5c84 00000020
+0023fcf4  0023fda0 729029bc 01dcde82 7ffdb000
+0023fd04  00000000 0025abf0 00000001 0023fcf8
+0023fd14  002f0001 0023ffe0 77df1758 77dfb420
+0023fd24  00000000 0023fea8 00401d2e 0025abf0
+0023fd34  00000020 0023fda0 00000020 00000000
+0023fd44  7c872a83 00670063 005f0072 00610068
+0023fd54  006e0072 00730065 002e0073 00780065
+0023fd64  00000065 00000000 0023fdbc 0000000a
+0023fd74  00000000 0023fdcc 00250000 0025c3b4
+0023fd84  0025c2a8 0025c288 0000bdd0 0023fce0
+0023fd94  0001fe34 0023fde4 7c839ac0 00000000
+0023fda4  00000000 00000000 00000000 00000000
+0023fdb4  00000000 00000000 00000000 00000000
+[V26_D640_ARGS_RAW]
+Evaluate expression: 2474664 = 0025c2a8
+Evaluate expression: 2474632 = 0025c288
+Evaluate expression: 0 = 00000000
+Evaluate expression: 0 = 00000000
+Evaluate expression: 2358688 = 0023fda0
+Evaluate expression: 32 = 00000020
+Evaluate expression: 0 = 00000000
+[V26_STATE20_SLOT_68031958_AT_D640_ENTRY]
+68031958  b5 86 73 45 66 22 ab 71-d0 76 74 c7 5c b6 b0 8d  ..sEf".q.vt.\...
+68031968  e2 b6 f0 8c 87 42 ab 9d-88 ef 91 a7 0d f7 94 79  .....B.........y
+68031978  5c 31 f0 05 15 51 74 76-c8 be 1c 90 ab 5b 91 d6  \1...Qtv.....[..
+68031988  9d c0 40 42 0e e0 5e ef-ae d3 08 7d 00 00 00 00  ..@B..^....}....
+6800d640 8bff            mov     edi,edi
+6800d642 55              push    ebp
+6800d643 8bec            mov     ebp,esp
+6800d645 83ec50          sub     esp,50h
+6800d648 a184180368      mov     eax,dword ptr ds:[68031884h]
+6800d64d 8945fc          mov     dword ptr [ebp-4],eax
+6800d650 8b4514          mov     eax,dword ptr [ebp+14h]
+6800d653 53              push    ebx
+6800d654 8945b4          mov     dword ptr [ebp-4Ch],eax
+6800d657 8b4518          mov     eax,dword ptr [ebp+18h]
+6800d65a 56              push    esi
+6800d65b 8b7510          mov     esi,dword ptr [ebp+10h]
+6800d65e 85f6            test    esi,esi
+6800d660 8945b8          mov     dword ptr [ebp-48h],eax
+6800d663 8b451c          mov     eax,dword ptr [ebp+1Ch]
+6800d666 57              push    edi
+6800d667 8975b0          mov     dword ptr [ebp-50h],esi
+6800d66a 8945bc          mov     dword ptr [ebp-44h],eax
+6800d66d 740a            je      6800d679
+6800d66f 6a05            push    5
+6800d671 59              pop     ecx
+6800d672 bf58190368      mov     edi,68031958h
+6800d677 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d679 85c0            test    eax,eax
+6800d67b 0f84a2000000    je      6800d723
+6800d681 33db            xor     ebx,ebx
+6800d683 395d20          cmp     dword ptr [ebp+20h],ebx
+6800d686 7550            jne     6800d6d8
+6800d688 6a14            push    14h
+6800d68a 5f              pop     edi
+6800d68b 397dbc          cmp     dword ptr [ebp-44h],edi
+6800d68e 7303            jae     6800d693
+6800d690 8b7dbc          mov     edi,dword ptr [ebp-44h]
+6800d693 6a14            push    14h
+6800d695 8d45e8          lea     eax,[ebp-18h]
+6800d698 50              push    eax
+6800d699 e8ae790000      call    6801504c
+6800d69e 84c0            test    al,al
+6800d6a0 742f            je      6800d6d1
+6800d6a2 33c9            xor     ecx,ecx
+6800d6a4 85ff            test    edi,edi
+6800d6a6 7616            jbe     6800d6be
+6800d6a8 8b75b8          mov     esi,dword ptr [ebp-48h]
+6800d6ab 8d45e8          lea     eax,[ebp-18h]
+6800d6ae 2bf0            sub     esi,eax
+6800d6b0 8d440de8        lea     eax,[ebp+ecx-18h]
+6800d6b4 8a1406          mov     dl,byte ptr [esi+eax]
+6800d6b7 3010            xor     byte ptr [eax],dl
+6800d6b9 41              inc     ecx
+6800d6ba 3bcf            cmp     ecx,edi
+6800d6bc 72f2            jb      6800d6b0
+6800d6be 8d45e8          lea     eax,[ebp-18h]
+6800d6c1 50              push    eax
+6800d6c2 e87dfeffff      call    6800d544
+6800d6c7 43              inc     ebx
+6800d6c8 85c0            test    eax,eax
+6800d6ca 751b            jne     6800d6e7
+6800d6cc 83fb05          cmp     ebx,5
+6800d6cf 76c2            jbe     6800d693
+6800d6d1 b820000980      mov     eax,80090020h
+6800d6d6 eb5f            jmp     6800d737
+6800d6d8 8b75b4          mov     esi,dword ptr [ebp-4Ch]
+6800d6db 3bf3            cmp     esi,ebx
+6800d6dd 74f2            je      6800d6d1
+6800d6df 6a05            push    5
+6800d6e1 59              pop     ecx
+6800d6e2 8d7de8          lea     edi,[ebp-18h]
+6800d6e5 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d6e7 6a14            push    14h
+6800d6e9 8d45c0          lea     eax,[ebp-40h]
+6800d6ec 50              push    eax
+6800d6ed 8d45e8          lea     eax,[ebp-18h]
+6800d6f0 50              push    eax
+6800d6f1 6858190368      push    68031958h
+6800d6f6 e8069a0100      call    68027101
+6800d6fb 6a28            push    28h
+6800d6fd 5e              pop     esi
+6800d6fe 3975bc          cmp     dword ptr [ebp-44h],esi
+6800d701 7703            ja      6800d706
+6800d703 8b75bc          mov     esi,dword ptr [ebp-44h]
+6800d706 56              push    esi
+6800d707 8d45c0          lea     eax,[ebp-40h]
+6800d70a 50              push    eax
+6800d70b ff75b8          push    dword ptr [ebp-48h]
+6800d70e e8bafeffff      call    6800d5cd
+6800d713 85c0            test    eax,eax
+6800d715 74ba            je      6800d6d1
+6800d717 0175b8          add     dword ptr [ebp-48h],esi
+6800d71a 2975bc          sub     dword ptr [ebp-44h],esi
+6800d71d 0f855effffff    jne     6800d681
+6800d723 33c0            xor     eax,eax
+6800d725 394520          cmp     dword ptr [ebp+20h],eax
+6800d728 740d            je      6800d737
+6800d72a 8b7db0          mov     edi,dword ptr [ebp-50h]
+6800d72d 6a05            push    5
+6800d72f 59              pop     ecx
+6800d730 be58190368      mov     esi,68031958h
+6800d735 f3a5            rep movs dword ptr es:[edi],dword ptr [esi]
+6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4]
+6800d73a 5f              pop     edi
+6800d73b 5e              pop     esi
+6800d73c 5b              pop     ebx
+6800d73d e877750000      call    68014cb9
+6800d742 c9              leave
+6800d743 c21c00          ret     1Ch
+6800d746 cc              int     3
+6800d747 cc              int     3
+6800d748 cc              int     3
+6800d749 cc              int     3
+6800d74a cc              int     3
+6800d74b 8bff            mov     edi,edi
+6800d74d 55              push    ebp
+6800d74e 8bec            mov     ebp,esp
+6800d750 33c0            xor     eax,eax
+6800d752 50              push    eax
+6800d753 ff7518          push    dword ptr [ebp+18h]
+6800d756 ff7514          push    dword ptr [ebp+14h]
+6800d759 50              push    eax
+6800d75a 50              push    eax
+6800d75b ff7510          push    dword ptr [ebp+10h]
+6800d75e ff750c          push    dword ptr [ebp+0Ch]
+6800d761 e8dafeffff      call    6800d640
+6800d766 5d              pop     ebp
+6800d767 c21400          ret     14h
+6800d76a cc              int     3
+6800d76b cc              int     3
+6800d76c cc              int     3
+6800d76d cc              int     3
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_SOURCE_COPY_OR_NULL_6800D679]
+eax=00000020 ebx=7ffdb000 ecx=0025c288 edx=77c61b78 esi=00000000 edi=00000000
+001b:6800d679 85c0            test    eax,eax
+[V26_STATE20_SLOT_AFTER_SOURCE_STAGE]
+68031958  b5 86 73 45 66 22 ab 71-d0 76 74 c7 5c b6 b0 8d  ..sEf".q.vt.\...
+68031968  e2 b6 f0 8c 87 42 ab 9d-88 ef 91 a7 0d f7 94 79  .....B.........y
+68031978  5c 31 f0 05 15 51 74 76-c8 be 1c 90 ab 5b 91 d6  \1...Qtv.....[..
+68031988  9d c0 40 42 0e e0 5e ef-ae d3 08 7d 00 00 00 00  ..@B..^....}....
+[V26_BEFORE_FIPS_CALL_6800D6F6]
+eax=0023fca8 ebx=00000001 ecx=0000368d edx=6803196c esi=000000f8 edi=00000014
+001b:6800d6f6 e8069a0100      call    68027101
+[V26_STATE20_BEFORE_FIPS_SLOT]
+68031958  b5 86 73 45 66 22 ab 71-d0 76 74 c7 5c b6 b0 8d  ..sEf".q.vt.\...
+68031968  e2 b6 f0 8c c0 a1 33 bd-a7 0d 26 fb 95 ab ff 14  ......3...&.....
+68031978  51 0e ae 90 76 bf 69 55-c8 be 1c 90 ab 5b 91 d6  Q...v.iU.....[..
+68031988  9d c0 40 42 0e e0 5e ef-ae d3 08 7d 00 00 00 00  ..@B..^....}....
+[V26_OUT40_LOCAL_BEFORE_FIPS_EBP_M40]
+0023fc80  ad 03 c3 77 2a 00 00 00-a0 fc c5 77 00 00 00 00  ...w*......w....
+0023fc90  2a 00 00 00 84 fc 23 00-6e 00 65 00 18 fd 23 00  *.....#.n.e...#.
+0023fca0  94 5c c3 77 80 25 c1 77-a0 dd 52 7a c8 86 b6 91  .\.w.%.w..Rz....
+0023fcb0  99 f4 fc e1 d6 60 02 12-74 78 39 3b 8d 36 00 00  .....`..tx9;.6..
+[V26_AUX20_LOCAL_BEFORE_FIPS_EBP_M18]
+0023fca8  a0 dd 52 7a c8 86 b6 91-99 f4 fc e1 d6 60 02 12  ..Rz.........`..
+0023fcb8  74 78 39 3b 8d 36 00 00-e4 fc 23 00 da d7 00 68  tx9;.6....#....h
+0023fcc8  a8 c2 25 00 88 c2 25 00-00 00 00 00 00 00 00 00  ..%...%.........
+0023fcd8  a0 fd 23 00 20 00 00 00-00 00 00 00 28 fd 23 00  ..#. .......(.#.
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_FIPS_ENTRY_68027101]
+eax=0023fca8 ebx=00000001 ecx=0000368d edx=6803196c esi=000000f8 edi=00000014
+001b:68027101 8bff            mov     edi,edi
+[V26_FIPS_ENTRY_ARGS]
+0023fc50  6800d6fb 68031958 0023fca8 0023fc80
+0023fc60  00000014 00000000 0025abf0 7ffdb000
+0023fc70  00000000 00000000 0023fda0 00000020
+0023fc80  77c303ad 0000002a 77c5fca0 00000000
+0023fc90  0000002a 0023fc84 0065006e 0023fd18
+0023fca0  77c35c94 77c12580 7a52dda0 91b686c8
+0023fcb0  e1fcf499 120260d6 3b397874 0000368d
+0023fcc0  0023fce4 6800d7da 0025c2a8 0025c288
+[V26_FIPS_UPDATE_A_RETURN_680271D5]
+eax=00230001 ebx=00000014 ecx=68490122 edx=00000014 esi=68031958 edi=0023fc1c
+001b:680271d5 83bd3cffffff00  cmp     dword ptr [ebp-0C4h],0 ss:0023:0023fb88=0023fca8
+[V26_STATE20_SLOT_AFTER_UPDATE_A_OR_PARTIAL]
+68031958  22 bd a1 93 a1 3f f9 d5-59 b2 54 b8 9b 09 8c 65  "....?..Y.T....e
+68031968  11 50 43 98 c0 a1 33 bd-a7 0d 26 fb 95 ab ff 14  .PC...3...&.....
+68031978  51 0e ae 90 76 bf 69 55-c8 be 1c 90 ab 5b 91 d6  Q...v.iU.....[..
+68031988  9d c0 40 42 0e e0 5e ef-ae d3 08 7d 00 00 00 00  ..@B..^....}....
+[V26_FIPS_UPDATE_B_RETURN_68027297]
+eax=00230000 ebx=00000014 ecx=68490096 edx=00000014 esi=0023fc1c edi=0023fc1c
+001b:68027297 8bbd40ffffff    mov     edi,dword ptr [ebp-0C0h] ss:0023:0023fb8c=0023fc80
+[V26_STATE20_SLOT_AFTER_UPDATE_B_OR_FINAL]
+68031958  96 bd c2 a1 70 c1 af 30-05 55 e2 5a 04 5f 1c 81  ....p..0.U.Z._..
+68031968  75 5e 4c 0a c0 a1 33 bd-a7 0d 26 fb 95 ab ff 14  u^L...3...&.....
+68031978  51 0e ae 90 76 bf 69 55-c8 be 1c 90 ab 5b 91 d6  Q...v.iU.....[..
+68031988  9d c0 40 42 0e e0 5e ef-ae d3 08 7d 00 00 00 00  ..@B..^....}....
+[V26_AFTER_FIPS_CALL_6800D6FB]
+eax=00230000 ebx=00000001 ecx=0000368d edx=00000014 esi=000000f8 edi=00000014
+001b:6800d6fb 6a28            push    28h
+[V26_STATE20_AFTER_FIPS_SLOT]
+68031958  96 bd c2 a1 70 c1 af 30-05 55 e2 5a 04 5f 1c 81  ....p..0.U.Z._..
+68031968  75 5e 4c 0a c0 a1 33 bd-a7 0d 26 fb 95 ab ff 14  u^L...3...&.....
+68031978  51 0e ae 90 76 bf 69 55-c8 be 1c 90 ab 5b 91 d6  Q...v.iU.....[..
+68031988  9d c0 40 42 0e e0 5e ef-ae d3 08 7d 00 00 00 00  ..@B..^....}....
+[V26_OUT40_LOCAL_AFTER_FIPS_EBP_M40]
+0023fc80  6d 37 2e 4e 3b 1d 4e 63-89 3b df f1 3e 52 db d7  m7.N;.Nc.;..>R..
+0023fc90  2e 99 53 0b 74 00 21 0d-cf 81 b5 5a ab a3 8d a1  ..S.t.!....Z....
+0023fca0  69 55 90 1c 64 0e 08 71-a0 dd 52 7a c8 86 b6 91  iU..d..q..Rz....
+0023fcb0  99 f4 fc e1 d6 60 02 12-74 78 39 3b 8d 36 00 00  .....`..tx9;.6..
+[V26_AUX20_LOCAL_AFTER_FIPS_EBP_M18]
+0023fca8  a0 dd 52 7a c8 86 b6 91-99 f4 fc e1 d6 60 02 12  ..Rz.........`..
+0023fcb8  74 78 39 3b 8d 36 00 00-e4 fc 23 00 da d7 00 68  tx9;.6....#....h
+0023fcc8  a8 c2 25 00 88 c2 25 00-00 00 00 00 00 00 00 00  ..%...%.........
+0023fcd8  a0 fd 23 00 20 00 00 00-00 00 00 00 28 fd 23 00  ..#. .......(.#.
+[V26_BEFORE_OUT_COPY_6800D70E]
+eax=0023fc80 ebx=00000001 ecx=0000368d edx=00000014 esi=00000020 edi=00000014
+001b:6800d70e e8bafeffff      call    6800d5cd
+[V26_OUT40_LOCAL_BEFORE_COPY_EBP_M40]
+0023fc80  6d 37 2e 4e 3b 1d 4e 63-89 3b df f1 3e 52 db d7  m7.N;.Nc.;..>R..
+0023fc90  2e 99 53 0b 74 00 21 0d-cf 81 b5 5a ab a3 8d a1  ..S.t.!....Z....
+0023fca0  69 55 90 1c 64 0e 08 71-a0 dd 52 7a c8 86 b6 91  iU..d..q..Rz....
+0023fcb0  99 f4 fc e1 d6 60 02 12-74 78 39 3b 8d 36 00 00  .....`..tx9;.6..
+[V26_OUT_DEST_BEFORE_COPY]
+0023fda0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdb0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdc0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdd0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_OUT_DEST_PTR_AND_LEN_HINTS]
+Evaluate expression: 2358688 = 0023fda0
+Evaluate expression: 32 = 00000020
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+[V26_AFTER_OUT_COPY_6800D713]
+eax=00000001 ebx=00000001 ecx=00000000 edx=68031980 esi=00000020 edi=00000014
+001b:6800d713 85c0            test    eax,eax
+[V26_OUT_DEST_AFTER_COPY]
+0023fda0  6d 37 2e 4e 3b 1d 4e 63-89 3b df f1 3e 52 db d7  m7.N;.Nc.;..>R..
+0023fdb0  2e 99 53 0b 74 00 21 0d-cf 81 b5 5a ab a3 8d a1  ..S.t.!....Z....
+0023fdc0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdd0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V26_OUT40_LOCAL_AFTER_COPY_EBP_M40]
+0023fc80  6d 37 2e 4e 3b 1d 4e 63-89 3b df f1 3e 52 db d7  m7.N;.Nc.;..>R..
+0023fc90  2e 99 53 0b 74 00 21 0d-cf 81 b5 5a ab a3 8d a1  ..S.t.!....Z....
+0023fca0  69 55 90 1c 64 0e 08 71-a0 dd 52 7a c8 86 b6 91  iU..d..q..Rz....
+0023fcb0  99 f4 fc e1 d6 60 02 12-74 78 39 3b 8d 36 00 00  .....`..tx9;.6..
+[V26_OUT_COPY_LEN_REGISTER_ESI]
+Evaluate expression: 32 = 00000020
+[V26_D640_RETURN_6800D743]
+eax=00000000 ebx=7ffdb000 ecx=0000368d edx=68031980 esi=0025abf0 edi=00000000
+001b:6800d743 c21c00          ret     1Ch
+[V26_STATE20_SLOT_AT_D640_RETURN]
+68031958  96 bd c2 a1 70 c1 af 30-05 55 e2 5a 04 5f 1c 81  ....p..0.U.Z._..
+68031968  75 5e 4c 0a c0 a1 33 bd-a7 0d 26 fb 95 ab ff 14  u^L...3...&.....
+68031978  51 0e ae 90 76 bf 69 55-6d 37 2e 4e 3b 1d 4e 63  Q...v.iUm7.N;.Nc
+68031988  89 3b df f1 3e 52 db d7-2e 99 53 0b 00 00 00 00  .;..>R....S.....
+[V26_D640_RETURN_STACK]
+0023fcc4  6800d7da 0025c2a8 0025c288 00000000
+0023fcd4  00000000 0023fda0 00000020 00000000
+0023fce4  0023fd28 77dfb401 e37f5c84 00000020
+0023fcf4  0023fda0 729029bc 01dcde82 7ffdb000
+0023fd04  00000000 0025abf0 00000001 0023fcf8
+0023fd14  002f0001 0023ffe0 77df1758 77dfb420
+0023fd24  00000000 0023fea8 00401d2e 0025abf0
+0023fd34  00000020 0023fda0 00000020 00000000
+0023fd44  7c872a83 00670063 005f0072 00610068
+0023fd54  006e0072 00730065 002e0073 00780065
+0023fd64  00000065 00000000 0023fdbc 0000000a
+0023fd74  00000000 0023fdcc 00250000 0025c3b4
+0023fd84  0025c2a8 0025c288 0000bdd0 0023fce0
+0023fd94  0001fe34 0023fde4 7c839ac0 4e2e376d
+0023fda4  634e1d3b f1df3b89 d7db523e 0b53992e
+0023fdb4  0d210074 5ab581cf a18da3ab 00000000
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
