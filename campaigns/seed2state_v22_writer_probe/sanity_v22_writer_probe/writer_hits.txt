@@ -1,0 +1,64 @@
+313:[V22_WRITER_OUTBUF_FIRST_WRITE]
+315:eip=f745f10b esp=b8b619b4 ebp=00000040 iopl=0         nv up ei ng nz na po nc
+317:KSecDD!rc4+0xfb:
+318:f745f10b 4d              dec     ebp
+320:Evaluate expression: -146411253 = f745f10b
+362:KSecDD!rc4+0xfb:
+363:f745f10b 4d              dec     ebp
+472:00 b8b619c0 f74597aa     b8b619f0 00000100 8a04f1a8 KSecDD!rc4+0xfb
+1193:[V22_WRITER_OUTBUF_FIRST_WRITE]
+1195:eip=f745f10b esp=b8b619b4 ebp=00000040 iopl=0         nv up ei ng nz na po nc
+1197:KSecDD!rc4+0xfb:
+1198:f745f10b 4d              dec     ebp
+1200:Evaluate expression: -146411253 = f745f10b
+1242:KSecDD!rc4+0xfb:
+1243:f745f10b 4d              dec     ebp
+1352:00 b8b619c0 f74597aa     b8b619f0 00000100 89f7f468 KSecDD!rc4+0xfb
+2049:[V22_WRITER_OUTBUF_FIRST_WRITE]
+2051:eip=f745f10b esp=b8b619b4 ebp=00000040 iopl=0         nv up ei ng nz na pe nc
+2053:KSecDD!rc4+0xfb:
+2054:f745f10b 4d              dec     ebp
+2056:Evaluate expression: -146411253 = f745f10b
+2098:KSecDD!rc4+0xfb:
+2099:f745f10b 4d              dec     ebp
+2208:00 b8b619c0 f74597aa     b8b619f0 00000100 89facdd8 KSecDD!rc4+0xfb
+2905:[V22_WRITER_OUTBUF_FIRST_WRITE]
+2907:eip=f745f10b esp=b8b619b4 ebp=00000040 iopl=0         nv up ei ng nz na pe nc
+2909:KSecDD!rc4+0xfb:
+2910:f745f10b 4d              dec     ebp
+2912:Evaluate expression: -146411253 = f745f10b
+2954:KSecDD!rc4+0xfb:
+2955:f745f10b 4d              dec     ebp
+3064:00 b8b619c0 f74597aa     b8b619f0 00000100 8a05c000 KSecDD!rc4+0xfb
+3761:[V22_WRITER_OUTBUF_FIRST_WRITE]
+3763:eip=f745f10b esp=b8b619b4 ebp=00000040 iopl=0         nv up ei ng nz na po nc
+3765:KSecDD!rc4+0xfb:
+3766:f745f10b 4d              dec     ebp
+3768:Evaluate expression: -146411253 = f745f10b
+3810:KSecDD!rc4+0xfb:
+3811:f745f10b 4d              dec     ebp
+3920:00 b8b619c0 f74597aa     b8b619f0 00000100 8a000e70 KSecDD!rc4+0xfb
+4617:[V22_WRITER_OUTBUF_FIRST_WRITE]
+4619:eip=f745f10b esp=b8b619b4 ebp=00000040 iopl=0         nv up ei ng nz na po nc
+4621:KSecDD!rc4+0xfb:
+4622:f745f10b 4d              dec     ebp
+4624:Evaluate expression: -146411253 = f745f10b
+4666:KSecDD!rc4+0xfb:
+4667:f745f10b 4d              dec     ebp
+4776:00 b8b619c0 f74597aa     b8b619f0 00000100 8a05fe70 KSecDD!rc4+0xfb
+5473:[V22_WRITER_OUTBUF_FIRST_WRITE]
+5475:eip=f745f10b esp=b8b619b4 ebp=00000040 iopl=0         nv up ei ng nz na pe nc
+5477:KSecDD!rc4+0xfb:
+5478:f745f10b 4d              dec     ebp
+5480:Evaluate expression: -146411253 = f745f10b
+5522:KSecDD!rc4+0xfb:
+5523:f745f10b 4d              dec     ebp
+5632:00 b8b619c0 f74597aa     b8b619f0 00000100 89db67d8 KSecDD!rc4+0xfb
+6329:[V22_WRITER_OUTBUF_FIRST_WRITE]
+6331:eip=f745f10b esp=b8b619b4 ebp=00000040 iopl=0         nv up ei ng nz na po nc
+6333:KSecDD!rc4+0xfb:
+6334:f745f10b 4d              dec     ebp
+6336:Evaluate expression: -146411253 = f745f10b
+6378:KSecDD!rc4+0xfb:
+6379:f745f10b 4d              dec     ebp
+6488:00 b8b619c0 f74597aa     b8b619f0 00000100 8a03bce0 KSecDD!rc4+0xfb
