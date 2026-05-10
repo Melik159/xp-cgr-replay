@@ -1,0 +1,9 @@
+{
+  "arg10": "00000000",
+  "arg18": "0000000a",
+  "aux20_before_eq_fips_arg2": true,
+  "complete": true,
+  "index": 3,
+  "retaddr": "6800d766",
+  "state20_after_eq_core_exit": true
+}

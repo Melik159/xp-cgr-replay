@@ -1,0 +1,11 @@
+[V19C FIPS STATE20 UPDATE REPLAY]
+calls=5
+complete_calls=5
+out40_match=5/5
+state20_after_match=5/5
+state20_after_eq_core_exit=5/5
+recurrence_match=4/4
+replay_ok=5/5
+
+[SUMMARY]
+v19c_provider_state_update_closed=True

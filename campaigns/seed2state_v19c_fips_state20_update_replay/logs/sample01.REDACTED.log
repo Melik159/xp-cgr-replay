@@ -1,0 +1,886 @@
+0: kd> bc *
+0: kd> r efl = @efl & 0fffffeff
+0: kd> .expr /s masm
+Current expression evaluator: MASM - Microsoft Assembler expressions
+0: kd> $$>a<C:\Temp\seed2state_v19c\master_setup_v19c.txt
+[SEED2STATE_V19C_MASTER_SETUP_BEGIN]
+Current expression evaluator: MASM - Microsoft Assembler expressions
+Log file could not be opened
+[SEED2STATE_V19C_BREAKPOINTS_INSTALL_BEGIN]
+[SEED2STATE_V19C_BREAKPOINTS_INSTALL_END]
+[SEED2STATE_V19C_MASTER_SETUP_END]
+0: kd> $$>a<C:\Temp\seed2state_v19c\go_v19c.txt
+[SEED2STATE_V19C_GO_ARMED]
+[V19C_CORE_ENTRY_6800D640]
+eax=0023f664 ebx=00000001 ecx=00000000 edx=00001000 esi=6802f8cc edi=0023f678
+eip=6800d640 esp=0023f364 ebp=0023f68c iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d640 8bff            mov     edi,edi
+retaddr=68011caa arg04=00000000 arg08=00000000 arg0c=0023f664 arg10=0023f628 arg14=0023f628 arg18=00000028 arg1c=00000001 arg20=68031998
+[V19C_GLOBAL_68031958_CORE_ENTRY]
+68031958  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+68031968  00 00 00 00                                      ....
+[V19C_ARG10_IF_ANY]
+0023f628  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f638  00 00 00 00                                      ....
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f360 68011caa     00000000 00000000 0023f664 0x6800d640
+01 0023f68c 680120b7     00000000 00000001 77c2c3ce 0x68011caa
+02 0023f6c8 68014eda     68000000 00000001 00000000 0x680120b7
+03 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+04 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+05 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+06 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+07 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+08 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+09 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+0a 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0b 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0c 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0d 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0e 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0f 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+10 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_BEFORE_FIPS_6800D6E7]
+eax=00000028 ebx=00000000 ecx=00000000 edx=00001000 esi=0023f63c edi=0023f35c
+eip=6800d6e7 esp=0023f304 ebp=0023f360 iopl=0         nv up ei pl nz na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000206
+001b:6800d6e7 6a14            push    14h
+retaddr=68011caa ebp=0023f360 out_cursor=0023f628 remaining=00000028
+[V19C_STATE20_BEFORE_FIPS_68031958]
+68031958  01 02 03 04 05 06 07 08-09 0a 0b 0c 0d 0e 0f 10  ................
+68031968  11 12 13 14                                      ....
+[V19C_AUX20_BEFORE_FIPS_EBP_M18]
+0023f348  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f358  00 00 00 00                                      ....
+[V19C_OUT40_BEFORE_FIPS_EBP_M40]
+0023f320  02 cd ce 44 bc 9c 7c f4-c8 49 07 85 5c d0 30 18  ...D..|..I..\.0.
+0023f330  4f 4f c6 87 bc 98 14 fc-8f cd 4e 08 9c dc e0 70  OO........N....p
+0023f340  ce 8b 44 cd f8 f0 b8 ec                          ..D.....
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f360 68011caa     00000000 00000000 0023f664 0x6800d6e7
+01 0023f68c 680120b7     00000000 00000001 77c2c3ce 0x68011caa
+02 0023f6c8 68014eda     68000000 00000001 00000000 0x680120b7
+03 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+04 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+05 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+06 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+07 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+08 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+09 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+0a 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0b 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0c 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0d 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0e 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0f 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+10 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_FIPS_ENTRY_68027101]
+eax=0023f348 ebx=00000000 ecx=00000000 edx=00001000 esi=0023f63c edi=0023f35c
+eip=68027101 esp=0023f2f0 ebp=0023f360 iopl=0         nv up ei pl nz na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000206
+001b:68027101 8bff            mov     edi,edi
+arg1_state20=68031958 arg2_aux20=0023f348 arg3_out40=0023f320 esp=0023f2f0 ebp=0023f360
+[V19C_FIPS_ARG1_STATE20]
+68031958  01 02 03 04 05 06 07 08-09 0a 0b 0c 0d 0e 0f 10  ................
+68031968  11 12 13 14                                      ....
+[V19C_FIPS_ARG2_AUX20]
+0023f348  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f358  00 00 00 00                                      ....
+[V19C_FIPS_ARG3_OUT40_BEFORE]
+0023f320  02 cd ce 44 bc 9c 7c f4-c8 49 07 85 5c d0 30 18  ...D..|..I..\.0.
+0023f330  4f 4f c6 87 bc 98 14 fc-8f cd 4e 08 9c dc e0 70  OO........N....p
+0023f340  ce 8b 44 cd f8 f0 b8 ec                          ..D.....
+[V19C_GLOBAL_68031958_AT_FIPS_ENTRY]
+68031958  01 02 03 04 05 06 07 08-09 0a 0b 0c 0d 0e 0f 10  ................
+68031968  11 12 13 14                                      ....
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f2ec 6800d6fb     68031958 0023f348 0023f320 0x68027101
+01 0023f360 68011caa     00000000 00000000 0023f664 0x6800d6fb
+02 0023f68c 680120b7     00000000 00000001 77c2c3ce 0x68011caa
+03 0023f6c8 68014eda     68000000 00000001 00000000 0x680120b7
+04 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+05 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+06 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+07 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+08 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+09 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+0a 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+0b 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0c 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0d 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0e 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0f 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+10 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+11 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_FIPS_RETURN_6800D6FB]
+eax=00230000 ebx=00000000 ecx=000018da edx=00000014 esi=0023f63c edi=0023f35c
+eip=6800d6fb esp=0023f304 ebp=0023f360 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d6fb 6a28            push    28h
+[V19C_GLOBAL_68031958_AFTER_FIPS]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb                                      |...
+[V19C_AUX20_AFTER_FIPS_EBP_M18]
+0023f348  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023f358  00 00 00 00                                      ....
+[V19C_OUT40_AFTER_FIPS_EBP_M40]
+0023f320  0a e8 1e 95 fc 39 7b 50-8d 9a 4e 0d fd cd 1a 2c  .....9{P..N....,
+0023f330  24 e4 72 86 18 da e5 26-43 1b ff 1f d7 24 c3 6b  $.r....&C....$.k
+0023f340  63 32 cc 84 46 91 7f 4f                          c2..F..O
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f360 68011caa     00000000 00000000 0023f664 0x6800d6fb
+01 0023f68c 680120b7     00000000 00000001 77c2c3ce 0x68011caa
+02 0023f6c8 68014eda     68000000 00000001 00000000 0x680120b7
+03 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+04 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+05 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+06 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+07 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+08 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+09 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+0a 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0b 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0c 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0d 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0e 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0f 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+10 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_AFTER_OUTPUT_COPY_6800D717]
+eax=00000001 ebx=00000000 ecx=00000000 edx=68031980 esi=00000028 edi=0023f35c
+eip=6800d717 esp=0023f304 ebp=0023f360 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d717 0175b8          add     dword ptr [ebp-48h],esi ss:0023:0023f318=0023f628
+retaddr=68011caa out_cursor_before_advance=0023f628 copied_len=00000028 remaining_before_sub=00000028
+[V19C_OUT40_AT_COPY_EBP_M40]
+0023f320  0a e8 1e 95 fc 39 7b 50-8d 9a 4e 0d fd cd 1a 2c  .....9{P..N....,
+0023f330  24 e4 72 86 18 da e5 26-43 1b ff 1f d7 24 c3 6b  $.r....&C....$.k
+0023f340  63 32 cc 84 46 91 7f 4f                          c2..F..O
+[V19C_USER_OUT_AFTER_COPY]
+0023f628  0a e8 1e 95 fc 39 7b 50-8d 9a 4e 0d fd cd 1a 2c  .....9{P..N....,
+0023f638  24 e4 72 86 18 da e5 26-43 1b ff 1f d7 24 c3 6b  $.r....&C....$.k
+0023f648  63 32 cc 84 46 91 7f 4f-00 00 00 00 00 00 00 00  c2..F..O........
+0023f658  00 00 00 00 00 00 00 00-00 00 00 00 01 02 03 04  ................
+[V19C_GLOBAL_68031958_AFTER_COPY]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb                                      |...
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f360 68011caa     00000000 00000000 0023f664 0x6800d717
+01 0023f68c 680120b7     00000000 00000001 77c2c3ce 0x68011caa
+02 0023f6c8 68014eda     68000000 00000001 00000000 0x680120b7
+03 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+04 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+05 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+06 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+07 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+08 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+09 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+0a 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0b 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0c 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0d 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0e 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0f 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+10 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_CORE_EXIT_6800D737]
+eax=00000000 ebx=00000000 ecx=00000000 edx=68031980 esi=6803196c edi=0023f678
+eip=6800d737 esp=0023f304 ebp=0023f360 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4] ss:0023:0023f35c=000018da
+retaddr=68011caa arg04=00000000 arg08=00000000 arg0c=0023f664 arg10=0023f628 arg14=0023f628 arg18=00000028 arg1c=00000001 arg20=68031998 eax=00000000
+[V19C_GLOBAL_68031958_CORE_EXIT]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb                                      |...
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f360 68011caa     00000000 00000000 0023f664 0x6800d737
+01 0023f68c 680120b7     00000000 00000001 77c2c3ce 0x68011caa
+02 0023f6c8 68014eda     68000000 00000001 00000000 0x680120b7
+03 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+04 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+05 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+06 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+07 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+08 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+09 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+0a 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0b 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0c 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0d 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0e 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0f 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+10 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_CORE_ENTRY_6800D640]
+eax=0023f69c ebx=68000000 ecx=680266c6 edx=7c97b140 esi=00000000 edi=68031998
+eip=6800d640 esp=0023f674 ebp=0023f6c8 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d640 8bff            mov     edi,edi
+retaddr=680120d4 arg04=00000000 arg08=00000000 arg0c=00000000 arg10=00000000 arg14=0023f69c arg18=00000028 arg1c=00000000 arg20=00000000
+[V19C_GLOBAL_68031958_CORE_ENTRY]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb                                      |...
+[V19C_ARG10_IF_ANY]
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f670 680120d4     00000000 00000000 00000000 0x6800d640
+01 0023f6c8 68014eda     68000000 00000001 00000000 0x680120d4
+02 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+03 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+04 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+05 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+06 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+07 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+08 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+09 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0a 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0b 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0c 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0d 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0e 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+0f 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_BEFORE_FIPS_6800D6E7]
+eax=00000001 ebx=00000001 ecx=000018da edx=6803196c esi=00000044 edi=00000014
+eip=6800d6e7 esp=0023f614 ebp=0023f670 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d6e7 6a14            push    14h
+retaddr=680120d4 ebp=0023f670 out_cursor=0023f69c remaining=00000028
+[V19C_STATE20_BEFORE_FIPS_68031958]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb                                      |...
+[V19C_AUX20_BEFORE_FIPS_EBP_M18]
+0023f658  ca 4f ac 94 29 71 06 4a-16 4a 12 d9 c3 11 e3 ad  .O..)q.J.J......
+0023f668  81 3b 90 eb                                      .;..
+[V19C_OUT40_BEFORE_FIPS_EBP_M40]
+0023f630  40 f6 23 00 0c 16 91 7c-00 ae 25 00 00 00 00 00  @.#....|..%.....
+0023f640  4c f6 23 00 8f 9f 80 7c-00 ae 25 00 8c f6 23 00  L.#....|..%...#.
+0023f650  78 66 02 68 c6 66 02 68                          xf.h.f.h
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f670 680120d4     00000000 00000000 00000000 0x6800d6e7
+01 0023f6c8 68014eda     68000000 00000001 00000000 0x680120d4
+02 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+03 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+04 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+05 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+06 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+07 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+08 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+09 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0a 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0b 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0c 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0d 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0e 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+0f 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_FIPS_ENTRY_68027101]
+eax=0023f658 ebx=00000001 ecx=000018da edx=6803196c esi=00000044 edi=00000014
+eip=68027101 esp=0023f600 ebp=0023f670 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:68027101 8bff            mov     edi,edi
+arg1_state20=68031958 arg2_aux20=0023f658 arg3_out40=0023f630 esp=0023f600 ebp=0023f670
+[V19C_FIPS_ARG1_STATE20]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb                                      |...
+[V19C_FIPS_ARG2_AUX20]
+0023f658  ca 4f ac 94 29 71 06 4a-16 4a 12 d9 c3 11 e3 ad  .O..)q.J.J......
+0023f668  81 3b 90 eb                                      .;..
+[V19C_FIPS_ARG3_OUT40_BEFORE]
+0023f630  40 f6 23 00 0c 16 91 7c-00 ae 25 00 00 00 00 00  @.#....|..%.....
+0023f640  4c f6 23 00 8f 9f 80 7c-00 ae 25 00 8c f6 23 00  L.#....|..%...#.
+0023f650  78 66 02 68 c6 66 02 68                          xf.h.f.h
+[V19C_GLOBAL_68031958_AT_FIPS_ENTRY]
+68031958  24 c5 06 c0 44 5b 81 78-6d c9 1c 85 6e 0d f5 c0  $...D[.xm...n...
+68031968  7c 88 04 eb                                      |...
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f5fc 6800d6fb     68031958 0023f658 0023f630 0x68027101
+01 0023f670 680120d4     00000000 00000000 00000000 0x6800d6fb
+02 0023f6c8 68014eda     68000000 00000001 00000000 0x680120d4
+03 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+04 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+05 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+06 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+07 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+08 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+09 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+0a 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0b 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0c 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0d 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0e 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0f 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+10 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_FIPS_RETURN_6800D6FB]
+eax=00230000 ebx=00000001 ecx=000018da edx=00000014 esi=00000044 edi=00000014
+eip=6800d6fb esp=0023f614 ebp=0023f670 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d6fb 6a28            push    28h
+[V19C_GLOBAL_68031958_AFTER_FIPS]
+68031958  8a b3 28 38 80 da bf dd-aa df 2c ca 85 fc de 59  ..(8......,....Y
+68031968  e8 2d 71 58                                      .-qX
+[V19C_AUX20_AFTER_FIPS_EBP_M18]
+0023f658  ca 4f ac 94 29 71 06 4a-16 4a 12 d9 c3 11 e3 ad  .O..)q.J.J......
+0023f668  81 3b 90 eb                                      .;..
+[V19C_OUT40_AFTER_FIPS_EBP_M40]
+0023f630  01 fe 39 40 0d 56 5b 3d-1e 7f 5e b5 f6 06 af 63  ..9@.V[=..^....c
+0023f640  63 c6 f1 b4 63 ef e8 38-2f 28 e3 28 1e 96 b1 8f  c...c..8/(.(....
+0023f650  21 e8 39 36 07 de 7a b7                          !.96..z.
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f670 680120d4     00000000 00000000 00000000 0x6800d6fb
+01 0023f6c8 68014eda     68000000 00000001 00000000 0x680120d4
+02 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+03 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+04 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+05 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+06 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+07 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+08 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+09 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0a 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0b 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0c 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0d 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0e 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+0f 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_AFTER_OUTPUT_COPY_6800D717]
+eax=00000001 ebx=00000001 ecx=00000000 edx=68031980 esi=00000028 edi=00000014
+eip=6800d717 esp=0023f614 ebp=0023f670 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d717 0175b8          add     dword ptr [ebp-48h],esi ss:0023:0023f628=0023f69c
+retaddr=680120d4 out_cursor_before_advance=0023f69c copied_len=00000028 remaining_before_sub=00000028
+[V19C_OUT40_AT_COPY_EBP_M40]
+0023f630  01 fe 39 40 0d 56 5b 3d-1e 7f 5e b5 f6 06 af 63  ..9@.V[=..^....c
+0023f640  63 c6 f1 b4 63 ef e8 38-2f 28 e3 28 1e 96 b1 8f  c...c..8/(.(....
+0023f650  21 e8 39 36 07 de 7a b7                          !.96..z.
+[V19C_USER_OUT_AFTER_COPY]
+0023f69c  01 fe 39 40 0d 56 5b 3d-1e 7f 5e b5 f6 06 af 63  ..9@.V[=..^....c
+0023f6ac  63 c6 f1 b4 63 ef e8 38-2f 28 e3 28 1e 96 b1 8f  c...c..8/(.(....
+0023f6bc  21 e8 39 36 07 de 7a b7-da 18 00 00 e8 f6 23 00  !.96..z.......#.
+0023f6cc  da 4e 01 68 00 00 00 68-01 00 00 00 00 00 00 00  .N.h...h........
+[V19C_GLOBAL_68031958_AFTER_COPY]
+68031958  8a b3 28 38 80 da bf dd-aa df 2c ca 85 fc de 59  ..(8......,....Y
+68031968  e8 2d 71 58                                      .-qX
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f670 680120d4     00000000 00000000 00000000 0x6800d717
+01 0023f6c8 68014eda     68000000 00000001 00000000 0x680120d4
+02 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+03 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+04 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+05 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+06 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+07 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+08 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+09 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0a 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0b 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0c 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0d 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0e 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+0f 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_CORE_EXIT_6800D737]
+eax=00000000 ebx=00000001 ecx=00000000 edx=68031980 esi=00000028 edi=00000014
+eip=6800d737 esp=0023f614 ebp=0023f670 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4] ss:0023:0023f66c=000018da
+retaddr=680120d4 arg04=00000000 arg08=00000000 arg0c=00000000 arg10=00000000 arg14=0023f69c arg18=00000028 arg1c=00000000 arg20=00000000 eax=00000000
+[V19C_GLOBAL_68031958_CORE_EXIT]
+68031958  8a b3 28 38 80 da bf dd-aa df 2c ca 85 fc de 59  ..(8......,....Y
+68031968  e8 2d 71 58                                      .-qX
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023f670 680120d4     00000000 00000000 00000000 0x6800d737
+01 0023f6c8 68014eda     68000000 00000001 00000000 0x680120d4
+02 0023f6e8 7c90118a     68000000 00000001 00000000 0x68014eda
+03 0023f708 7c91c4da     68014e88 68000000 00000001 ntdll!LdrpCallInitRoutine+0x14
+04 0023f810 7c916351     00000000 c0150008 00000000 ntdll!LdrpRunInitializeRoutines+0x344
+05 0023fabc 7c9164b3     00000000 00254bf0 0023fdb0 ntdll!LdrpLoadDll+0x3e5
+06 0023fd64 7c801bbd     00254bf0 0023fdb0 0023fd90 ntdll!LdrLoadDll+0x230
+07 0023fdcc 7c801d72     7ffddc00 00000000 00000000 0x7c801bbd
+08 0023fde0 7c801da8     00254bb8 00000000 00000000 0x7c801d72
+09 0023fdfc 77de8810     00254bb8 729029bc 01dcde82 0x7c801da8
+0a 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de8810
+0b 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+0c 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+0d 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+0e 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+0f 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_CORE_ENTRY_6800D640]
+eax=00000000 ebx=0025c250 ecx=7c9101bb edx=00000014 esi=0025c2a8 edi=f0000000
+eip=6800d640 esp=0023fd58 ebp=0023fd78 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d640 8bff            mov     edi,edi
+retaddr=6800d766 arg04=0025c2a8 arg08=0025c288 arg0c=00000000 arg10=00000000 arg14=0023fdbc arg18=0000000a arg1c=00000000 arg20=0023fdcc
+[V19C_GLOBAL_68031958_CORE_ENTRY]
+68031958  8a b3 28 38 80 da bf dd-aa df 2c ca 85 fc de 59  ..(8......,....Y
+68031968  e8 2d 71 58                                      .-qX
+[V19C_ARG10_IF_ANY]
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fd54 6800d766     0025c2a8 0025c288 00000000 0x6800d640
+01 0023fd78 6800fac7     0025c3b4 0025c2a8 0025c288 0x6800d766
+02 0023fdcc 6800fb7a     00000000 f0000000 0023fe04 0x6800fac7
+03 0023fdf0 77de7c8f     0023fe4c 00000000 f0000000 0x6800fb7a
+04 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de7c8f
+05 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+06 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+07 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+08 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+09 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_BEFORE_FIPS_6800D6E7]
+eax=00000001 ebx=00000001 ecx=000018da edx=6803196c esi=00000080 edi=0000000a
+eip=6800d6e7 esp=0023fcf8 ebp=0023fd54 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d6e7 6a14            push    14h
+retaddr=6800d766 ebp=0023fd54 out_cursor=0023fdbc remaining=0000000a
+[V19C_STATE20_BEFORE_FIPS_68031958]
+68031958  8a b3 28 38 80 da bf dd-aa df 2c ca 85 fc de 59  ..(8......,....Y
+68031968  e8 2d 71 58                                      .-qX
+[V19C_AUX20_BEFORE_FIPS_EBP_M18]
+0023fd3c  44 c5 f2 23 f7 e4 c9 a9-32 84 d6 cd dd 60 3c 5d  D..#....2....`<]
+0023fd4c  e3 ca e0 13                                      ....
+[V19C_OUT40_BEFORE_FIPS_EBP_M40]
+0023fd14  98 af 25 00 6c fc 23 00-c8 07 00 00 a8 fe 23 00  ..%.l.#.......#.
+0023fd24  00 e9 90 7c e0 15 91 7c-00 00 00 00 a8 4b 25 00  ...|...|.....K%.
+0023fd34  40 b1 97 7c 50 c2 25 00                          @..|P.%.
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fd54 6800d766     0025c2a8 0025c288 00000000 0x6800d6e7
+01 0023fd78 6800fac7     0025c3b4 0025c2a8 0025c288 0x6800d766
+02 0023fdcc 6800fb7a     00000000 f0000000 0023fe04 0x6800fac7
+03 0023fdf0 77de7c8f     0023fe4c 00000000 f0000000 0x6800fb7a
+04 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de7c8f
+05 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+06 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+07 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+08 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+09 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_FIPS_ENTRY_68027101]
+eax=0023fd3c ebx=00000001 ecx=000018da edx=6803196c esi=00000080 edi=0000000a
+eip=68027101 esp=0023fce4 ebp=0023fd54 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:68027101 8bff            mov     edi,edi
+arg1_state20=68031958 arg2_aux20=0023fd3c arg3_out40=0023fd14 esp=0023fce4 ebp=0023fd54
+[V19C_FIPS_ARG1_STATE20]
+68031958  8a b3 28 38 80 da bf dd-aa df 2c ca 85 fc de 59  ..(8......,....Y
+68031968  e8 2d 71 58                                      .-qX
+[V19C_FIPS_ARG2_AUX20]
+0023fd3c  44 c5 f2 23 f7 e4 c9 a9-32 84 d6 cd dd 60 3c 5d  D..#....2....`<]
+0023fd4c  e3 ca e0 13                                      ....
+[V19C_FIPS_ARG3_OUT40_BEFORE]
+0023fd14  98 af 25 00 6c fc 23 00-c8 07 00 00 a8 fe 23 00  ..%.l.#.......#.
+0023fd24  00 e9 90 7c e0 15 91 7c-00 00 00 00 a8 4b 25 00  ...|...|.....K%.
+0023fd34  40 b1 97 7c 50 c2 25 00                          @..|P.%.
+[V19C_GLOBAL_68031958_AT_FIPS_ENTRY]
+68031958  8a b3 28 38 80 da bf dd-aa df 2c ca 85 fc de 59  ..(8......,....Y
+68031968  e8 2d 71 58                                      .-qX
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fce0 6800d6fb     68031958 0023fd3c 0023fd14 0x68027101
+01 0023fd54 6800d766     0025c2a8 0025c288 00000000 0x6800d6fb
+02 0023fd78 6800fac7     0025c3b4 0025c2a8 0025c288 0x6800d766
+03 0023fdcc 6800fb7a     00000000 f0000000 0023fe04 0x6800fac7
+04 0023fdf0 77de7c8f     0023fe4c 00000000 f0000000 0x6800fb7a
+05 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de7c8f
+06 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+07 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+08 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+09 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+0a 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_FIPS_RETURN_6800D6FB]
+eax=00230001 ebx=00000001 ecx=000018da edx=00000014 esi=00000080 edi=0000000a
+eip=6800d6fb esp=0023fcf8 ebp=0023fd54 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d6fb 6a28            push    28h
+[V19C_GLOBAL_68031958_AFTER_FIPS]
+68031958  60 2e 2a 1b 39 4e f8 57-ed 05 d8 fb b6 ac a2 45  `.*.9N.W.......E
+68031968  8c 19 4a 20                                      ..J 
+[V19C_AUX20_AFTER_FIPS_EBP_M18]
+0023fd3c  44 c5 f2 23 f7 e4 c9 a9-32 84 d6 cd dd 60 3c 5d  D..#....2....`<]
+0023fd4c  e3 ca e0 13                                      ....
+[V19C_OUT40_AFTER_FIPS_EBP_M40]
+0023fd14  d7 6e 82 01 0c ae db 27-c2 dc be 8a 9a ed 7b 50  .n.....'......{P
+0023fd24  a2 69 48 ae fe 0c 7f e1-ab c5 5d 52 7f 49 ed a6  .iH.......]R.I..
+0023fd34  95 c2 48 9b 01 82 90 18                          ..H.....
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fd54 6800d766     0025c2a8 0025c288 00000000 0x6800d6fb
+01 0023fd78 6800fac7     0025c3b4 0025c2a8 0025c288 0x6800d766
+02 0023fdcc 6800fb7a     00000000 f0000000 0023fe04 0x6800fac7
+03 0023fdf0 77de7c8f     0023fe4c 00000000 f0000000 0x6800fb7a
+04 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de7c8f
+05 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+06 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+07 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+08 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+09 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_AFTER_OUTPUT_COPY_6800D717]
+eax=00000001 ebx=00000001 ecx=00000000 edx=68031980 esi=0000000a edi=0000000a
+eip=6800d717 esp=0023fcf8 ebp=0023fd54 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d717 0175b8          add     dword ptr [ebp-48h],esi ss:0023:0023fd0c=0023fdbc
+retaddr=6800d766 out_cursor_before_advance=0023fdbc copied_len=0000000a remaining_before_sub=0000000a
+[V19C_OUT40_AT_COPY_EBP_M40]
+0023fd14  d7 6e 82 01 0c ae db 27-c2 dc be 8a 9a ed 7b 50  .n.....'......{P
+0023fd24  a2 69 48 ae fe 0c 7f e1-ab c5 5d 52 7f 49 ed a6  .iH.......]R.I..
+0023fd34  95 c2 48 9b 01 82 90 18                          ..H.....
+[V19C_USER_OUT_AFTER_COPY]
+0023fdbc  d7 6e 82 01 0c ae db 27-c2 dc 00 00 da 18 00 00  .n.....'........
+0023fdcc  f0 fd 23 00 7a fb 00 68-00 00 00 00 00 00 00 f0  ..#.z..h........
+0023fddc  04 fe 23 00 4c fe 23 00-01 00 00 00 78 4a 25 00  ..#.L.#.....xJ%.
+0023fdec  2c ff 23 00 b8 fe 23 00-8f 7c de 77 4c fe 23 00  ,.#...#..|.wL.#.
+[V19C_GLOBAL_68031958_AFTER_COPY]
+68031958  60 2e 2a 1b 39 4e f8 57-ed 05 d8 fb b6 ac a2 45  `.*.9N.W.......E
+68031968  8c 19 4a 20                                      ..J 
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fd54 6800d766     0025c2a8 0025c288 00000000 0x6800d717
+01 0023fd78 6800fac7     0025c3b4 0025c2a8 0025c288 0x6800d766
+02 0023fdcc 6800fb7a     00000000 f0000000 0023fe04 0x6800fac7
+03 0023fdf0 77de7c8f     0023fe4c 00000000 f0000000 0x6800fb7a
+04 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de7c8f
+05 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+06 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+07 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+08 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+09 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_CORE_EXIT_6800D737]
+eax=00000000 ebx=00000001 ecx=00000000 edx=68031980 esi=0000000a edi=0000000a
+eip=6800d737 esp=0023fcf8 ebp=0023fd54 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4] ss:0023:0023fd50=000018da
+retaddr=6800d766 arg04=0025c2a8 arg08=0025c288 arg0c=00000000 arg10=00000000 arg14=0023fdbc arg18=0000000a arg1c=00000000 arg20=0023fdcc eax=00000000
+[V19C_GLOBAL_68031958_CORE_EXIT]
+68031958  60 2e 2a 1b 39 4e f8 57-ed 05 d8 fb b6 ac a2 45  `.*.9N.W.......E
+68031968  8c 19 4a 20                                      ..J 
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fd54 6800d766     0025c2a8 0025c288 00000000 0x6800d737
+01 0023fd78 6800fac7     0025c3b4 0025c2a8 0025c288 0x6800d766
+02 0023fdcc 6800fb7a     00000000 f0000000 0023fe04 0x6800fac7
+03 0023fdf0 77de7c8f     0023fe4c 00000000 f0000000 0x6800fb7a
+04 0023feb8 00401c84     0023ff2c 00000000 00000000 0x77de7c8f
+05 0023fed8 004024e4     0023ff2c 000324a8 0023ff30 0x401c84
+06 0023ff78 0040124b     00000003 000324a8 00032a20 0x4024e4
+07 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+08 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+09 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_CORE_ENTRY_6800D640]
+eax=0025c2a8 ebx=7ffde000 ecx=0025c288 edx=77c61b78 esi=0025abf0 edi=00000000
+eip=6800d640 esp=0023fcc4 ebp=0023fce4 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d640 8bff            mov     edi,edi
+retaddr=6800d7da arg04=0025c2a8 arg08=0025c288 arg0c=00000000 arg10=00000000 arg14=0023fda0 arg18=00000020 arg1c=00000000 arg20=0023fd28
+[V19C_GLOBAL_68031958_CORE_ENTRY]
+68031958  60 2e 2a 1b 39 4e f8 57-ed 05 d8 fb b6 ac a2 45  `.*.9N.W.......E
+68031968  8c 19 4a 20                                      ..J 
+[V19C_ARG10_IF_ANY]
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d640
+01 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+02 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+03 0023fea8 00401e72     0025abf0 0040476a 00000000 0x401d2e
+04 0023fed8 00402506     0025abf0 0023ff30 0023ff30 0x401e72
+05 0023ff78 0040124b     00000003 000324a8 00032a20 0x402506
+06 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+07 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+08 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_BEFORE_FIPS_6800D6E7]
+eax=00000001 ebx=00000001 ecx=000018da edx=6803196c esi=000000f8 edi=00000014
+eip=6800d6e7 esp=0023fc64 ebp=0023fcc0 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d6e7 6a14            push    14h
+retaddr=6800d7da ebp=0023fcc0 out_cursor=0023fda0 remaining=00000020
+[V19C_STATE20_BEFORE_FIPS_68031958]
+68031958  60 2e 2a 1b 39 4e f8 57-ed 05 d8 fb b6 ac a2 45  `.*.9N.W.......E
+68031968  8c 19 4a 20                                      ..J 
+[V19C_AUX20_BEFORE_FIPS_EBP_M18]
+0023fca8  84 97 3c a7 cf 28 31 b1-e9 e5 48 be 05 e8 96 79  ..<..(1...H....y
+0023fcb8  36 1d b0 40                                      6..@
+[V19C_OUT40_BEFORE_FIPS_EBP_M40]
+0023fc80  ad 03 c3 77 28 00 00 00-a0 fc c5 77 00 00 00 00  ...w(......w....
+0023fc90  28 00 00 00 84 fc 23 00-00 00 00 00 18 fd 23 00  (.....#.......#.
+0023fca0  94 5c c3 77 80 25 c1 77                          .\.w.%.w
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d6e7
+01 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+02 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+03 0023fea8 00401e72     0025abf0 0040476a 00000000 0x401d2e
+04 0023fed8 00402506     0025abf0 0023ff30 0023ff30 0x401e72
+05 0023ff78 0040124b     00000003 000324a8 00032a20 0x402506
+06 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+07 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+08 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_FIPS_ENTRY_68027101]
+eax=0023fca8 ebx=00000001 ecx=000018da edx=6803196c esi=000000f8 edi=00000014
+eip=68027101 esp=0023fc50 ebp=0023fcc0 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:68027101 8bff            mov     edi,edi
+arg1_state20=68031958 arg2_aux20=0023fca8 arg3_out40=0023fc80 esp=0023fc50 ebp=0023fcc0
+[V19C_FIPS_ARG1_STATE20]
+68031958  60 2e 2a 1b 39 4e f8 57-ed 05 d8 fb b6 ac a2 45  `.*.9N.W.......E
+68031968  8c 19 4a 20                                      ..J 
+[V19C_FIPS_ARG2_AUX20]
+0023fca8  84 97 3c a7 cf 28 31 b1-e9 e5 48 be 05 e8 96 79  ..<..(1...H....y
+0023fcb8  36 1d b0 40                                      6..@
+[V19C_FIPS_ARG3_OUT40_BEFORE]
+0023fc80  ad 03 c3 77 28 00 00 00-a0 fc c5 77 00 00 00 00  ...w(......w....
+0023fc90  28 00 00 00 84 fc 23 00-00 00 00 00 18 fd 23 00  (.....#.......#.
+0023fca0  94 5c c3 77 80 25 c1 77                          .\.w.%.w
+[V19C_GLOBAL_68031958_AT_FIPS_ENTRY]
+68031958  60 2e 2a 1b 39 4e f8 57-ed 05 d8 fb b6 ac a2 45  `.*.9N.W.......E
+68031968  8c 19 4a 20                                      ..J 
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fc4c 6800d6fb     68031958 0023fca8 0023fc80 0x68027101
+01 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d6fb
+02 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+03 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+04 0023fea8 00401e72     0025abf0 0040476a 00000000 0x401d2e
+05 0023fed8 00402506     0025abf0 0023ff30 0023ff30 0x401e72
+06 0023ff78 0040124b     00000003 000324a8 00032a20 0x402506
+07 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+08 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+09 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_FIPS_RETURN_6800D6FB]
+eax=00230000 ebx=00000001 ecx=000018da edx=00000014 esi=000000f8 edi=00000014
+eip=6800d6fb esp=0023fc64 ebp=0023fcc0 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d6fb 6a28            push    28h
+[V19C_GLOBAL_68031958_AFTER_FIPS]
+68031958  48 ec c9 de 94 98 50 d9-1d 84 45 3b 0d 9f 54 cc  H.....P...E;..T.
+68031968  43 b6 57 04                                      C.W.
+[V19C_AUX20_AFTER_FIPS_EBP_M18]
+0023fca8  84 97 3c a7 cf 28 31 b1-e9 e5 48 be 05 e8 96 79  ..<..(1...H....y
+0023fcb8  36 1d b0 40                                      6..@
+[V19C_OUT40_AFTER_FIPS_EBP_M40]
+0023fc80  ca 96 f0 14 d8 47 bc 72-c0 95 90 2b 0b 05 2c b2  .....G.r...+..,.
+0023fc90  37 f1 52 a5 1e 27 af ae-83 01 9c 0e 6f e8 dc 14  7.R..'......o...
+0023fca0  4b ed 85 d4 7f ab ba 3d                          K......=
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d6fb
+01 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+02 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+03 0023fea8 00401e72     0025abf0 0040476a 00000000 0x401d2e
+04 0023fed8 00402506     0025abf0 0023ff30 0023ff30 0x401e72
+05 0023ff78 0040124b     00000003 000324a8 00032a20 0x402506
+06 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+07 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+08 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_AFTER_OUTPUT_COPY_6800D717]
+eax=00000001 ebx=00000001 ecx=00000000 edx=68031980 esi=00000020 edi=00000014
+eip=6800d717 esp=0023fc64 ebp=0023fcc0 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d717 0175b8          add     dword ptr [ebp-48h],esi ss:0023:0023fc78=0023fda0
+retaddr=6800d7da out_cursor_before_advance=0023fda0 copied_len=00000020 remaining_before_sub=00000020
+[V19C_OUT40_AT_COPY_EBP_M40]
+0023fc80  ca 96 f0 14 d8 47 bc 72-c0 95 90 2b 0b 05 2c b2  .....G.r...+..,.
+0023fc90  37 f1 52 a5 1e 27 af ae-83 01 9c 0e 6f e8 dc 14  7.R..'......o...
+0023fca0  4b ed 85 d4 7f ab ba 3d                          K......=
+[V19C_USER_OUT_AFTER_COPY]
+0023fda0  ca 96 f0 14 d8 47 bc 72-c0 95 90 2b 0b 05 2c b2  .....G.r...+..,.
+0023fdb0  37 f1 52 a5 1e 27 af ae-83 01 9c 0e 6f e8 dc 14  7.R..'......o...
+0023fdc0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdd0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V19C_GLOBAL_68031958_AFTER_COPY]
+68031958  48 ec c9 de 94 98 50 d9-1d 84 45 3b 0d 9f 54 cc  H.....P...E;..T.
+68031968  43 b6 57 04                                      C.W.
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d717
+01 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+02 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+03 0023fea8 00401e72     0025abf0 0040476a 00000000 0x401d2e
+04 0023fed8 00402506     0025abf0 0023ff30 0023ff30 0x401e72
+05 0023ff78 0040124b     00000003 000324a8 00032a20 0x402506
+06 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+07 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+08 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_CORE_EXIT_6800D737]
+eax=00000000 ebx=00000001 ecx=00000000 edx=68031980 esi=00000020 edi=00000014
+eip=6800d737 esp=0023fc64 ebp=0023fcc0 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4] ss:0023:0023fcbc=000018da
+retaddr=6800d7da arg04=0025c2a8 arg08=0025c288 arg0c=00000000 arg10=00000000 arg14=0023fda0 arg18=00000020 arg1c=00000000 arg20=0023fd28 eax=00000000
+[V19C_GLOBAL_68031958_CORE_EXIT]
+68031958  48 ec c9 de 94 98 50 d9-1d 84 45 3b 0d 9f 54 cc  H.....P...E;..T.
+68031968  43 b6 57 04                                      C.W.
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d737
+01 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+02 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+03 0023fea8 00401e72     0025abf0 0040476a 00000000 0x401d2e
+04 0023fed8 00402506     0025abf0 0023ff30 0023ff30 0x401e72
+05 0023ff78 0040124b     00000003 000324a8 00032a20 0x402506
+06 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+07 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+08 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+Break instruction exception - code 80000003 (first chance)
+ntdll!DbgBreakPoint:
+001b:7c90120e cc              int     3
+0: kd> g
+[V19C_CORE_ENTRY_6800D640]
+eax=0025c2a8 ebx=7ffde000 ecx=0025c288 edx=77c61b78 esi=0025abf0 edi=00000000
+eip=6800d640 esp=0023fcc4 ebp=0023fce4 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d640 8bff            mov     edi,edi
+retaddr=6800d7da arg04=0025c2a8 arg08=0025c288 arg0c=00000000 arg10=00000000 arg14=0023fda0 arg18=00000020 arg1c=00000000 arg20=0023fd28
+[V19C_GLOBAL_68031958_CORE_ENTRY]
+68031958  48 ec c9 de 94 98 50 d9-1d 84 45 3b 0d 9f 54 cc  H.....P...E;..T.
+68031968  43 b6 57 04                                      C.W.
+[V19C_ARG10_IF_ANY]
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d640
+01 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+02 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+03 0023fea8 00402290     0025abf0 00404970 00000000 0x401d2e
+04 0023fed8 004025b9     0025abf0 0023ff30 0023ff30 0x402290
+05 0023ff78 0040124b     00000003 000324a8 00032a20 0x4025b9
+06 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+07 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+08 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_BEFORE_FIPS_6800D6E7]
+eax=00000001 ebx=00000001 ecx=000018da edx=6803196c esi=000000f8 edi=00000014
+eip=6800d6e7 esp=0023fc64 ebp=0023fcc0 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d6e7 6a14            push    14h
+retaddr=6800d7da ebp=0023fcc0 out_cursor=0023fda0 remaining=00000020
+[V19C_STATE20_BEFORE_FIPS_68031958]
+68031958  48 ec c9 de 94 98 50 d9-1d 84 45 3b 0d 9f 54 cc  H.....P...E;..T.
+68031968  43 b6 57 04                                      C.W.
+[V19C_AUX20_BEFORE_FIPS_EBP_M18]
+0023fca8  b7 ac c3 68 0f 9e 7a e2-07 7d 15 9c 39 2d 38 ef  ...h..z..}..9-8.
+0023fcb8  ef dd ce 0a                                      ....
+[V19C_OUT40_BEFORE_FIPS_EBP_M40]
+0023fc80  ad 03 c3 77 2a 00 00 00-a0 fc c5 77 00 00 00 00  ...w*......w....
+0023fc90  2a 00 00 00 84 fc 23 00-6e 00 65 00 18 fd 23 00  *.....#.n.e...#.
+0023fca0  94 5c c3 77 80 25 c1 77                          .\.w.%.w
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d6e7
+01 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+02 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+03 0023fea8 00402290     0025abf0 00404970 00000000 0x401d2e
+04 0023fed8 004025b9     0025abf0 0023ff30 0023ff30 0x402290
+05 0023ff78 0040124b     00000003 000324a8 00032a20 0x4025b9
+06 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+07 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+08 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_FIPS_ENTRY_68027101]
+eax=0023fca8 ebx=00000001 ecx=000018da edx=6803196c esi=000000f8 edi=00000014
+eip=68027101 esp=0023fc50 ebp=0023fcc0 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:68027101 8bff            mov     edi,edi
+arg1_state20=68031958 arg2_aux20=0023fca8 arg3_out40=0023fc80 esp=0023fc50 ebp=0023fcc0
+[V19C_FIPS_ARG1_STATE20]
+68031958  48 ec c9 de 94 98 50 d9-1d 84 45 3b 0d 9f 54 cc  H.....P...E;..T.
+68031968  43 b6 57 04                                      C.W.
+[V19C_FIPS_ARG2_AUX20]
+0023fca8  b7 ac c3 68 0f 9e 7a e2-07 7d 15 9c 39 2d 38 ef  ...h..z..}..9-8.
+0023fcb8  ef dd ce 0a                                      ....
+[V19C_FIPS_ARG3_OUT40_BEFORE]
+0023fc80  ad 03 c3 77 2a 00 00 00-a0 fc c5 77 00 00 00 00  ...w*......w....
+0023fc90  2a 00 00 00 84 fc 23 00-6e 00 65 00 18 fd 23 00  *.....#.n.e...#.
+0023fca0  94 5c c3 77 80 25 c1 77                          .\.w.%.w
+[V19C_GLOBAL_68031958_AT_FIPS_ENTRY]
+68031958  48 ec c9 de 94 98 50 d9-1d 84 45 3b 0d 9f 54 cc  H.....P...E;..T.
+68031968  43 b6 57 04                                      C.W.
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fc4c 6800d6fb     68031958 0023fca8 0023fc80 0x68027101
+01 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d6fb
+02 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+03 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+04 0023fea8 00402290     0025abf0 00404970 00000000 0x401d2e
+05 0023fed8 004025b9     0025abf0 0023ff30 0023ff30 0x402290
+06 0023ff78 0040124b     00000003 000324a8 00032a20 0x4025b9
+07 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+08 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+09 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_FIPS_RETURN_6800D6FB]
+eax=00230000 ebx=00000001 ecx=000018da edx=00000014 esi=000000f8 edi=00000014
+eip=6800d6fb esp=0023fc64 ebp=0023fcc0 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d6fb 6a28            push    28h
+[V19C_GLOBAL_68031958_AFTER_FIPS]
+68031958  d4 ae 02 35 85 2f 1b 26-87 ba af 16 37 4c c4 e3  ...5./.&....7L..
+68031968  88 c8 a7 39                                      ...9
+[V19C_AUX20_AFTER_FIPS_EBP_M18]
+0023fca8  b7 ac c3 68 0f 9e 7a e2-07 7d 15 9c 39 2d 38 ef  ...h..z..}..9-8.
+0023fcb8  ef dd ce 0a                                      ....
+[V19C_OUT40_AFTER_FIPS_EBP_M40]
+0023fc80  da ab 0b 2e 69 36 3f f8-da f2 5e 28 5f 82 dc 2f  ....i6?...^(_../
+0023fc90  ef 9e 2e 9b b1 16 2d 28-87 60 8a 54 8f 44 0b b2  ......-(.`.T.D..
+0023fca0  ca 2a 93 e7 55 74 21 98                          .*..Ut!.
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d6fb
+01 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+02 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+03 0023fea8 00402290     0025abf0 00404970 00000000 0x401d2e
+04 0023fed8 004025b9     0025abf0 0023ff30 0023ff30 0x402290
+05 0023ff78 0040124b     00000003 000324a8 00032a20 0x4025b9
+06 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+07 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+08 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_AFTER_OUTPUT_COPY_6800D717]
+eax=00000001 ebx=00000001 ecx=00000000 edx=68031980 esi=00000020 edi=00000014
+eip=6800d717 esp=0023fc64 ebp=0023fcc0 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000202
+001b:6800d717 0175b8          add     dword ptr [ebp-48h],esi ss:0023:0023fc78=0023fda0
+retaddr=6800d7da out_cursor_before_advance=0023fda0 copied_len=00000020 remaining_before_sub=00000020
+[V19C_OUT40_AT_COPY_EBP_M40]
+0023fc80  da ab 0b 2e 69 36 3f f8-da f2 5e 28 5f 82 dc 2f  ....i6?...^(_../
+0023fc90  ef 9e 2e 9b b1 16 2d 28-87 60 8a 54 8f 44 0b b2  ......-(.`.T.D..
+0023fca0  ca 2a 93 e7 55 74 21 98                          .*..Ut!.
+[V19C_USER_OUT_AFTER_COPY]
+0023fda0  da ab 0b 2e 69 36 3f f8-da f2 5e 28 5f 82 dc 2f  ....i6?...^(_../
+0023fdb0  ef 9e 2e 9b b1 16 2d 28-87 60 8a 54 8f 44 0b b2  ......-(.`.T.D..
+0023fdc0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+0023fdd0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+[V19C_GLOBAL_68031958_AFTER_COPY]
+68031958  d4 ae 02 35 85 2f 1b 26-87 ba af 16 37 4c c4 e3  ...5./.&....7L..
+68031968  88 c8 a7 39                                      ...9
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d717
+01 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+02 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+03 0023fea8 00402290     0025abf0 00404970 00000000 0x401d2e
+04 0023fed8 004025b9     0025abf0 0023ff30 0023ff30 0x402290
+05 0023ff78 0040124b     00000003 000324a8 00032a20 0x4025b9
+06 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+07 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+08 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+[V19C_CORE_EXIT_6800D737]
+eax=00000000 ebx=00000001 ecx=00000000 edx=68031980 esi=00000020 edi=00000014
+eip=6800d737 esp=0023fc64 ebp=0023fcc0 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000246
+001b:6800d737 8b4dfc          mov     ecx,dword ptr [ebp-4] ss:0023:0023fcbc=000018da
+retaddr=6800d7da arg04=0025c2a8 arg08=0025c288 arg0c=00000000 arg10=00000000 arg14=0023fda0 arg18=00000020 arg1c=00000000 arg20=0023fd28 eax=00000000
+[V19C_GLOBAL_68031958_CORE_EXIT]
+68031958  d4 ae 02 35 85 2f 1b 26-87 ba af 16 37 4c c4 e3  ...5./.&....7L..
+68031968  88 c8 a7 39                                      ...9
+ # ChildEBP RetAddr      Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+00 0023fcc0 6800d7da     0025c2a8 0025c288 00000000 0x6800d737
+01 0023fce4 77dfb401     e37f5c84 00000020 0023fda0 0x6800d7da
+02 0023fd28 00401d2e     0025abf0 00000020 0023fda0 0x77dfb401
+03 0023fea8 00402290     0025abf0 00404970 00000000 0x401d2e
+04 0023fed8 004025b9     0025abf0 0023ff30 0023ff30 0x402290
+05 0023ff78 0040124b     00000003 000324a8 00032a20 0x4025b9
+06 0023ffb0 00401298     00000001 00000009 0023fff0 0x40124b
+07 0023ffc0 7c817067     729029bc 01dcde82 7ffde000 0x401298
+08 0023fff0 00000000     00401280 00000000 78746341 0x7c817067
+Break instruction exception - code 80000003 (first chance)
