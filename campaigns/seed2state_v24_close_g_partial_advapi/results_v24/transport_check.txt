@@ -1,0 +1,50 @@
+cycle entry vlh rc4_calls rc4_key_calls transport_match status
+01 13 1 2 2 False FAIL
+02 1647 1 2 2 False FAIL
+03 3192 1 2 2 False FAIL
+04 4737 1 2 2 False FAIL
+05 6282 1 2 2 False FAIL
+06 7827 1 2 2 False FAIL
+07 9372 1 2 2 False FAIL
+08 10917 1 2 2 False FAIL
+V24_CLOSEG transport PASS=0/8
+
+[RC4 PRGA REPLAY]
+cycle=01 rc4_call=01 len=80 status=FAIL layout=no layout matched
+cycle=01 rc4_call=02 len=256 status=FAIL layout=no layout matched
+cycle=02 rc4_call=01 len=80 status=FAIL layout=no layout matched
+cycle=02 rc4_call=02 len=256 status=FAIL layout=no layout matched
+cycle=03 rc4_call=01 len=80 status=FAIL layout=no layout matched
+cycle=03 rc4_call=02 len=256 status=FAIL layout=no layout matched
+cycle=04 rc4_call=01 len=80 status=FAIL layout=no layout matched
+cycle=04 rc4_call=02 len=256 status=FAIL layout=no layout matched
+cycle=05 rc4_call=01 len=80 status=FAIL layout=no layout matched
+cycle=05 rc4_call=02 len=256 status=FAIL layout=no layout matched
+cycle=06 rc4_call=01 len=80 status=FAIL layout=no layout matched
+cycle=06 rc4_call=02 len=256 status=FAIL layout=no layout matched
+cycle=07 rc4_call=01 len=80 status=FAIL layout=no layout matched
+cycle=07 rc4_call=02 len=256 status=FAIL layout=no layout matched
+cycle=08 rc4_call=01 len=80 status=FAIL layout=no layout matched
+cycle=08 rc4_call=02 len=256 status=FAIL layout=no layout matched
+V24_CLOSEG rc4_prga PASS=0/16
+
+[RC4 KEY/KSA LINKS]
+cycle=01 rc4_key=01 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=01 rc4_key=02 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=02 rc4_key=01 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=02 rc4_key=02 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=03 rc4_key=01 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=03 rc4_key=02 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=04 rc4_key=01 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=04 rc4_key=02 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=05 rc4_key=01 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=05 rc4_key=02 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=06 rc4_key=01 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=06 rc4_key=02 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=07 rc4_key=01 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=07 rc4_key=02 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=08 rc4_key=01 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+cycle=08 rc4_key=02 keylen=80 status=PASS layout=S@0+i8@0x100+j8@0x101
+V24_CLOSEG rc4_key PASS=16/16
+
+OVERALL=INCOMPLETE
