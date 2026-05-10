@@ -1,0 +1,8 @@
+{
+  "head16": "0fd2cf68f23620e9c079f1a5628bfb2c",
+  "kind": "advapi_ioctl",
+  "len": 256,
+  "line": 5985,
+  "marker": "V22_1_ADVAPI_IOCTL_OUTBUF_100",
+  "sha256": "bc8f48bcf35b2c6b490468fe53fd05cc364d79a45c217f854bf4520d043ba34f"
+}
