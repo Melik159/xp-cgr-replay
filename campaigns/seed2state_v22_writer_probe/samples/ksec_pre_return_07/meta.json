@@ -1,0 +1,8 @@
+{
+  "head16": "0fd2cf68f23620e9c079f1a5628bfb2c",
+  "kind": "ksec_pre_return",
+  "len": 256,
+  "line": 5859,
+  "marker": "V22_WRITER_KSEC_NEWGENEX_OUTBUF_PRE_RETURN_100",
+  "sha256": "bc8f48bcf35b2c6b490468fe53fd05cc364d79a45c217f854bf4520d043ba34f"
+}
