@@ -424,6 +424,50 @@ not:
 FULL_CLOSE_G
 ```
 
+### `seed2state_v26_rsaenh_provider_only`
+
+Provider-local validation campaign for the Windows XP SP3 `rsaenh.dll` RNG path.
+
+This campaign validates the local provider transition observed in captured executions:
+
+```text
+state20 @ 68031958
++ local aux20
+→ rsaenh FIPS-style block @ 68027101
+→ out40
+→ out40[:len] copied to caller buffer
+→ provider state slot updated
+
+```
+
+Included artifacts:
+
+
+```
+campaigns/seed2state_v26_rsaenh_provider_only/
+├── parser/                         parser for the reduced trace excerpt
+├── samples/sample01/blobs/          extracted binary samples
+├── samples/sample01/manifest.json   sample manifest
+├── samples/sample01/manifest.tsv    tabular manifest
+├── samples/sample01/v26_provider_validation.txt
+└── tools/replay_v26_samples.py      replay check from extracted samples
+
+```
+
+Main result for sample01:
+
+
+```
+selftest_stack_source_equals_6802F8CC  PASS
+fips_entry_count                       PASS
+fips_update_A_seen                     PASS
+fips_update_B_seen                     PASS
+out_copy_prefix_summary                PASS 6/6
+OVERALL                                PASS
+
+```
+Scope note: this campaign is intentionally rsaenh provider-local. It does not claim to reconstruct the upstream KSecDD/ADVAPI/SystemFunction036 provenance of state20.
+
 ---
 
 ## Campaign Status Summary
