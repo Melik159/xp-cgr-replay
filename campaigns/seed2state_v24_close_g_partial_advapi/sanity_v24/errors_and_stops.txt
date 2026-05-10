@@ -1,0 +1,604 @@
+8:Break instruction exception - code 80000003 (first chance)
+9:KSecDD!NewGenRandomEx:
+17:KSecDD!NewGenRandomEx:
+70:00 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx
+116:Break instruction exception - code 80000003 (first chance)
+117:KSecDD!rc4_key:
+125:KSecDD!rc4_key:
+180:00 b8b619bc f7459705     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+181:01 b8b61bbc f74599a6     00000000 00000000 8a0fcc50 KSecDD!GatherRandomKey+0x36c
+182:02 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x55
+218:Break instruction exception - code 80000003 (first chance)
+219:KSecDD!GatherRandomKey+0x38b:
+227:KSecDD!GatherRandomKey+0x38b:
+294:00 b8b61bbc f74599a6     00000000 00000000 8a0fcc50 KSecDD!GatherRandomKey+0x38b
+295:01 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x55
+331:Break instruction exception - code 80000003 (first chance)
+332:KSecDD!rc4:
+340:KSecDD!rc4:
+397:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b18 KSecDD!rc4
+398:01 b8b61bbc f74599a6     00000000 00000000 8a0fcc50 KSecDD!GatherRandomKey+0x3bf
+399:02 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x55
+452:KSecDD!rc4+0xfb:
+465:KSecDD!rc4+0x97:
+499:KSecDD!rc4+0xfb:
+501:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+505:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+525:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+534:KSecDD!rc4_key:
+603:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0xfb
+604:01 b8b61bbc f74599a6     00000000 00000000 8a0fcc50 KSecDD!GatherRandomKey+0x3bf
+605:02 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x55
+653:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^ Syntax error in '.echo [V24_CLOSEG_RC4_OUTBUF_FIRST_WRITE];r;.echo [V24_CLOSEG_FIRST_WRITE_EIP];? @eip;.echo [V24_CLOSEG_FIRST_WRITE_ARG_STATE_T4];? @$t4;.echo [V24_CLOSEG_FIRST_WRITE_ARG_LEN_T5];? @$t5;.echo [V24_CLOSEG_FIRST_WRITE_ARG_OUT_BEGIN_T7];? @$t7;.echo [V24_CLOSEG_FIRST_WRITE_ARG_OUT_END_T6];? @$t6;.echo [V24_CLOSEG_FIRST_WRITE_CODE_BACK];ub @eip l20;.echo [V24_CLOSEG_FIRST_WRITE_CODE_FWD];u @eip l30;.echo [V24_CLOSEG_RC4_OUTBUF_AT_FIRST_WRITE_100];db @$t7 l100;.echo [V24_CLOSEG_RC4_STATE_AT_FIRST_WRITE_120];db @$t4 l120;.echo [V24_CLOSEG_STACK_AT_FIRST_WRITE];dd @esp l40;kb;.echo [V24_CLOSEG_BREAKPOINTS_AT_FIRST_WRITE_BEFORE_CLEAR];bl;.echo [V24_CLOSEG_CLEAR_CURRENT_WATCHPOINT];bc @$bpnum;.echo [V24_CLOSEG_BREAKPOINTS_AT_FIRST_WRITE_AFTER_CLEAR];bl;gc;'
+654:KSecDD!rc4+0xfb:
+671:Break instruction exception - code 80000003 (first chance)
+672:KSecDD!rc4+0x14a:
+680:KSecDD!rc4+0x14a:
+737:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0x14a
+738:01 b8b61bbc f74599a6     00000000 00000000 8a0fcc50 KSecDD!GatherRandomKey+0x3bf
+739:02 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x55
+775:Break instruction exception - code 80000003 (first chance)
+776:KSecDD!rc4_key:
+787:KSecDD!rc4_key:
+842:00 b8b619c0 f7459786     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+843:01 b8b61bbc f74599a6     00000000 00000000 8a0fcc50 KSecDD!GatherRandomKey+0x3ed
+844:02 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x55
+880:Break instruction exception - code 80000003 (first chance)
+881:KSecDD!rc4:
+889:KSecDD!rc4:
+946:00 b8b619c0 f74597aa     b8b619f0 00000100 8a0fcc50 KSecDD!rc4
+947:01 b8b61bbc f74599a6     00000000 00000000 8a0fcc50 KSecDD!GatherRandomKey+0x411
+948:02 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x55
+1001:KSecDD!rc4+0xfb:
+1014:KSecDD!rc4+0x97:
+1048:KSecDD!rc4+0xfb:
+1050:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+1054:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+1074:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+1083:KSecDD!rc4_key:
+1152:00 b8b619c0 f74597aa     b8b619f0 00000100 8a0fcd50 KSecDD!rc4+0xfb
+1153:01 b8b61bbc f74599a6     00000000 00000000 8a0fcc50 KSecDD!GatherRandomKey+0x411
+1154:02 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x55
+1212:Break instruction exception - code 80000003 (first chance)
+1213:KSecDD!rc4+0x14a:
+1221:KSecDD!rc4+0x14a:
+1278:00 b8b619c0 f74597aa     b8b619f0 00000100 8a0fcd50 KSecDD!rc4+0x14a
+1279:01 b8b61bbc f74599a6     00000000 00000000 8a0fcc50 KSecDD!GatherRandomKey+0x411
+1280:02 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x55
+1316:Break instruction exception - code 80000003 (first chance)
+1317:KSecDD!NewGenRandomEx+0x55:
+1318:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+1325:KSecDD!NewGenRandomEx+0x55:
+1326:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+1411:00 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x55
+1447:Break instruction exception - code 80000003 (first chance)
+1448:KSecDD!NewGenRandomEx+0x77:
+1456:KSecDD!NewGenRandomEx+0x77:
+1525:00 b8b61be0 f7457cf9     b8b61c00 8a0fcc50 00000100 KSecDD!NewGenRandomEx+0x77
+1642:Break instruction exception - code 80000003 (first chance)
+1643:KSecDD!NewGenRandomEx:
+1651:KSecDD!NewGenRandomEx:
+1704:00 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx
+1744:Break instruction exception - code 80000003 (first chance)
+1745:KSecDD!rc4_key:
+1753:KSecDD!rc4_key:
+1808:00 b8b619bc f7459705     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+1809:01 b8b61bbc f74599a6     00000000 00000000 89f88a30 KSecDD!GatherRandomKey+0x36c
+1810:02 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x55
+1840:Break instruction exception - code 80000003 (first chance)
+1841:KSecDD!GatherRandomKey+0x38b:
+1849:KSecDD!GatherRandomKey+0x38b:
+1916:00 b8b61bbc f74599a6     00000000 00000000 89f88a30 KSecDD!GatherRandomKey+0x38b
+1917:01 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x55
+1947:Break instruction exception - code 80000003 (first chance)
+1948:KSecDD!rc4:
+1956:KSecDD!rc4:
+2013:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b18 KSecDD!rc4
+2014:01 b8b61bbc f74599a6     00000000 00000000 89f88a30 KSecDD!GatherRandomKey+0x3bf
+2015:02 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x55
+2062:KSecDD!rc4+0xfb:
+2075:KSecDD!rc4+0x97:
+2109:KSecDD!rc4+0xfb:
+2111:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+2115:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+2135:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+2144:KSecDD!rc4_key:
+2213:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0xfb
+2214:01 b8b61bbc f74599a6     00000000 00000000 89f88a30 KSecDD!GatherRandomKey+0x3bf
+2215:02 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x55
+2267:Break instruction exception - code 80000003 (first chance)
+2268:KSecDD!rc4+0x14a:
+2276:KSecDD!rc4+0x14a:
+2333:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0x14a
+2334:01 b8b61bbc f74599a6     00000000 00000000 89f88a30 KSecDD!GatherRandomKey+0x3bf
+2335:02 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x55
+2365:Break instruction exception - code 80000003 (first chance)
+2366:KSecDD!rc4_key:
+2374:KSecDD!rc4_key:
+2429:00 b8b619c0 f7459786     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+2430:01 b8b61bbc f74599a6     00000000 00000000 89f88a30 KSecDD!GatherRandomKey+0x3ed
+2431:02 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x55
+2461:Break instruction exception - code 80000003 (first chance)
+2462:KSecDD!rc4:
+2470:KSecDD!rc4:
+2527:00 b8b619c0 f74597aa     b8b619f0 00000100 89f88a30 KSecDD!rc4
+2528:01 b8b61bbc f74599a6     00000000 00000000 89f88a30 KSecDD!GatherRandomKey+0x411
+2529:02 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x55
+2576:KSecDD!rc4+0xfb:
+2589:KSecDD!rc4+0x97:
+2623:KSecDD!rc4+0xfb:
+2625:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+2629:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+2649:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+2658:KSecDD!rc4_key:
+2727:00 b8b619c0 f74597aa     b8b619f0 00000100 89f88b30 KSecDD!rc4+0xfb
+2728:01 b8b61bbc f74599a6     00000000 00000000 89f88a30 KSecDD!GatherRandomKey+0x411
+2729:02 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x55
+2781:Break instruction exception - code 80000003 (first chance)
+2782:KSecDD!rc4+0x14a:
+2790:KSecDD!rc4+0x14a:
+2847:00 b8b619c0 f74597aa     b8b619f0 00000100 89f88b30 KSecDD!rc4+0x14a
+2848:01 b8b61bbc f74599a6     00000000 00000000 89f88a30 KSecDD!GatherRandomKey+0x411
+2849:02 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x55
+2879:Break instruction exception - code 80000003 (first chance)
+2880:KSecDD!NewGenRandomEx+0x55:
+2881:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+2888:KSecDD!NewGenRandomEx+0x55:
+2889:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+2974:00 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x55
+3004:Break instruction exception - code 80000003 (first chance)
+3005:KSecDD!NewGenRandomEx+0x77:
+3013:KSecDD!NewGenRandomEx+0x77:
+3082:00 b8b61be0 f7457cf9     b8b61c00 89f88a30 00000100 KSecDD!NewGenRandomEx+0x77
+3187:Break instruction exception - code 80000003 (first chance)
+3188:KSecDD!NewGenRandomEx:
+3196:KSecDD!NewGenRandomEx:
+3249:00 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx
+3289:Break instruction exception - code 80000003 (first chance)
+3290:KSecDD!rc4_key:
+3298:KSecDD!rc4_key:
+3353:00 b8b619bc f7459705     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+3354:01 b8b61bbc f74599a6     00000000 00000000 89e14e78 KSecDD!GatherRandomKey+0x36c
+3355:02 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x55
+3385:Break instruction exception - code 80000003 (first chance)
+3386:KSecDD!GatherRandomKey+0x38b:
+3394:KSecDD!GatherRandomKey+0x38b:
+3461:00 b8b61bbc f74599a6     00000000 00000000 89e14e78 KSecDD!GatherRandomKey+0x38b
+3462:01 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x55
+3492:Break instruction exception - code 80000003 (first chance)
+3493:KSecDD!rc4:
+3501:KSecDD!rc4:
+3558:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b18 KSecDD!rc4
+3559:01 b8b61bbc f74599a6     00000000 00000000 89e14e78 KSecDD!GatherRandomKey+0x3bf
+3560:02 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x55
+3607:KSecDD!rc4+0xfb:
+3620:KSecDD!rc4+0x97:
+3654:KSecDD!rc4+0xfb:
+3656:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+3660:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+3680:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+3689:KSecDD!rc4_key:
+3758:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0xfb
+3759:01 b8b61bbc f74599a6     00000000 00000000 89e14e78 KSecDD!GatherRandomKey+0x3bf
+3760:02 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x55
+3812:Break instruction exception - code 80000003 (first chance)
+3813:KSecDD!rc4+0x14a:
+3821:KSecDD!rc4+0x14a:
+3878:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0x14a
+3879:01 b8b61bbc f74599a6     00000000 00000000 89e14e78 KSecDD!GatherRandomKey+0x3bf
+3880:02 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x55
+3910:Break instruction exception - code 80000003 (first chance)
+3911:KSecDD!rc4_key:
+3919:KSecDD!rc4_key:
+3974:00 b8b619c0 f7459786     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+3975:01 b8b61bbc f74599a6     00000000 00000000 89e14e78 KSecDD!GatherRandomKey+0x3ed
+3976:02 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x55
+4006:Break instruction exception - code 80000003 (first chance)
+4007:KSecDD!rc4:
+4015:KSecDD!rc4:
+4072:00 b8b619c0 f74597aa     b8b619f0 00000100 89e14e78 KSecDD!rc4
+4073:01 b8b61bbc f74599a6     00000000 00000000 89e14e78 KSecDD!GatherRandomKey+0x411
+4074:02 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x55
+4121:KSecDD!rc4+0xfb:
+4134:KSecDD!rc4+0x97:
+4168:KSecDD!rc4+0xfb:
+4170:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+4174:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+4194:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+4203:KSecDD!rc4_key:
+4272:00 b8b619c0 f74597aa     b8b619f0 00000100 89e14f78 KSecDD!rc4+0xfb
+4273:01 b8b61bbc f74599a6     00000000 00000000 89e14e78 KSecDD!GatherRandomKey+0x411
+4274:02 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x55
+4326:Break instruction exception - code 80000003 (first chance)
+4327:KSecDD!rc4+0x14a:
+4335:KSecDD!rc4+0x14a:
+4392:00 b8b619c0 f74597aa     b8b619f0 00000100 89e14f78 KSecDD!rc4+0x14a
+4393:01 b8b61bbc f74599a6     00000000 00000000 89e14e78 KSecDD!GatherRandomKey+0x411
+4394:02 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x55
+4424:Break instruction exception - code 80000003 (first chance)
+4425:KSecDD!NewGenRandomEx+0x55:
+4426:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+4433:KSecDD!NewGenRandomEx+0x55:
+4434:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+4519:00 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x55
+4549:Break instruction exception - code 80000003 (first chance)
+4550:KSecDD!NewGenRandomEx+0x77:
+4558:KSecDD!NewGenRandomEx+0x77:
+4627:00 b8b61be0 f7457cf9     b8b61c00 89e14e78 00000100 KSecDD!NewGenRandomEx+0x77
+4732:Break instruction exception - code 80000003 (first chance)
+4733:KSecDD!NewGenRandomEx:
+4741:KSecDD!NewGenRandomEx:
+4794:00 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx
+4834:Break instruction exception - code 80000003 (first chance)
+4835:KSecDD!rc4_key:
+4843:KSecDD!rc4_key:
+4898:00 b8b619bc f7459705     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+4899:01 b8b61bbc f74599a6     00000000 00000000 89db7380 KSecDD!GatherRandomKey+0x36c
+4900:02 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x55
+4930:Break instruction exception - code 80000003 (first chance)
+4931:KSecDD!GatherRandomKey+0x38b:
+4939:KSecDD!GatherRandomKey+0x38b:
+5006:00 b8b61bbc f74599a6     00000000 00000000 89db7380 KSecDD!GatherRandomKey+0x38b
+5007:01 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x55
+5037:Break instruction exception - code 80000003 (first chance)
+5038:KSecDD!rc4:
+5046:KSecDD!rc4:
+5103:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b18 KSecDD!rc4
+5104:01 b8b61bbc f74599a6     00000000 00000000 89db7380 KSecDD!GatherRandomKey+0x3bf
+5105:02 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x55
+5152:KSecDD!rc4+0xfb:
+5165:KSecDD!rc4+0x97:
+5199:KSecDD!rc4+0xfb:
+5201:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+5205:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+5225:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+5234:KSecDD!rc4_key:
+5303:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0xfb
+5304:01 b8b61bbc f74599a6     00000000 00000000 89db7380 KSecDD!GatherRandomKey+0x3bf
+5305:02 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x55
+5357:Break instruction exception - code 80000003 (first chance)
+5358:KSecDD!rc4+0x14a:
+5366:KSecDD!rc4+0x14a:
+5423:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0x14a
+5424:01 b8b61bbc f74599a6     00000000 00000000 89db7380 KSecDD!GatherRandomKey+0x3bf
+5425:02 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x55
+5455:Break instruction exception - code 80000003 (first chance)
+5456:KSecDD!rc4_key:
+5464:KSecDD!rc4_key:
+5519:00 b8b619c0 f7459786     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+5520:01 b8b61bbc f74599a6     00000000 00000000 89db7380 KSecDD!GatherRandomKey+0x3ed
+5521:02 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x55
+5551:Break instruction exception - code 80000003 (first chance)
+5552:KSecDD!rc4:
+5560:KSecDD!rc4:
+5617:00 b8b619c0 f74597aa     b8b619f0 00000100 89db7380 KSecDD!rc4
+5618:01 b8b61bbc f74599a6     00000000 00000000 89db7380 KSecDD!GatherRandomKey+0x411
+5619:02 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x55
+5666:KSecDD!rc4+0xfb:
+5679:KSecDD!rc4+0x97:
+5713:KSecDD!rc4+0xfb:
+5715:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+5719:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+5739:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+5748:KSecDD!rc4_key:
+5817:00 b8b619c0 f74597aa     b8b619f0 00000100 89db7480 KSecDD!rc4+0xfb
+5818:01 b8b61bbc f74599a6     00000000 00000000 89db7380 KSecDD!GatherRandomKey+0x411
+5819:02 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x55
+5871:Break instruction exception - code 80000003 (first chance)
+5872:KSecDD!rc4+0x14a:
+5880:KSecDD!rc4+0x14a:
+5937:00 b8b619c0 f74597aa     b8b619f0 00000100 89db7480 KSecDD!rc4+0x14a
+5938:01 b8b61bbc f74599a6     00000000 00000000 89db7380 KSecDD!GatherRandomKey+0x411
+5939:02 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x55
+5969:Break instruction exception - code 80000003 (first chance)
+5970:KSecDD!NewGenRandomEx+0x55:
+5971:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+5978:KSecDD!NewGenRandomEx+0x55:
+5979:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+6064:00 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x55
+6094:Break instruction exception - code 80000003 (first chance)
+6095:KSecDD!NewGenRandomEx+0x77:
+6103:KSecDD!NewGenRandomEx+0x77:
+6172:00 b8b61be0 f7457cf9     b8b61c00 89db7380 00000100 KSecDD!NewGenRandomEx+0x77
+6277:Break instruction exception - code 80000003 (first chance)
+6278:KSecDD!NewGenRandomEx:
+6286:KSecDD!NewGenRandomEx:
+6339:00 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx
+6379:Break instruction exception - code 80000003 (first chance)
+6380:KSecDD!rc4_key:
+6388:KSecDD!rc4_key:
+6443:00 b8b619bc f7459705     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+6444:01 b8b61bbc f74599a6     00000000 00000000 89dce080 KSecDD!GatherRandomKey+0x36c
+6445:02 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x55
+6475:Break instruction exception - code 80000003 (first chance)
+6476:KSecDD!GatherRandomKey+0x38b:
+6484:KSecDD!GatherRandomKey+0x38b:
+6551:00 b8b61bbc f74599a6     00000000 00000000 89dce080 KSecDD!GatherRandomKey+0x38b
+6552:01 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x55
+6582:Break instruction exception - code 80000003 (first chance)
+6583:KSecDD!rc4:
+6591:KSecDD!rc4:
+6648:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b18 KSecDD!rc4
+6649:01 b8b61bbc f74599a6     00000000 00000000 89dce080 KSecDD!GatherRandomKey+0x3bf
+6650:02 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x55
+6697:KSecDD!rc4+0xfb:
+6710:KSecDD!rc4+0x97:
+6744:KSecDD!rc4+0xfb:
+6746:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+6750:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+6770:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+6779:KSecDD!rc4_key:
+6848:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0xfb
+6849:01 b8b61bbc f74599a6     00000000 00000000 89dce080 KSecDD!GatherRandomKey+0x3bf
+6850:02 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x55
+6902:Break instruction exception - code 80000003 (first chance)
+6903:KSecDD!rc4+0x14a:
+6911:KSecDD!rc4+0x14a:
+6968:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0x14a
+6969:01 b8b61bbc f74599a6     00000000 00000000 89dce080 KSecDD!GatherRandomKey+0x3bf
+6970:02 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x55
+7000:Break instruction exception - code 80000003 (first chance)
+7001:KSecDD!rc4_key:
+7009:KSecDD!rc4_key:
+7064:00 b8b619c0 f7459786     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+7065:01 b8b61bbc f74599a6     00000000 00000000 89dce080 KSecDD!GatherRandomKey+0x3ed
+7066:02 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x55
+7096:Break instruction exception - code 80000003 (first chance)
+7097:KSecDD!rc4:
+7105:KSecDD!rc4:
+7162:00 b8b619c0 f74597aa     b8b619f0 00000100 89dce080 KSecDD!rc4
+7163:01 b8b61bbc f74599a6     00000000 00000000 89dce080 KSecDD!GatherRandomKey+0x411
+7164:02 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x55
+7211:KSecDD!rc4+0xfb:
+7224:KSecDD!rc4+0x97:
+7258:KSecDD!rc4+0xfb:
+7260:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+7264:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+7284:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+7293:KSecDD!rc4_key:
+7362:00 b8b619c0 f74597aa     b8b619f0 00000100 89dce180 KSecDD!rc4+0xfb
+7363:01 b8b61bbc f74599a6     00000000 00000000 89dce080 KSecDD!GatherRandomKey+0x411
+7364:02 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x55
+7416:Break instruction exception - code 80000003 (first chance)
+7417:KSecDD!rc4+0x14a:
+7425:KSecDD!rc4+0x14a:
+7482:00 b8b619c0 f74597aa     b8b619f0 00000100 89dce180 KSecDD!rc4+0x14a
+7483:01 b8b61bbc f74599a6     00000000 00000000 89dce080 KSecDD!GatherRandomKey+0x411
+7484:02 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x55
+7514:Break instruction exception - code 80000003 (first chance)
+7515:KSecDD!NewGenRandomEx+0x55:
+7516:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+7523:KSecDD!NewGenRandomEx+0x55:
+7524:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+7609:00 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x55
+7639:Break instruction exception - code 80000003 (first chance)
+7640:KSecDD!NewGenRandomEx+0x77:
+7648:KSecDD!NewGenRandomEx+0x77:
+7717:00 b8b61be0 f7457cf9     b8b61c00 89dce080 00000100 KSecDD!NewGenRandomEx+0x77
+7822:Break instruction exception - code 80000003 (first chance)
+7823:KSecDD!NewGenRandomEx:
+7831:KSecDD!NewGenRandomEx:
+7884:00 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx
+7924:Break instruction exception - code 80000003 (first chance)
+7925:KSecDD!rc4_key:
+7933:KSecDD!rc4_key:
+7988:00 b8b619bc f7459705     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+7989:01 b8b61bbc f74599a6     00000000 00000000 89f81e70 KSecDD!GatherRandomKey+0x36c
+7990:02 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x55
+8020:Break instruction exception - code 80000003 (first chance)
+8021:KSecDD!GatherRandomKey+0x38b:
+8029:KSecDD!GatherRandomKey+0x38b:
+8096:00 b8b61bbc f74599a6     00000000 00000000 89f81e70 KSecDD!GatherRandomKey+0x38b
+8097:01 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x55
+8127:Break instruction exception - code 80000003 (first chance)
+8128:KSecDD!rc4:
+8136:KSecDD!rc4:
+8193:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b18 KSecDD!rc4
+8194:01 b8b61bbc f74599a6     00000000 00000000 89f81e70 KSecDD!GatherRandomKey+0x3bf
+8195:02 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x55
+8242:KSecDD!rc4+0xfb:
+8255:KSecDD!rc4+0x97:
+8289:KSecDD!rc4+0xfb:
+8291:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+8295:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+8315:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+8324:KSecDD!rc4_key:
+8393:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0xfb
+8394:01 b8b61bbc f74599a6     00000000 00000000 89f81e70 KSecDD!GatherRandomKey+0x3bf
+8395:02 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x55
+8447:Break instruction exception - code 80000003 (first chance)
+8448:KSecDD!rc4+0x14a:
+8456:KSecDD!rc4+0x14a:
+8513:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0x14a
+8514:01 b8b61bbc f74599a6     00000000 00000000 89f81e70 KSecDD!GatherRandomKey+0x3bf
+8515:02 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x55
+8545:Break instruction exception - code 80000003 (first chance)
+8546:KSecDD!rc4_key:
+8554:KSecDD!rc4_key:
+8609:00 b8b619c0 f7459786     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+8610:01 b8b61bbc f74599a6     00000000 00000000 89f81e70 KSecDD!GatherRandomKey+0x3ed
+8611:02 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x55
+8641:Break instruction exception - code 80000003 (first chance)
+8642:KSecDD!rc4:
+8650:KSecDD!rc4:
+8707:00 b8b619c0 f74597aa     b8b619f0 00000100 89f81e70 KSecDD!rc4
+8708:01 b8b61bbc f74599a6     00000000 00000000 89f81e70 KSecDD!GatherRandomKey+0x411
+8709:02 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x55
+8756:KSecDD!rc4+0xfb:
+8769:KSecDD!rc4+0x97:
+8803:KSecDD!rc4+0xfb:
+8805:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+8809:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+8829:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+8838:KSecDD!rc4_key:
+8907:00 b8b619c0 f74597aa     b8b619f0 00000100 89f81f70 KSecDD!rc4+0xfb
+8908:01 b8b61bbc f74599a6     00000000 00000000 89f81e70 KSecDD!GatherRandomKey+0x411
+8909:02 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x55
+8961:Break instruction exception - code 80000003 (first chance)
+8962:KSecDD!rc4+0x14a:
+8970:KSecDD!rc4+0x14a:
+9027:00 b8b619c0 f74597aa     b8b619f0 00000100 89f81f70 KSecDD!rc4+0x14a
+9028:01 b8b61bbc f74599a6     00000000 00000000 89f81e70 KSecDD!GatherRandomKey+0x411
+9029:02 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x55
+9059:Break instruction exception - code 80000003 (first chance)
+9060:KSecDD!NewGenRandomEx+0x55:
+9061:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+9068:KSecDD!NewGenRandomEx+0x55:
+9069:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+9154:00 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x55
+9184:Break instruction exception - code 80000003 (first chance)
+9185:KSecDD!NewGenRandomEx+0x77:
+9193:KSecDD!NewGenRandomEx+0x77:
+9262:00 b8b61be0 f7457cf9     b8b61c00 89f81e70 00000100 KSecDD!NewGenRandomEx+0x77
+9367:Break instruction exception - code 80000003 (first chance)
+9368:KSecDD!NewGenRandomEx:
+9376:KSecDD!NewGenRandomEx:
+9429:00 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx
+9469:Break instruction exception - code 80000003 (first chance)
+9470:KSecDD!rc4_key:
+9478:KSecDD!rc4_key:
+9533:00 b8b619bc f7459705     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+9534:01 b8b61bbc f74599a6     00000000 00000000 89db8ed8 KSecDD!GatherRandomKey+0x36c
+9535:02 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x55
+9565:Break instruction exception - code 80000003 (first chance)
+9566:KSecDD!GatherRandomKey+0x38b:
+9574:KSecDD!GatherRandomKey+0x38b:
+9641:00 b8b61bbc f74599a6     00000000 00000000 89db8ed8 KSecDD!GatherRandomKey+0x38b
+9642:01 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x55
+9672:Break instruction exception - code 80000003 (first chance)
+9673:KSecDD!rc4:
+9681:KSecDD!rc4:
+9738:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b18 KSecDD!rc4
+9739:01 b8b61bbc f74599a6     00000000 00000000 89db8ed8 KSecDD!GatherRandomKey+0x3bf
+9740:02 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x55
+9787:KSecDD!rc4+0xfb:
+9800:KSecDD!rc4+0x97:
+9834:KSecDD!rc4+0xfb:
+9836:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+9840:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+9860:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+9869:KSecDD!rc4_key:
+9938:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0xfb
+9939:01 b8b61bbc f74599a6     00000000 00000000 89db8ed8 KSecDD!GatherRandomKey+0x3bf
+9940:02 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x55
+9992:Break instruction exception - code 80000003 (first chance)
+9993:KSecDD!rc4+0x14a:
+10001:KSecDD!rc4+0x14a:
+10058:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0x14a
+10059:01 b8b61bbc f74599a6     00000000 00000000 89db8ed8 KSecDD!GatherRandomKey+0x3bf
+10060:02 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x55
+10090:Break instruction exception - code 80000003 (first chance)
+10091:KSecDD!rc4_key:
+10099:KSecDD!rc4_key:
+10154:00 b8b619c0 f7459786     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+10155:01 b8b61bbc f74599a6     00000000 00000000 89db8ed8 KSecDD!GatherRandomKey+0x3ed
+10156:02 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x55
+10186:Break instruction exception - code 80000003 (first chance)
+10187:KSecDD!rc4:
+10195:KSecDD!rc4:
+10252:00 b8b619c0 f74597aa     b8b619f0 00000100 89db8ed8 KSecDD!rc4
+10253:01 b8b61bbc f74599a6     00000000 00000000 89db8ed8 KSecDD!GatherRandomKey+0x411
+10254:02 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x55
+10301:KSecDD!rc4+0xfb:
+10314:KSecDD!rc4+0x97:
+10348:KSecDD!rc4+0xfb:
+10350:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+10354:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+10374:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+10383:KSecDD!rc4_key:
+10452:00 b8b619c0 f74597aa     b8b619f0 00000100 89db8fd8 KSecDD!rc4+0xfb
+10453:01 b8b61bbc f74599a6     00000000 00000000 89db8ed8 KSecDD!GatherRandomKey+0x411
+10454:02 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x55
+10506:Break instruction exception - code 80000003 (first chance)
+10507:KSecDD!rc4+0x14a:
+10515:KSecDD!rc4+0x14a:
+10572:00 b8b619c0 f74597aa     b8b619f0 00000100 89db8fd8 KSecDD!rc4+0x14a
+10573:01 b8b61bbc f74599a6     00000000 00000000 89db8ed8 KSecDD!GatherRandomKey+0x411
+10574:02 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x55
+10604:Break instruction exception - code 80000003 (first chance)
+10605:KSecDD!NewGenRandomEx+0x55:
+10606:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+10613:KSecDD!NewGenRandomEx+0x55:
+10614:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+10699:00 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x55
+10729:Break instruction exception - code 80000003 (first chance)
+10730:KSecDD!NewGenRandomEx+0x77:
+10738:KSecDD!NewGenRandomEx+0x77:
+10807:00 b8b61be0 f7457cf9     b8b61c00 89db8ed8 00000100 KSecDD!NewGenRandomEx+0x77
+10912:Break instruction exception - code 80000003 (first chance)
+10913:KSecDD!NewGenRandomEx:
+10921:KSecDD!NewGenRandomEx:
+10974:00 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx
+11014:Break instruction exception - code 80000003 (first chance)
+11015:KSecDD!rc4_key:
+11023:KSecDD!rc4_key:
+11078:00 b8b619bc f7459705     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+11079:01 b8b61bbc f74599a6     00000000 00000000 89f4d860 KSecDD!GatherRandomKey+0x36c
+11080:02 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x55
+11110:Break instruction exception - code 80000003 (first chance)
+11111:KSecDD!GatherRandomKey+0x38b:
+11119:KSecDD!GatherRandomKey+0x38b:
+11186:00 b8b61bbc f74599a6     00000000 00000000 89f4d860 KSecDD!GatherRandomKey+0x38b
+11187:01 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x55
+11217:Break instruction exception - code 80000003 (first chance)
+11218:KSecDD!rc4:
+11226:KSecDD!rc4:
+11283:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b18 KSecDD!rc4
+11284:01 b8b61bbc f74599a6     00000000 00000000 89f4d860 KSecDD!GatherRandomKey+0x3bf
+11285:02 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x55
+11332:KSecDD!rc4+0xfb:
+11345:KSecDD!rc4+0x97:
+11379:KSecDD!rc4+0xfb:
+11381:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+11385:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+11405:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+11414:KSecDD!rc4_key:
+11483:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0xfb
+11484:01 b8b61bbc f74599a6     00000000 00000000 89f4d860 KSecDD!GatherRandomKey+0x3bf
+11485:02 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x55
+11537:Break instruction exception - code 80000003 (first chance)
+11538:KSecDD!rc4+0x14a:
+11546:KSecDD!rc4+0x14a:
+11603:00 b8b619bc f7459758     b8b619f0 00000050 b8b61b68 KSecDD!rc4+0x14a
+11604:01 b8b61bbc f74599a6     00000000 00000000 89f4d860 KSecDD!GatherRandomKey+0x3bf
+11605:02 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x55
+11635:Break instruction exception - code 80000003 (first chance)
+11636:KSecDD!rc4_key:
+11644:KSecDD!rc4_key:
+11699:00 b8b619c0 f7459786     b8b619f0 00000050 b8b61b68 KSecDD!rc4_key
+11700:01 b8b61bbc f74599a6     00000000 00000000 89f4d860 KSecDD!GatherRandomKey+0x3ed
+11701:02 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x55
+11731:Break instruction exception - code 80000003 (first chance)
+11732:KSecDD!rc4:
+11740:KSecDD!rc4:
+11797:00 b8b619c0 f74597aa     b8b619f0 00000100 89f4d860 KSecDD!rc4
+11798:01 b8b61bbc f74599a6     00000000 00000000 89f4d860 KSecDD!GatherRandomKey+0x411
+11799:02 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x55
+11846:KSecDD!rc4+0xfb:
+11859:KSecDD!rc4+0x97:
+11893:KSecDD!rc4+0xfb:
+11895:f745f10c 0f854effffff    jne     KSecDD!rc4+0x50 (f745f060)
+11899:f745f11b 742e            je      KSecDD!rc4+0x13b (f745f14b)
+11919:f745f149 75d5            jne     KSecDD!rc4+0x110 (f745f120)
+11928:KSecDD!rc4_key:
+11997:00 b8b619c0 f74597aa     b8b619f0 00000100 89f4d960 KSecDD!rc4+0xfb
+11998:01 b8b61bbc f74599a6     00000000 00000000 89f4d860 KSecDD!GatherRandomKey+0x411
+11999:02 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x55
+12051:Break instruction exception - code 80000003 (first chance)
+12052:KSecDD!rc4+0x14a:
+12060:KSecDD!rc4+0x14a:
+12117:00 b8b619c0 f74597aa     b8b619f0 00000100 89f4d960 KSecDD!rc4+0x14a
+12118:01 b8b61bbc f74599a6     00000000 00000000 89f4d860 KSecDD!GatherRandomKey+0x411
+12119:02 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x55
+12149:Break instruction exception - code 80000003 (first chance)
+12150:KSecDD!NewGenRandomEx+0x55:
+12151:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+12158:KSecDD!NewGenRandomEx+0x55:
+12159:f74599a6 eb0d            jmp     KSecDD!NewGenRandomEx+0x64 (f74599b5)
+12244:00 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x55
+12274:Break instruction exception - code 80000003 (first chance)
+12275:KSecDD!NewGenRandomEx+0x77:
+12283:KSecDD!NewGenRandomEx+0x77:
+12352:00 b8b61be0 f7457cf9     b8b61c00 89f4d860 00000100 KSecDD!NewGenRandomEx+0x77
+12457:Break instruction exception - code 80000003 (first chance)
+12462:Break instruction exception - code 80000003 (first chance)
