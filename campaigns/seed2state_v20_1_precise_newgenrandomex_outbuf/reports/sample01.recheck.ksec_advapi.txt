@@ -1,0 +1,23 @@
+[V20.1 KSECDD NEWGENRANDOMEX OUTBUF -> ADVAPI IOCTL CHECK]
+ksec_outbufs=16
+advapi_ioctl_outbufs=8
+
+MATCH ksec_after_gather_01/outbuf_100.bin == advapi_ioctl_01/outbuf_100.bin head16=72e4f5915eaf084298d096b28281f2c3
+MATCH ksec_after_gather_02/outbuf_100.bin == advapi_ioctl_03/outbuf_100.bin head16=57b2b4307f4ef53a326ac60fea7c78ea
+MATCH ksec_after_gather_03/outbuf_100.bin == advapi_ioctl_05/outbuf_100.bin head16=6be1855e572bd94e73b5d3dc216d82a9
+MATCH ksec_after_gather_04/outbuf_100.bin == advapi_ioctl_07/outbuf_100.bin head16=04fdc51998e04d84daa952b51801d9f9
+MATCH ksec_after_gather_05/outbuf_100.bin == advapi_ioctl_09/outbuf_100.bin head16=6f3ab449e345c53ac9b8abbe57be0f9f
+MATCH ksec_after_gather_06/outbuf_100.bin == advapi_ioctl_11/outbuf_100.bin head16=4b869f4bbd2bede760818229e6fdf2c0
+MATCH ksec_after_gather_07/outbuf_100.bin == advapi_ioctl_13/outbuf_100.bin head16=7f3e38a0c27c057f94263956e1d017b2
+MATCH ksec_after_gather_08/outbuf_100.bin == advapi_ioctl_15/outbuf_100.bin head16=76a58a4c7f84677e210a48bc87b9c36a
+MATCH ksec_pre_return_01/outbuf_100.bin == advapi_ioctl_01/outbuf_100.bin head16=72e4f5915eaf084298d096b28281f2c3
+MATCH ksec_pre_return_02/outbuf_100.bin == advapi_ioctl_03/outbuf_100.bin head16=57b2b4307f4ef53a326ac60fea7c78ea
+MATCH ksec_pre_return_03/outbuf_100.bin == advapi_ioctl_05/outbuf_100.bin head16=6be1855e572bd94e73b5d3dc216d82a9
+MATCH ksec_pre_return_04/outbuf_100.bin == advapi_ioctl_07/outbuf_100.bin head16=04fdc51998e04d84daa952b51801d9f9
+MATCH ksec_pre_return_05/outbuf_100.bin == advapi_ioctl_09/outbuf_100.bin head16=6f3ab449e345c53ac9b8abbe57be0f9f
+MATCH ksec_pre_return_06/outbuf_100.bin == advapi_ioctl_11/outbuf_100.bin head16=4b869f4bbd2bede760818229e6fdf2c0
+MATCH ksec_pre_return_07/outbuf_100.bin == advapi_ioctl_13/outbuf_100.bin head16=7f3e38a0c27c057f94263956e1d017b2
+MATCH ksec_pre_return_08/outbuf_100.bin == advapi_ioctl_15/outbuf_100.bin head16=76a58a4c7f84677e210a48bc87b9c36a
+
+[SUMMARY] exact_matches=16
+csv=reports/sample01.recheck.ksec_advapi.csv
