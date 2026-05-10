@@ -1,5 +1,5 @@
 [SEED2STATE V24 CLOSE-G PARSE REPORT]
-file=/home/hal/lab/00_fullchain_campaigns/10/seed2state_v24_close_g_campaign/seed2state_v24_close_g/original_log_omitted
+file=original_log_omitted
 
 [COUNTS]
 SEED2STATE_V24_CLOSEG_GO_ARMED                               1
