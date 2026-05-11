@@ -470,31 +470,156 @@ Scope note: this campaign is intentionally rsaenh provider-local. It does not cl
 
 ---
 
-## Campaign Status Summary
 
-The V5, V17.1, and V18.1 campaigns validate the downstream `G_aux` / ADVAPI-to-`aux20` branch from captured ADVAPI RC4 material to `SystemFunction036 output20` and, in the V5 campaign, to `rsaenh aux20`.
+### `seed2state_v29_g_composed_provider_bridge`
 
-V18.1 additionally validates the local boundary from a captured KSecDD kernel output buffer to the corresponding ADVAPI IOCTL output buffer.
+Composed provider-side validation campaign for the Windows XP SP3 `rsaenh.dll`
+RNG path.
 
-V19c validates a local provider-side state/update boundary around captured `state20`, `aux20`, and `out40` material.
-
-V20.1, V22, V23, and V24 progressively refine the KSecDD `NewGenRandomEx`, RC4, writer, XOR, and ADVAPI transport observations.
-
-Together, these campaigns improve the experimental decomposition of the path, but they do not close:
+This campaign validates, in a single captured execution, the composed
+provider-side relation:
 
 ```text
-VLH seedbase_after → KSecDD kernel_outbuf[0x100]
-seedbase_after / persistent provider state → state20
+G_provider =
+  G_init
+  + G_acquire_bridge_00
+  + G_runtime_measured
+````
+
+The trace shows that the first measured `CryptGenRandom(32)` state is not
+immediately adjacent to the provider initialization state. One additional
+provider transition occurs during `CryptAcquireContext`.
+
+Once this acquire-bridge transition is included, the provider state chain is
+replayed sequentially through the same `rsaenh` FIPS-style block:
+
+```text
+post-AlgorithmCheck state20
+→ init provider transition
+→ acquire-bridge provider transition
+→ measured runtime provider transition
+→ CryptGenRandom(32) output
+→ next runtime provider state20
+```
+
+Validated local relations:
+
+```text
+aux20_final = SystemFunction036_raw20 XOR outbuf_prefix20
+out40       = rsaenh_FIPS_block_output(state20_before, aux20_final)
+state20_after = rsaenh_FIPS_state_update(state20_before, aux20_final)
+CGR output32 = runtime_out40[:32]
+```
+
+Included artifacts:
+
+```text
+campaigns/seed2state_v29_g_composed_provider_bridge/
+├── logs/                            redacted trace excerpt
+├── parser/                          parser for the composed trace
+├── samples/sample01/blobs/          extracted binary samples
+├── samples/sample01/manifest.json   sample manifest
+├── samples/sample01/manifest.tsv    tabular manifest
+├── samples/sample01/v29_g_composed_validation.txt
+└── tools/replay_v29_g_composed_provider_bridge.py
+```
+
+Main result for sample01:
+
+```text
+init_aux20_final_calc_equals_observed                PASS
+init_out40_calc_equals_observed                      PASS
+init_state20_after_calc_equals_observed              PASS
+state_continuity_init_to_bridge00                    PASS
+bridge00_aux20_final_calc_equals_observed            PASS
+bridge00_out40_calc_equals_observed                  PASS
+bridge00_state20_after_calc_equals_observed          PASS
+state_continuity_bridge00_to_runtime                 PASS
+runtime_aux20_final_calc_equals_observed             PASS
+runtime_out40_calc_equals_observed                   PASS
+runtime_state20_after_calc_equals_observed           PASS
+cgr_output32_equals_runtime_out40_prefix             PASS
+OVERALL=PASS
+```
+
+Scope note: this campaign closes the composed provider-side `G` relation for
+the captured execution. It does not claim full upstream closure of the complete
+KSecDD → ADVAPI → SystemFunction036 → rsaenh provenance chain.
+
+---
+
+
+## Campaign Status Summary
+
+The V5, V17.1, and V18.1 campaigns validate the downstream `G_aux` /
+ADVAPI-to-`aux20` branch from captured ADVAPI RC4 material to
+`SystemFunction036 output20` and, in the V5 campaign, to `rsaenh aux20`.
+
+V18.1 additionally validates the local boundary from a captured KSecDD kernel
+output buffer to the corresponding ADVAPI IOCTL output buffer.
+
+V19c, V26, V28, and V29 progressively close the provider-side `rsaenh` segment.
+
+- V19c validates a local provider-side state/update boundary around captured
+  `state20`, `aux20`, and `out40` material.
+
+- V26 validates the provider-local FIPS-style block and output-copy behavior
+  around `state20`, local `aux20`, `out40`, and provider state-slot updates.
+
+- V28 validates the provider initialization transition, showing that the first
+  runtime provider state is produced from a post-AlgorithmCheck state and an
+  `aux20_final` value derived as:
+
+```text
+aux20_final = SystemFunction036_raw20 XOR outbuf_prefix20
+````
+
+* V29 validates the composed provider-side `G` relation in a single execution:
+
+```text
+G_provider =
+  G_init
+  + G_acquire_bridge_00
+  + G_runtime_measured
+```
+
+V29 also shows that the direct continuity assumption:
+
+```text
+init_state20_after == runtime_state20_before
+```
+
+is false for the captured trace. The correct provider-side continuity is:
+
+```text
+init_state20_after      == bridge00_state20_before
+bridge00_state20_after  == runtime_state20_before
+runtime_out40[:32]      == measured CryptGenRandom(32) output
+```
+
+V20.1, V22, V23, and V24 progressively refine the KSecDD `NewGenRandomEx`,
+RC4, writer, XOR, and ADVAPI transport observations.
+
+Together, these campaigns substantially improve the experimental decomposition
+of the Windows XP SP3 `CryptGenRandom` path. In particular, the composed
+provider-side `G` relation is closed for the captured V29 execution.
+
+They still do not claim full closure of the complete upstream path:
+
+```text
+KSecDD → ADVAPI → SystemFunction036 → rsaenh
 ```
 
 They also do not claim:
 
 ```text
 complete Windows XP CryptGenRandom reconstruction
-complete seedbase_after → provider_state → state20 replay
+complete seedbase_after → KSecDD/ADVAPI/SystemFunction036 → provider replay
 complete entropy assessment
 practical attack against Bitcoin or historical keys
 ```
+
+
 
 ---
 
