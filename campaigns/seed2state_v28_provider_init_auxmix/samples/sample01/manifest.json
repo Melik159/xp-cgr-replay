@@ -1,0 +1,75 @@
+{
+  "addresses": {
+    "aux_dst": "0013f6e0",
+    "caller_outbuf": "0013f724",
+    "fips_entry": "68027101",
+    "fips_local_out": "0013f6b8",
+    "g_state20_slot": "68031958",
+    "init_call": "680120cf",
+    "init_return": "680120d4",
+    "provider_rng_wrapper": "6800d640",
+    "systemfunction036_callsite_after": "6800d69e",
+    "systemfunction036_callsite_before": "6800d693",
+    "systemfunction036_thunk": "6801504c"
+  },
+  "blob_files": {
+    "aux20_final": {
+      "hex": "310ccad9cd970d21107af18d266b4c21df883446",
+      "len": 20,
+      "path": "blobs/aux20_final.bin",
+      "sha256": "0ef068d4d720949e4402ad6516020a18285036f6076cc896f61408768c92de4e"
+    },
+    "out40_init": {
+      "hex": "56e57e14568b3254086d9a3ff8724ba5a9430ec4f99dbebf65016dcdddfe57f70467ccaf9f8a11c9",
+      "len": 40,
+      "path": "blobs/out40_init.bin",
+      "sha256": "54239a9efc8d7d8ce2703c818fecdb43495a0e4306f8091758574fbe43b69c57"
+    },
+    "outbuf_prefix20": {
+      "hex": "cec3c277e7c3c277800000003cf713007a9dc377",
+      "len": 20,
+      "path": "blobs/outbuf_prefix20.bin",
+      "sha256": "3ca235471c7c8ba1cd3823f2141a371c75182602a1976e75e14ba9483e1c8454"
+    },
+    "state20_after": {
+      "hex": "75484393ffe8219a54350ebc6ae80e15c555257a",
+      "len": 20,
+      "path": "blobs/state20_after.bin",
+      "sha256": "39152ab1de7dfd7700285d171cba86781bb1cc515bf6843ee0270f602b91c131"
+    },
+    "state20_before": {
+      "hex": "24c506c0445b81786dc91c856e0df5c07c8804eb",
+      "len": 20,
+      "path": "blobs/state20_before.bin",
+      "sha256": "90f23870e1d0878242ef2ac0a75d2d4f952cadefce7a01cab0bcf3017879cf99"
+    },
+    "sysfunc036_raw20": {
+      "hex": "ffcf08ae2a54cf56907af18d1a9c5f21a515f731",
+      "len": 20,
+      "path": "blobs/sysfunc036_raw20.bin",
+      "sha256": "ba6630e5f72af811725bccb8c803ef0997482aff254a60165cf51ef31d5a3619"
+    }
+  },
+  "blobs_hex": {
+    "aux20_final": "310ccad9cd970d21107af18d266b4c21df883446",
+    "out40_init": "56e57e14568b3254086d9a3ff8724ba5a9430ec4f99dbebf65016dcdddfe57f70467ccaf9f8a11c9",
+    "outbuf_prefix20": "cec3c277e7c3c277800000003cf713007a9dc377",
+    "state20_after": "75484393ffe8219a54350ebc6ae80e15c555257a",
+    "state20_before": "24c506c0445b81786dc91c856e0df5c07c8804eb",
+    "sysfunc036_raw20": "ffcf08ae2a54cf56907af18d1a9c5f21a515f731"
+  },
+  "campaign": "seed2state_v28_provider_init_auxmix",
+  "lengths": {
+    "aux_len": 20,
+    "fips_len_or_flags": 20,
+    "out_len_arg": 40
+  },
+  "markers_seen": [
+    "GSTATE_INIT_AUX_AFTER_SYSTEMFUNCTION036_6800D69E",
+    "GSTATE_INIT_AUX_BEFORE_SYSTEMFUNCTION036_6800D693",
+    "GSTATE_INIT_CALL_680120CF_BEFORE_SUB_6800D640",
+    "GSTATE_INIT_FIPS_ENTRY_68027101",
+    "GSTATE_INIT_RETURN_680120D4_AFTER_SUB_6800D640"
+  ],
+  "sample_id": "sample01"
+}

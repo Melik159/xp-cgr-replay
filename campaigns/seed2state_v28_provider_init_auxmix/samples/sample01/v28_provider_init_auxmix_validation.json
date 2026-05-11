@@ -1,0 +1,32 @@
+{
+  "calculated_hex": {
+    "aux20_final": "310ccad9cd970d21107af18d266b4c21df883446",
+    "out20_a": "56e57e14568b3254086d9a3ff8724ba5a9430ec4",
+    "out20_b": "f99dbebf65016dcdddfe57f70467ccaf9f8a11c9",
+    "out40_init": "56e57e14568b3254086d9a3ff8724ba5a9430ec4f99dbebf65016dcdddfe57f70467ccaf9f8a11c9",
+    "state20_after": "75484393ffe8219a54350ebc6ae80e15c555257a",
+    "state_a": "7baa84d49ae6b3cc7636b6c56680416625cb13b0",
+    "xval_a": "55d1d19a11f28e997e440e12947941e25c103931",
+    "xval_b": "acb74fae687dc0ed86b1a8528ceb8d88055347f6"
+  },
+  "checks": {
+    "aux20_final_calc_equals_observed": true,
+    "out40_calc_equals_observed": true,
+    "state20_after_calc_equals_observed": true
+  },
+  "observed_hex": {
+    "aux20_final": "310ccad9cd970d21107af18d266b4c21df883446",
+    "out40_init": "56e57e14568b3254086d9a3ff8724ba5a9430ec4f99dbebf65016dcdddfe57f70467ccaf9f8a11c9",
+    "outbuf_prefix20": "cec3c277e7c3c277800000003cf713007a9dc377",
+    "state20_after": "75484393ffe8219a54350ebc6ae80e15c555257a",
+    "state20_before": "24c506c0445b81786dc91c856e0df5c07c8804eb",
+    "sysfunc036_raw20": "ffcf08ae2a54cf56907af18d1a9c5f21a515f731"
+  },
+  "overall": true,
+  "relations": {
+    "aux20_final_calc": "sysfunc036_raw20 XOR outbuf_prefix20",
+    "out40_calc": "FIPS186_provider_block(state20_before, aux20_final_calc)",
+    "state20_after_calc": "FIPS186_provider_update(state20_before, aux20_final_calc)"
+  },
+  "sample_dir": "samples/sample01"
+}

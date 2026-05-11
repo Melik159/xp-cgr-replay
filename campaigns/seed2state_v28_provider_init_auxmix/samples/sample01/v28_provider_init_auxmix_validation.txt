@@ -1,0 +1,36 @@
+[V28_PROVIDER_INIT_AUXMIX_REPLAY]
+sample_dir=samples/sample01
+
+[OBSERVED]
+  state20_before    = 24 c5 06 c0 44 5b 81 78 6d c9 1c 85 6e 0d f5 c0 7c 88 04 eb
+  sysfunc036_raw20  = ff cf 08 ae 2a 54 cf 56 90 7a f1 8d 1a 9c 5f 21 a5 15 f7 31
+  outbuf_prefix20   = ce c3 c2 77 e7 c3 c2 77 80 00 00 00 3c f7 13 00 7a 9d c3 77
+  aux20_final_obs   = 31 0c ca d9 cd 97 0d 21 10 7a f1 8d 26 6b 4c 21 df 88 34 46
+  out40_obs         = 56 e5 7e 14 56 8b 32 54 08 6d 9a 3f f8 72 4b a5 a9 43 0e c4 f9 9d be bf 65 01 6d cd dd fe 57 f7 04 67 cc af 9f 8a 11 c9
+  state20_after_obs = 75 48 43 93 ff e8 21 9a 54 35 0e bc 6a e8 0e 15 c5 55 25 7a
+
+[CALCULATED]
+  aux20_final_calc  = sysfunc036_raw20 XOR outbuf_prefix20
+                    = 31 0c ca d9 cd 97 0d 21 10 7a f1 8d 26 6b 4c 21 df 88 34 46
+  xval_A            = 55 d1 d1 9a 11 f2 8e 99 7e 44 0e 12 94 79 41 e2 5c 10 39 31
+  out20_A           = 56 e5 7e 14 56 8b 32 54 08 6d 9a 3f f8 72 4b a5 a9 43 0e c4
+  state_A           = 7b aa 84 d4 9a e6 b3 cc 76 36 b6 c5 66 80 41 66 25 cb 13 b0
+  xval_B            = ac b7 4f ae 68 7d c0 ed 86 b1 a8 52 8c eb 8d 88 05 53 47 f6
+  out20_B           = f9 9d be bf 65 01 6d cd dd fe 57 f7 04 67 cc af 9f 8a 11 c9
+  out40_calc        = 56 e5 7e 14 56 8b 32 54 08 6d 9a 3f f8 72 4b a5 a9 43 0e c4 f9 9d be bf 65 01 6d cd dd fe 57 f7 04 67 cc af 9f 8a 11 c9
+  state20_after_calc= 75 48 43 93 ff e8 21 9a 54 35 0e bc 6a e8 0e 15 c5 55 25 7a
+
+[aux20_final] PASS
+  obs  = 31 0c ca d9 cd 97 0d 21 10 7a f1 8d 26 6b 4c 21 df 88 34 46
+  calc = 31 0c ca d9 cd 97 0d 21 10 7a f1 8d 26 6b 4c 21 df 88 34 46
+[out40_init] PASS
+  obs  = 56 e5 7e 14 56 8b 32 54 08 6d 9a 3f f8 72 4b a5 a9 43 0e c4 f9 9d be bf 65 01 6d cd dd fe 57 f7 04 67 cc af 9f 8a 11 c9
+  calc = 56 e5 7e 14 56 8b 32 54 08 6d 9a 3f f8 72 4b a5 a9 43 0e c4 f9 9d be bf 65 01 6d cd dd fe 57 f7 04 67 cc af 9f 8a 11 c9
+[state20_after] PASS
+  obs  = 75 48 43 93 ff e8 21 9a 54 35 0e bc 6a e8 0e 15 c5 55 25 7a
+  calc = 75 48 43 93 ff e8 21 9a 54 35 0e bc 6a e8 0e 15 c5 55 25 7a
+
+aux20_final_calc_equals_observed             PASS
+out40_calc_equals_observed                   PASS
+state20_after_calc_equals_observed           PASS
+OVERALL=PASS
