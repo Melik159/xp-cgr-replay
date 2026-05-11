@@ -1,0 +1,121 @@
+[V29_G_COMPOSED_PROVIDER_BRIDGE_REPLAY]
+sample_dir=samples/sample01
+
+[OBSERVED_INIT]
+  init_state20_before    = 24 c5 06 c0 44 5b 81 78 6d c9 1c 85 6e 0d f5 c0 7c 88 04 eb
+  init_sysfunc036_raw20  = 27 8e 09 bd f9 cb 36 da 56 a0 7f 3c 6c bf 60 74 de 70 ac e6
+  init_outbuf_prefix20   = ce c3 c2 77 e7 c3 c2 77 80 00 00 00 50 f7 13 00 7a 9d c3 77
+  init_aux20_final_obs   = e9 4d cb ca 1e 08 f4 ad d6 a0 7f 3c 3c 48 73 74 a4 ed 6f 91
+  init_out40_obs         = 03 fd c4 dc e7 a3 52 6b e0 48 54 39 c7 18 55 b1 4f 09 38 2c 23 59 6a 49 d1 25 ac 1c 2f 79 57 bd 0c c6 47 cb b0 24 cd ab
+  init_state20_after_obs = 4c 1c 35 e6 fd 24 80 00 7d 8a c8 7c 41 ec 93 3d 7b b6 0a c4
+
+[CALCULATED_INIT]
+  init_aux20_final_calc  = init_sysfunc036_raw20 XOR init_outbuf_prefix20
+                            = e9 4d cb ca 1e 08 f4 ad d6 a0 7f 3c 3c 48 73 74 a4 ed 6f 91
+  init_xval_A            = 0e 12 d2 8a 62 64 76 26 44 69 9b c1 aa 56 69 35 21 75 74 7c
+  init_out20_A           = 03 fd c4 dc e7 a3 52 6b e0 48 54 39 c7 18 55 b1 4f 09 38 2c
+  init_state_A           = 28 c2 cb 9d 2b fe d3 e4 4e 11 70 bf 35 26 4b 71 cb 91 3d 18
+  init_xval_B            = 12 10 97 67 4a 07 c8 92 24 b1 ef fb 71 6e be e6 70 7e ac a9
+  init_out20_B           = 23 59 6a 49 d1 25 ac 1c 2f 79 57 bd 0c c6 47 cb b0 24 cd ab
+  init_out40_calc        = 03 fd c4 dc e7 a3 52 6b e0 48 54 39 c7 18 55 b1 4f 09 38 2c 23 59 6a 49 d1 25 ac 1c 2f 79 57 bd 0c c6 47 cb b0 24 cd ab
+  init_state20_after_calc= 4c 1c 35 e6 fd 24 80 00 7d 8a c8 7c 41 ec 93 3d 7b b6 0a c4
+
+[init_aux20_final] PASS
+  obs  = e9 4d cb ca 1e 08 f4 ad d6 a0 7f 3c 3c 48 73 74 a4 ed 6f 91
+  calc = e9 4d cb ca 1e 08 f4 ad d6 a0 7f 3c 3c 48 73 74 a4 ed 6f 91
+[init_out40] PASS
+  obs  = 03 fd c4 dc e7 a3 52 6b e0 48 54 39 c7 18 55 b1 4f 09 38 2c 23 59 6a 49 d1 25 ac 1c 2f 79 57 bd 0c c6 47 cb b0 24 cd ab
+  calc = 03 fd c4 dc e7 a3 52 6b e0 48 54 39 c7 18 55 b1 4f 09 38 2c 23 59 6a 49 d1 25 ac 1c 2f 79 57 bd 0c c6 47 cb b0 24 cd ab
+[init_state20_after] PASS
+  obs  = 4c 1c 35 e6 fd 24 80 00 7d 8a c8 7c 41 ec 93 3d 7b b6 0a c4
+  calc = 4c 1c 35 e6 fd 24 80 00 7d 8a c8 7c 41 ec 93 3d 7b b6 0a c4
+
+[state_continuity_init_to_bridge00] PASS
+  obs  = 4c 1c 35 e6 fd 24 80 00 7d 8a c8 7c 41 ec 93 3d 7b b6 0a c4
+  calc = 4c 1c 35 e6 fd 24 80 00 7d 8a c8 7c 41 ec 93 3d 7b b6 0a c4
+
+[OBSERVED_BRIDGE00]
+  bridge00_state20_before    = 4c 1c 35 e6 fd 24 80 00 7d 8a c8 7c 41 ec 93 3d 7b b6 0a c4
+  bridge00_sysfunc036_raw20  = 3d 1c b8 f4 0c bc e5 df 6c 1d 41 72 ba 79 c9 52 bb 5c b8 62
+  bridge00_outbuf_prefix20   = 00 00 00 68 8c fe 13 00 00 00 00 00 00 00 00 00 00 00 00 00
+  bridge00_aux20_final_obs   = 3d 1c b8 9c 80 42 f6 df 6c 1d 41 72 ba 79 c9 52 bb 5c b8 62
+  bridge00_out40_obs         = 5a 9d 13 e5 ee a7 f9 59 0d 0d 86 ab c8 ac a7 e8 ca 52 40 be c1 61 4a 17 5e 37 46 9c 27 18 61 41 90 6c 5e 2d 04 e0 a6 e1
+  bridge00_state20_after_obs = 68 1a 93 e4 4a 03 bf f5 b1 b0 b0 69 9b 05 99 53 4a e8 f2 65
+
+[CALCULATED_BRIDGE00]
+  bridge00_aux20_final_calc  = bridge00_sysfunc036_raw20 XOR bridge00_outbuf_prefix20
+                            = 3d 1c b8 9c 80 42 f6 df 6c 1d 41 72 ba 79 c9 52 bb 5c b8 62
+  bridge00_xval_A            = 89 38 ee 83 7d 67 76 df e9 a8 09 ee fc 66 5c 90 37 12 c3 26
+  bridge00_out20_A           = 5a 9d 13 e5 ee a7 f9 59 0d 0d 86 ab c8 ac a7 e8 ca 52 40 be
+  bridge00_state_A           = a6 b9 49 cc eb cc 79 59 8a 98 4f 28 0a 99 3b 26 46 08 4b 83
+  bridge00_xval_B            = e3 d6 02 69 6c 0f 70 38 f6 b5 90 9a c5 13 04 79 01 65 03 e5
+  bridge00_out20_B           = c1 61 4a 17 5e 37 46 9c 27 18 61 41 90 6c 5e 2d 04 e0 a6 e1
+  bridge00_out40_calc        = 5a 9d 13 e5 ee a7 f9 59 0d 0d 86 ab c8 ac a7 e8 ca 52 40 be c1 61 4a 17 5e 37 46 9c 27 18 61 41 90 6c 5e 2d 04 e0 a6 e1
+  bridge00_state20_after_calc= 68 1a 93 e4 4a 03 bf f5 b1 b0 b0 69 9b 05 99 53 4a e8 f2 65
+
+[bridge00_aux20_final] PASS
+  obs  = 3d 1c b8 9c 80 42 f6 df 6c 1d 41 72 ba 79 c9 52 bb 5c b8 62
+  calc = 3d 1c b8 9c 80 42 f6 df 6c 1d 41 72 ba 79 c9 52 bb 5c b8 62
+[bridge00_out40] PASS
+  obs  = 5a 9d 13 e5 ee a7 f9 59 0d 0d 86 ab c8 ac a7 e8 ca 52 40 be c1 61 4a 17 5e 37 46 9c 27 18 61 41 90 6c 5e 2d 04 e0 a6 e1
+  calc = 5a 9d 13 e5 ee a7 f9 59 0d 0d 86 ab c8 ac a7 e8 ca 52 40 be c1 61 4a 17 5e 37 46 9c 27 18 61 41 90 6c 5e 2d 04 e0 a6 e1
+[bridge00_state20_after] PASS
+  obs  = 68 1a 93 e4 4a 03 bf f5 b1 b0 b0 69 9b 05 99 53 4a e8 f2 65
+  calc = 68 1a 93 e4 4a 03 bf f5 b1 b0 b0 69 9b 05 99 53 4a e8 f2 65
+
+[state_continuity_bridge00_to_runtime] PASS
+  obs  = 68 1a 93 e4 4a 03 bf f5 b1 b0 b0 69 9b 05 99 53 4a e8 f2 65
+  calc = 68 1a 93 e4 4a 03 bf f5 b1 b0 b0 69 9b 05 99 53 4a e8 f2 65
+
+[OBSERVED_RUNTIME]
+  runtime_state20_before    = 68 1a 93 e4 4a 03 bf f5 b1 b0 b0 69 9b 05 99 53 4a e8 f2 65
+  runtime_sysfunc036_raw20  = 83 98 62 83 70 89 51 13 77 73 3e 6a 2b b4 21 1d c7 54 60 99
+  runtime_outbuf_prefix20   = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  runtime_aux20_final_obs   = 83 98 62 83 70 89 51 13 77 73 3e 6a 2b b4 21 1d c7 54 60 99
+  runtime_out40_obs         = 26 92 52 76 5b 49 26 16 7c 6e 8c bb 58 10 6e 6b fb 3b 15 d3 1e 5c 0b 26 49 67 3e bf 15 de f5 02 7a 8a c0 97 5a 2b d3 6c
+  runtime_state20_after_obs = ad 08 f1 80 ee b4 24 cb 43 fe 32 27 6d a0 c8 56 a0 4f db a6
+
+[CALCULATED_RUNTIME]
+  runtime_aux20_final_calc  = runtime_sysfunc036_raw20 XOR runtime_outbuf_prefix20
+                            = 83 98 62 83 70 89 51 13 77 73 3e 6a 2b b4 21 1d c7 54 60 99
+  runtime_xval_A            = eb b2 f6 67 ba 8d 11 09 29 23 ee d3 c6 b9 ba 71 12 3d 52 fe
+  runtime_out20_A           = 26 92 52 76 5b 49 26 16 7c 6e 8c bb 58 10 6e 6b fb 3b 15 d3
+  runtime_state_A           = 8e ac e6 5a a5 4c e6 0c 2e 1f 3d 24 f3 16 07 bf 46 24 08 39
+  runtime_xval_B            = 12 45 48 de 15 d6 37 1f a5 92 7b 8f 1e ca 28 dd 0d 78 68 d2
+  runtime_out20_B           = 1e 5c 0b 26 49 67 3e bf 15 de f5 02 7a 8a c0 97 5a 2b d3 6c
+  runtime_out40_calc        = 26 92 52 76 5b 49 26 16 7c 6e 8c bb 58 10 6e 6b fb 3b 15 d3 1e 5c 0b 26 49 67 3e bf 15 de f5 02 7a 8a c0 97 5a 2b d3 6c
+  runtime_state20_after_calc= ad 08 f1 80 ee b4 24 cb 43 fe 32 27 6d a0 c8 56 a0 4f db a6
+
+[runtime_aux20_final] PASS
+  obs  = 83 98 62 83 70 89 51 13 77 73 3e 6a 2b b4 21 1d c7 54 60 99
+  calc = 83 98 62 83 70 89 51 13 77 73 3e 6a 2b b4 21 1d c7 54 60 99
+[runtime_out40] PASS
+  obs  = 26 92 52 76 5b 49 26 16 7c 6e 8c bb 58 10 6e 6b fb 3b 15 d3 1e 5c 0b 26 49 67 3e bf 15 de f5 02 7a 8a c0 97 5a 2b d3 6c
+  calc = 26 92 52 76 5b 49 26 16 7c 6e 8c bb 58 10 6e 6b fb 3b 15 d3 1e 5c 0b 26 49 67 3e bf 15 de f5 02 7a 8a c0 97 5a 2b d3 6c
+[runtime_state20_after] PASS
+  obs  = ad 08 f1 80 ee b4 24 cb 43 fe 32 27 6d a0 c8 56 a0 4f db a6
+  calc = ad 08 f1 80 ee b4 24 cb 43 fe 32 27 6d a0 c8 56 a0 4f db a6
+
+[OBSERVED_CGR]
+  cgr_output32_obs  = 26 92 52 76 5b 49 26 16 7c 6e 8c bb 58 10 6e 6b fb 3b 15 d3 1e 5c 0b 26 49 67 3e bf 15 de f5 02
+[CALCULATED_CGR]
+  cgr_output32_calc = runtime_out40_calc[:32]
+                    = 26 92 52 76 5b 49 26 16 7c 6e 8c bb 58 10 6e 6b fb 3b 15 d3 1e 5c 0b 26 49 67 3e bf 15 de f5 02
+
+[cgr_output32] PASS
+  obs  = 26 92 52 76 5b 49 26 16 7c 6e 8c bb 58 10 6e 6b fb 3b 15 d3 1e 5c 0b 26 49 67 3e bf 15 de f5 02
+  calc = 26 92 52 76 5b 49 26 16 7c 6e 8c bb 58 10 6e 6b fb 3b 15 d3 1e 5c 0b 26 49 67 3e bf 15 de f5 02
+
+init_aux20_final_calc_equals_observed                PASS
+init_out40_calc_equals_observed                      PASS
+init_state20_after_calc_equals_observed              PASS
+state_continuity_init_to_bridge00                    PASS
+bridge00_aux20_final_calc_equals_observed            PASS
+bridge00_out40_calc_equals_observed                  PASS
+bridge00_state20_after_calc_equals_observed          PASS
+state_continuity_bridge00_to_runtime                 PASS
+runtime_aux20_final_calc_equals_observed             PASS
+runtime_out40_calc_equals_observed                   PASS
+runtime_state20_after_calc_equals_observed           PASS
+cgr_output32_equals_runtime_out40_prefix             PASS
+OVERALL=PASS

@@ -1,0 +1,37 @@
+{
+  "campaign": "seed2state_v29_g_composed_provider_bridge",
+  "model": "G_provider = G_init + G_acquire_bridge_00 + G_runtime_measured",
+  "checks": {
+    "init_aux20_final_calc_equals_observed": true,
+    "init_out40_calc_equals_observed": true,
+    "init_state20_after_calc_equals_observed": true,
+    "state_continuity_init_to_bridge00": true,
+    "bridge00_aux20_final_calc_equals_observed": true,
+    "bridge00_out40_calc_equals_observed": true,
+    "bridge00_state20_after_calc_equals_observed": true,
+    "state_continuity_bridge00_to_runtime": true,
+    "runtime_aux20_final_calc_equals_observed": true,
+    "runtime_out40_calc_equals_observed": true,
+    "runtime_state20_after_calc_equals_observed": true,
+    "cgr_output32_equals_runtime_out40_prefix": true
+  },
+  "overall": true,
+  "observed": {
+    "init_state20_before": "24c506c0445b81786dc91c856e0df5c07c8804eb",
+    "init_state20_after": "4c1c35e6fd2480007d8ac87c41ec933d7bb60ac4",
+    "bridge00_state20_before": "4c1c35e6fd2480007d8ac87c41ec933d7bb60ac4",
+    "bridge00_state20_after": "681a93e44a03bff5b1b0b0699b0599534ae8f265",
+    "runtime_state20_before": "681a93e44a03bff5b1b0b0699b0599534ae8f265",
+    "runtime_state20_after": "ad08f180eeb424cb43fe32276da0c856a04fdba6",
+    "cgr_output32": "269252765b4926167c6e8cbb58106e6bfb3b15d31e5c0b2649673ebf15def502"
+  },
+  "calculated": {
+    "init_out40": "03fdc4dce7a3526be0485439c71855b14f09382c23596a49d125ac1c2f7957bd0cc647cbb024cdab",
+    "init_state20_after": "4c1c35e6fd2480007d8ac87c41ec933d7bb60ac4",
+    "bridge00_out40": "5a9d13e5eea7f9590d0d86abc8aca7e8ca5240bec1614a175e37469c27186141906c5e2d04e0a6e1",
+    "bridge00_state20_after": "681a93e44a03bff5b1b0b0699b0599534ae8f265",
+    "runtime_out40": "269252765b4926167c6e8cbb58106e6bfb3b15d31e5c0b2649673ebf15def5027a8ac0975a2bd36c",
+    "runtime_state20_after": "ad08f180eeb424cb43fe32276da0c856a04fdba6",
+    "cgr_output32": "269252765b4926167c6e8cbb58106e6bfb3b15d31e5c0b2649673ebf15def502"
+  }
+}
