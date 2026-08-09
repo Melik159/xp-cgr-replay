@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*.tmp
+*.log.tmp
+validation-report.json
+

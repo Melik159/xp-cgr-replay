@@ -1,0 +1,13 @@
+[
+  {"directory":"01-advapi-round-robin","source_campaign":"seed2state_v5_roundrobin","status":"PASS","capture":"reduced-result"},
+  {"directory":"02-advapi-ioctl-to-rc4","source_campaign":"seed2state_v17_1_precise_ioctl_outbuf","status":"PASS","capture":"retained-log"},
+  {"directory":"03-ksecdd-to-advapi","source_campaign":"seed2state_v18_1_ksecdd_kernel_outbuf_manual","status":"PASS","capture":"redacted-log"},
+  {"directory":"04-provider-state-update","source_campaign":"seed2state_v19c_fips_state20_update_replay","status":"PASS","capture":"redacted-log"},
+  {"directory":"05-newgenrandom-transport","source_campaign":"seed2state_v20_1_precise_newgenrandomex_outbuf","status":"PASS","capture":"redacted-log"},
+  {"directory":"06-newgenrandom-first-write","source_campaign":"seed2state_v22_writer_probe","status":"PASS","capture":"omitted"},
+  {"directory":"07-ksecdd-rc4-transport","source_campaign":"seed2state_v23_rc4_replay","status":"PASS","capture":"omitted"},
+  {"directory":"08-partial-advapi-transport","source_campaign":"seed2state_v24_close_g_partial_advapi","status":"PARTIAL","capture":"omitted"},
+  {"directory":"09-rsaenh-provider-transition","source_campaign":"seed2state_v26_rsaenh_provider_only","status":"PASS","capture":"reduced-excerpt"},
+  {"directory":"10-provider-initialization","source_campaign":"seed2state_v28_provider_init_auxmix","status":"PASS","capture":"redacted-log"},
+  {"directory":"11-provider-composed-bridge","source_campaign":"seed2state_v29_g_composed_provider_bridge","status":"PASS","capture":"redacted-log"}
+]
