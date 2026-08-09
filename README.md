@@ -1,9 +1,9 @@
-# Windows XP CryptGenRandom: Block-Level Replay Artifact
+# Windows XP CryptGenRandom: Blockwise Replay Artifact
 
 This repository reorganizes the retained experimental material for:
 
-> *An Empirical Analysis of CryptGenRandom in Windows XP SP3 and Its
-> Historical Relevance to Bitcoin 0.1.5*
+> *A Blockwise Empirical Reconstruction of CryptGenRandom in Windows XP SP3
+> and Its Observed Relationship to OpenSSL 0.9.8h and Bitcoin 0.1.5*
 
 The artifact validates isolated relations in eight blocks. It does not claim
 an end-to-end reconstruction of Windows XP `CryptGenRandom`, a complete
