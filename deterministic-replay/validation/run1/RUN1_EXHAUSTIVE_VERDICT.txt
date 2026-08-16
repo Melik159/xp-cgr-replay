@@ -1,0 +1,10 @@
+Windows XP SP3 CryptGenRandom deterministic replay
+Run1 exhaustive multisource differential validation
+
+cases              : 240/240 PASS
+Rust/CUDA outputs   : 61440/61440 exact
+Python checks       : 61440/61440 exact
+Original candidates : 240/240 PASS
+
+Conclusion:
+Python == Rust == CUDA bit-for-bit for all 61,440 tested counterfactual outputs.
