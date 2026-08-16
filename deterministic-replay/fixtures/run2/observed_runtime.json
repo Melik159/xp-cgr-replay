@@ -1,0 +1,16 @@
+{
+  "output_hex": "73f3bee078d1335c3dda75994b505be400b1b29ecf2443000cf83128dfcd2fd8",
+  "provenance": {
+    "run": "run2",
+    "trace_sha256": "4cd84290fc31862a81c4a45cbf72007f186f87126a2fdb32450b92ee05b52773"
+  },
+  "schema": "cgr-observation/v1",
+  "state_after": {
+    "boundary": "post_runtime",
+    "provider_fips_state_hex": "ae27f4a99e4648188fdaaa5fac957825a54de8d7",
+    "rc4_contexts_hex": [
+      "56aeb21b731c2acf8fba4789eff388e1376dc59dd140249e286f41c029f9480eaf85beb96204f2e020fdf0e5b132957fa0e8b0e614de07022c7e10fb8ac2826c930af543d3c47197a292a41f2fb85ef14a0875c7ebc153907d7b2e314e176ecd06eea1bb55528079e7017c4f875b0c0b12ddd56b6ae39a0325574b761acb61e94c67fc69c87aca5dff918c50165f09ec515a18b44dc9aca3a93c668359bc9f058100336522bd3b3f7478d85845c3e41927e215b5a8adf8a5bfdbfef6d08468983dfaed0fcc9c112bf71eb67721b742b3eaaa8d5c9b9426ab63d2541399df44a7463470ce0d1dd72d723ac630da968e3638f4d964dca686d660d48b3e4935233914ee"
+    ],
+    "schema": "cgr-provider-state/v1"
+  }
+}

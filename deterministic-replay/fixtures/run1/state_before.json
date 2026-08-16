@@ -1,0 +1,6 @@
+{
+  "boundary": "pre_acquisition",
+  "ksec_global_state_hex": "a126898f5dd37236c3b7d64019facc558b9a893f642117dc2247148be99780b54da5fdd23bc33eb57d1c9e52f7e607e2bf08e483e161611e891b7b5da2889e21d3bd5820bdf4f551c8b8a80799a5ef48",
+  "provider_fips_state_hex": "29e36cf4529a817ddf015c3f752641b2adc7805f",
+  "schema": "cgr-provider-state/v1"
+}

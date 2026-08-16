@@ -1,0 +1,21 @@
+Windows XP SP3 CryptGenRandom deterministic replay
+Two-run exhaustive multisource differential validation
+
+Run1:
+  cases            : 240/240 PASS
+  triple agreement : 61,440/61,440
+
+Run2:
+  cases            : 240/240 PASS
+  triple agreement : 61,440/61,440
+
+Combined:
+  independent runs : 2
+  cases            : 480/480 PASS
+  outputs          : 122,880/122,880
+  implementations  : Python == Rust == CUDA bit-for-bit
+
+Experimental boundary:
+The reconstruction begins at the retained pre-call state and observed
+source-return buffers. It does not claim characterization of the physical
+provenance or information-theoretic entropy of every Windows XP source.

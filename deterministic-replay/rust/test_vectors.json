@@ -1,0 +1,110 @@
+[
+  {
+    "run": "run1",
+    "mutation": "qsi17_20",
+    "value": 0,
+    "output_hex": "a37bf2d7c0c473fc92c62f5171adb25cabdb23a5bb9fcc6b3bd733aaeac53ad4"
+  },
+  {
+    "run": "run1",
+    "mutation": "qsi17_20",
+    "value": 1,
+    "output_hex": "5ac7f88cbf3b89532ec096f28134db8c8fe7350aa9c8bd4ee60ae9515ec9897d"
+  },
+  {
+    "run": "run1",
+    "mutation": "qsi17_20",
+    "value": 255,
+    "output_hex": "0a7eaa389b0365455c0b0c2ef0c99d1e7ed89eda8906e0f2bca2a3778b807b0c"
+  },
+  {
+    "run": "run1",
+    "mutation": "qsi05_0",
+    "value": 0,
+    "output_hex": "af842960530b4c069c66fbb74f5cf99c28da733c8a3e757393a722bb21d2e495"
+  },
+  {
+    "run": "run1",
+    "mutation": "qsi05_0",
+    "value": 1,
+    "output_hex": "d5d37653780b07d1b57cbd48912faf7b58d9dc1749022cefe143b85aeef4c716"
+  },
+  {
+    "run": "run1",
+    "mutation": "qsi05_0",
+    "value": 255,
+    "output_hex": "11cde8b20c2df60e36da2f66c4820d1b9c7bc0dc44dd3fed6bde994ef0a57209"
+  },
+  {
+    "run": "run1",
+    "mutation": "sys2_0",
+    "value": 0,
+    "output_hex": "a37bf2d7c0c473fc92c62f5171adb25cabdb23a5bb9fcc6b3bd733aaeac53ad4"
+  },
+  {
+    "run": "run1",
+    "mutation": "sys2_0",
+    "value": 1,
+    "output_hex": "374e83ecba2aad4fe4560a3f405c14353bdd702aa9ec120e94607736bbb91811"
+  },
+  {
+    "run": "run1",
+    "mutation": "sys2_0",
+    "value": 255,
+    "output_hex": "f4f78f48de27fe22bb9eda4b2f5eee67b6b9c7290356668757558062cc899eae"
+  },
+  {
+    "run": "run2",
+    "mutation": "qsi17_20",
+    "value": 0,
+    "output_hex": "73f3bee078d1335c3dda75994b505be400b1b29ecf2443000cf83128dfcd2fd8"
+  },
+  {
+    "run": "run2",
+    "mutation": "qsi17_20",
+    "value": 1,
+    "output_hex": "21ffb0abef097af101892bd3cd63a100c83fda40920c66e680b6af0d52cfdacd"
+  },
+  {
+    "run": "run2",
+    "mutation": "qsi17_20",
+    "value": 255,
+    "output_hex": "45383b3fffaac84a2af1609e294567c43743ac521872514361e6f5d0fb547f04"
+  },
+  {
+    "run": "run2",
+    "mutation": "qsi05_0",
+    "value": 0,
+    "output_hex": "3c3edad08045fef394ab094ba1ea32a47bebfb616fb45181742f8e7bdebd2eae"
+  },
+  {
+    "run": "run2",
+    "mutation": "qsi05_0",
+    "value": 1,
+    "output_hex": "7a36a404855ac696b5910965eeb271d97551e1d2f3c782d6072fd4a311c463df"
+  },
+  {
+    "run": "run2",
+    "mutation": "qsi05_0",
+    "value": 255,
+    "output_hex": "4bdfad37dade0c2dfd1ec82c09c22d17da28c8c707f9bf816d4d932c87ede846"
+  },
+  {
+    "run": "run2",
+    "mutation": "sys2_0",
+    "value": 0,
+    "output_hex": "73f3bee078d1335c3dda75994b505be400b1b29ecf2443000cf83128dfcd2fd8"
+  },
+  {
+    "run": "run2",
+    "mutation": "sys2_0",
+    "value": 1,
+    "output_hex": "934286e20b0d94ced01cefcfa1175ab748d64c67fef4978b9efb9e1f09fa8893"
+  },
+  {
+    "run": "run2",
+    "mutation": "sys2_0",
+    "value": 255,
+    "output_hex": "2f2283b70f35c25a5a7701439f338b006ca3eea849beebf9865c06f1bb9199da"
+  }
+]
